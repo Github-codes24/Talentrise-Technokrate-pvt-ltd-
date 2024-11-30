@@ -1,0 +1,2826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Technkorate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+
+    <!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="img/technokrate.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/technokrate.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;family=Rubik:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">   
+    
+    <!---Fontawesome cdn-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    
+     <!-- Bootstrap CSS and Icons -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">-->
+    
+    <style>
+        /* Styles for the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Styles for the button that triggers the dropdown */
+        .dropdown button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styles for the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -400px;
+            
+        }
+
+        /* Styles for each item in the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #800080;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused */
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+
+        /* Styles for the dropdown content of about (hidden by default) */
+        .dropdown-content-about {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -50px;
+        }
+
+        /* Styles for each item in the dropdown of about */
+        .dropdown-content-about a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+
+        /* Change color on hover of about */
+        .dropdown-content-about a:hover {
+            background-color: #800080;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused for about*/
+        .dropdown:hover .dropdown-content-about,
+        .dropdown:focus-within .dropdown-content-about {
+            display: block;
+        }
+        
+           /* Ensures all blog items are hidden initially */
+          .blog-item {
+               display: none;
+    }
+    
+  /*hover remove*/
+  .blog-item .position-absolute:hover {
+            background-color: #800080 !important; /* Ensure the background stays the same */
+            color: white !important; /* Ensure the text color stays white */
+            text-decoration: none !important; /* Ensure no text decoration like underline */
+        }
+        
+        
+/*pagination*/
+/* Change pagination link color to purple */
+.pagination .page-link {
+    background-color: white; /* Set background color to purple */
+    color: black; /* Set text color to white */
+    border: 1px solid #800080; /* Set border color to purple */
+    
+    
+}
+
+/* Change hover and active states for the pagination links */
+.pagination .page-link:hover,
+.pagination .page-item.active .page-link {
+    background-color: #800080; /* Darker purple for hover or active state */
+    color: white; /* Ensure text remains white */
+    border-color: #6a006a; /* Border color when hovering or active */
+}
+
+/* Optional: Change disabled page item styles (if needed) */
+.pagination .page-item.disabled .page-link {
+    background-color:white; /* Light background for disabled item */
+    color: black; /* Light color for disabled text */
+    border-color: #800080; /* Light border for disabled item */
+}
+
+.new_gy{
+    --bs-gutter-y: 1.1rem;
+}
+
+@media (max-width:767px){
+    .new_gy{
+    --bs-gutter-y: 0.36rem;
+}
+}
+
+  
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <!--<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">-->
+    <!--    <div class="spinner"></div>-->
+    <!--</div>-->
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #800080;">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <!-- <small class="me-3 text-light"><a href="#" class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>4th floor, Prince Complex, Chatrapati Nagar, Nagpur, Maharashtra 440015</a></small> -->
+                    <small class="me-3 text-light"><a href="tel:+918956992803" class="me-3 text-light" style="color:white;"><i class="fa fa-phone-alt me-2"></i>+91-8956992803</a></small>
+                    <small class="me-3 text-light"><a href="mailto:info@technokrate.com" class="text-light" style="color:white;" ><i class="fa fa-envelope-open me-2"></i>info@technokrate.com</a></small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://x.com/Talentrise59788"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.facebook.com/profile.php?id=100093741976560"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.linkedin.com/company/telentrisetechnokrate/?viewAsMember=true"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.instagram.com/talentrise_technokrate/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- <div id="wa-logo">
+        <a href="https://wa.me/+918381009662" target="_blank"><img src="./../img/whatsapp.png" alt="Technokrate"></a>
+    </div> -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-e8ed3f66-befe-4c31-b424-4487bbed5463" data-elfsight-app-lazy></div>
+    
+   
+         
+         <!--Start of Tawk.to Script-->
+         <!--<script type="text/javascript">-->
+         <!--var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();-->
+         <!--(function(){-->
+         <!--var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];-->
+         <!--s1.async=true;-->
+         <!--s1.src='https://embed.tawk.to/65145e67b1aaa13b7a7948ef/1hbbp1i4f';-->
+         <!--s1.charset='UTF-8';-->
+         <!--s1.setAttribute('crossorigin','*');-->
+         <!--s0.parentNode.insertBefore(s1,s0);-->
+         <!--})();-->
+         <!--</script>-->
+         <!--End of Tawk.to Script-->
+         
+   <!-- Launcher Icon Container -->
+<div id="launcher-icon" 
+     style="width: 60px; height: 60px; background-color: #007bff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); position: fixed; bottom: 20px; right: 20px; cursor: pointer; z-index: 1000; transition: transform 0.2s;">
+    <i class="bi bi-chat-dots" style="color: #fff; font-size: 1.5rem;"></i>
+</div>
+
+<!-- Chat Window -->
+<div id="chatWindow" 
+     style="display: none; position: fixed; bottom: 90px; right: 20px; width: 300px; max-height: 400px; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); overflow: hidden; z-index: 1001; transition: opacity 0.3s ease, transform 0.3s ease;">
+    <div class="chat-header" 
+         style="background-color: #007bff; color: #fff; padding: 10px; text-align: center; position: relative;">
+        <h6 style="margin: 0;">Technokrate Chat Support</h6>
+        <span id="closeChat" style="position: absolute; top: 5px; right: 10px; cursor: pointer; font-weight: bold;">&times;</span>
+    </div>
+    <div id="chatBody" 
+         style="padding: 10px; overflow-y: auto; max-height: 300px;">
+        <!-- Dynamic messages will appear here -->
+    </div>
+    <div id="typingIndicator" 
+         style="display: none; text-align: left; color: #6c757d; margin: 5px 0;">
+        <em>Bot is typing...</em>
+    </div>
+    <div class="chat-footer d-flex" 
+         style="padding: 5px; border-top: 1px solid #dee2e6;">
+        <input type="text" id="chatInput" class="form-control" placeholder="Type a message..." 
+               style="flex: 1;">
+        <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- Bootstrap and JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Chat Functionality Script -->
+<script>
+    const launcherIcon = document.getElementById('launcher-icon');
+    const chatWindow = document.getElementById('chatWindow');
+    const chatBody = document.getElementById('chatBody');
+    const chatInput = document.getElementById('chatInput');
+    const closeChat = document.getElementById('closeChat');
+    const typingIndicator = document.getElementById('typingIndicator');
+
+    const responses = {
+        "hi": "Hello! How can I assist you today?",
+        "pricing": "You can find our pricing information on the Pricing page of our website.",
+        "support": "Our support team is available 24/7. How can we help you?",
+        "default": "I'm not sure about that. Could you please provide more details?"
+    };
+
+    // Load previous chat history
+    function loadChatHistory() {
+        const history = localStorage.getItem('chatHistory');
+        if (history) {
+            chatBody.innerHTML = history;
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+    }
+
+    // Save chat history
+    function saveChatHistory() {
+        localStorage.setItem('chatHistory', chatBody.innerHTML);
+    }
+
+    // Toggle chat window visibility
+    launcherIcon.addEventListener('click', function() {
+        chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+        if (chatWindow.style.display === 'block') {
+            loadChatHistory();
+        }
+    });
+
+    // Close chat window
+    closeChat.addEventListener('click', function() {
+        chatWindow.style.display = 'none';
+    });
+
+    // Hover effect on launcher icon
+    launcherIcon.addEventListener('mouseover', function() {
+        launcherIcon.style.transform = 'scale(1.1)';
+    });
+    launcherIcon.addEventListener('mouseout', function() {
+        launcherIcon.style.transform = 'scale(1)';
+    });
+
+    // Send message function
+    function sendMessage() {
+        const message = chatInput.value.trim();
+        if (message) {
+            const userMessage = document.createElement('p');
+            userMessage.innerText = message;
+            userMessage.style.cssText = 'text-align: right; margin-bottom: 8px; background-color: #e9ecef; border-radius: 10px; padding: 8px;';
+            chatBody.appendChild(userMessage);
+
+            chatInput.value = '';
+            chatBody.scrollTop = chatBody.scrollHeight;
+            saveChatHistory();
+
+            // Simulate bot response with typing indicator
+            typingIndicator.style.display = 'block';
+            setTimeout(() => {
+                const botMessage = document.createElement('p');
+                botMessage.innerText = responses[message.toLowerCase()] || responses.default;
+                botMessage.style.cssText = 'text-align: left; margin-bottom: 8px; background-color: #e9ecef; border-radius: 10px; padding: 8px;';
+                chatBody.appendChild(botMessage);
+                typingIndicator.style.display = 'none';
+                chatBody.scrollTop = chatBody.scrollHeight;
+                saveChatHistory();
+            }, 1000);
+        }
+    }
+</script>
+
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+           <a href="../index.html" class="navbar-brand p-0">
+               <img src="../img/Techknokrate logo 2.png" alt="Technokrate" class="img-fluid" style="height: 100px; width:200px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link" style=" color: black;">Home</a>
+
+                    <div class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a href="about.html" class="nav-item nav-link active" style=" color: black;">About</a>
+                            <div class="dropdown-content-about" style="width: 180px; padding-top: 10px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <a href="projects.html"><b>Projects</b></a>
+                                        <a href="casestudy.html"><b>Case-Study</b></a>
+                                        <a href="Blogs.html"><b>Blogs</b></a>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <!-- <a href="projects.html" class="nav-item nav-link">Projects</a> -->
+                    <a href="service.html" class="nav-item nav-link" style=" color: black;">Services</a>
+                    <!-- <a href="service.html" class="nav-item nav-link" style="font-size: 16px;">Services</a> -->
+                    <div class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a href="" class="nav-item nav-link" style="font-size: 16px;  color: black">Hire Us</a>
+                            <div class="dropdown-content" style="width: 850px; padding-top: 20px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Trending</h6>
+                                        <a href="./Others/MERN_Developer.html">MERN Developers</a>
+                                        <a href="./Others/MEAN_Developer.html">MEAN Developers</a>
+                                        <a href="./Others/Hire-Meteor-Devloper.html">Meteor Developers</a>
+                                        <a href="./Others/Blockchain_Developer.html">Blockchain Developers</a>
+                                        <a href="./Others/Devops_Engineer.html">DevOps Engineers</a>
+                                        <a href="./Others/Fintech_Developer.html">Fintech Developers</a>
+                                        <a href="./Others/Hire Automation Tester.html">Automation Testers</a>
+                                        <a href="./Others/Software_Developer.html">Software Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <br>
+                                        <a href="./Others/Hire AR Developers.html">AR Developers</a>
+                                        <a href="./Others/Hire-VueJS-Developer.html">VueJS Developers</a>
+                                        <a href="./Others/Hire Kotlin App Developers.html">Kotlin Developers</a>
+                                        <a href="./Others/Hire-RoR-Devloper.html">RoR Developers</a>
+                                        <li><a href="./Others/Hire Django Developers.html">Django Developers</a></li>
+                                        <li><a href="./Others/Ruby_on_rail_Developer.html">Ruby on Rails Developers</a></li>
+                                        <a href="./Others/Hire UI Developer.html">UI UX Designers</a>
+                                        <a href="./Others/AWS_Developer.html">AWS Developers</a>
+                                        <a href="./Others/PHP_Developer.html">PHP Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Front-End Developers</h6>
+                                        <a href="./Others/Hire Java Script Developer.html">JavaScript Developers</a>
+                                        <a href="./Others/Typescript_Developer.html">TypeScript Developers</a>
+                                        <a href="./Others/Hire HTML5 Developers.html">HTML5 Developers</a>
+                                        <a href="./Others/TailwindCSS_Developer.html">Tailwind CSS Developers</a>
+                                        <a href="./Others/Angular_Developer.html">Angular Developers</a>
+                                        <a href="./Others/hire-reactjs-Developers.html">ReactJS Developers</a>
+                                        <a href="./Others/NextJS_Developer.html">NextJS Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Back-End Developers</h6>
+                                        <li><a href="./Others/Node JS Developer.html">Node JS Developers</a></li>
+                                        <li><a href="./Others/Hire UI Developer.html">UI Developers</a></li>
+                                        <li><a href="./Others/Laravel Development.html">Laravel Developers</a></li>
+                                        <li><a href="./Others/Hire-ASPNET-Devloper.html">ASPNET Developers</a></li>
+                                        <li><a href="./Others/Hire Python Developer.html">Python Developers</a></li>
+                                        <li><a href="./Others/Hire Java Developer.html">Java Developers</a></li>
+                                        <li><a href="./Others/ExpressJS_Developer.html">ExpressJS Developers</a></li>
+                                        <li><a href="./Others/SpringBoot_Developer.html">Spring Boot Developers</a></li>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Mobile App Developers</h6>
+                                        <li><a href="./Others/Hire Android Developer.html">Android Developers</a>
+                                        </li>
+                                        <li><a href="./Others/Hire IOS Developer.html">IOS Developers</a></li>
+                                        <li><a href="./Others/Hire Swift App Developers.html">Swift App Developers</a>
+                                        </li>
+                                        <li><a href="./Others/Hire-Flutter-Developer.html">Flutter Developers</a></li>
+                                        <li><a href="./Others/Hire Ionic Developers.html">Ionic Developers</a></li>
+                                        <li><a href="./Others/Hire-React-Native-developer.html">React Native Developers</a></li>
+                                        <li><a href="./Others/HIRE XAMARIN DEVELOPER.html">Xamarin Developers</a></li>
+                                        <li><a href="./Others/Hire CodeIgniter developer.html">CodeIgniter Developers</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Add more items as needed -->
+                            </div>
+                        </div>
+                        </div>
+                    <!-- <a href="casestudy.html" class="nav-item nav-link" style="font-size: 16px;">Case-Study</a> -->
+                    <a href="career.html" class="nav-item nav-link" style="font-size: 16px;  color: black">Career</a>
+                    <a href="contact.html" class="nav-item nav-link" style="font-size: 16px;  color: black">Contact</a>
+                       <a href="quote.html" class="nav-item nav-link" style="padding-top: 23px;">
+                        <button type="button" 
+                                style="background-color: #800080; 
+                                       min-height: 1px; 
+                                       font-size: 16px; 
+                                       color: #fff; 
+                                       border: 1px solid white; 
+                                       outline: none;" 
+                                class="btn btn-primary btn-lg btn-block">
+                          <b>Request Free Quote</b>
+                        </button>
+                      </a>
+                </div>
+
+
+                <!-- <a href="" class="btn btn-primary py-2 px-4 ms-3" style="background-color: #091E3E;">Get IN Touch</a> -->
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                     <h1 class="display-4 text-black animated zoomIn">Blogs</h1><br>
+                    <!--<h4 class="display-4 text-white animated zoomIn">Learn More About IT Industry & Services</h4><br>-->
+                    <h4 class="display-4 text-black animated zoomIn" style="font-size: 2.5rem;">
+                           Learn More About IT Industry & Services
+                    </h4>
+
+                 <!--   <h1 class="display-4 text-white animated zoomIn" style="color: red;">-->
+                 <!--Learn More About IT Industry & Services-->
+                 <!--  </h1>-->
+
+                    <!--<a href="" class="h5 text-white">Home</a>-->
+                    <!--<i class="far fa-circle text-white px-2"></i>-->
+                    <!--<a href="" class="h5 text-white">To excel in your business vertical, stay updated with the latest market and technological trends through our blogs</a>-->
+                   <a href="" class="h5 text-black" style="text-decoration: none; color: black;">
+                      To excel in your business vertical, stay updated with the latest market and technological trends<br>
+                      through our blogs
+                   </a>
+
+                    <br><br>
+                    
+                </div>
+                
+            </div>
+            <!--<h5 style="color: white; text-align: center;">See How We Deliver Client's Idea Into Excellent Result!</h5>-->
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+    
+    <!--modal start-->
+    
+ <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-height: 400px; max-width: 600px;"> <!-- Custom width with inline CSS -->
+        <div class="modal-content rounded-0 border-0">
+            <div class="modal-body">
+                <div class="row align-items-center"> <!-- Added align-items-center to vertically center the content -->
+                    <!-- Left column for the image -->
+                    <div class="col-md-6 d-flex justify-content-center"> <!-- Center image horizontally -->
+                        <img src="../img/technokrate.png" alt="Techknokrate Logo" style="width: 200px; height: 250px; object-fit: cover;">
+                    </div>
+
+                    <!-- Right column for the form -->
+                    <div class="col-md-6">
+                        <div class="modal-header border-0 d-flex justify-content-between p-0">
+                            <h6 class="text-start" style="font-size: 20px; text-shadow: none; box-shadow: none; margin: 0;">
+                                Kindly Fill The Details !
+                            </h6>
+                            <a href="javascript:void(0)" class="close" data-dismiss="modal" aria-label="Close" onclick="hideModal()" 
+                               style="border: 2px solid black; padding: 6px; padding-bottom: 4px; padding-top: 4px; color:black;">
+                                <span aria-hidden="true">&times;</span>
+                            </a>
+                        </div>
+
+                        <form action="https://formspree.io/f/mnnqnyjy" class="row" method="post" id="formSubmit">
+                            <!-- Add margin-top to create space between close button and the first input field -->
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="loginPhone" name="loginName" placeholder="First Name" required style="font-size: 14px; margin-top: 20px;">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="loginName" name="loginEmail" placeholder="E-mail address" required style="font-size: 14px;">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Phone" maxlength="10" required style="font-size: 14px;">
+                            </div>
+                            <div class="col-12">
+                                <a href="https://appt.link/meet-with-chetan-chitriv-0E0czwAl/web-conference" class="btn btn-primary w-100 mb-3" role="button">
+                                    Submit
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!--modal end-->
+
+
+    <!-- Blog Start -->
+<div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -30px; padding-right:30px;padding-left:30px;">
+    <div class="container-fluid py-1">
+        <div class="row new_gy">
+            <!-- Blog list Start -->
+            <div class="col-lg-12">
+                <!--Row for blogs-->
+                <div class="row new_gy">
+                    <!-- First Blog -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                        <div class="blog-item bg-light rounded overflow-hidden">
+                            <div class="blog-img position-relative overflow-hidden">
+                                <a href="./Blogs/35_leading_company.html">
+                                    <img src="./img/35_leading_sw.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                                </a>
+                                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-3 py-2 px-4" href="./Blogs/35_leading_company.html" style="z-index: 1; background-color: #800080;">-->
+                                <!--    5 Leading Software Companies in India-->
+                                <!--</a>-->
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3">5 Leading Software Companies in India</h4>
+                                <p>India has emerged as a global hub for software development, offering a rich talent pool and a vibrant ecosystem for tech innovation.</p><br> 
+                                <a class="text-uppercase" href="./Blogs/35_leading_company.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                        <div class="blog-item bg-light rounded overflow-hidden">
+                            <div class="blog-img position-relative overflow-hidden">
+                                <a href="./Blogs/Website_Development_Companies_in_2024.html">
+                                    <img src="./img/Custom_Software_Development_.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                                </a>
+                                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Website_Development_Companies_in_2024.html" style="background-color: #800080;">-->
+                                <!--    Website Development Companies in 2024-->
+                                <!--</a>-->
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3">Website Development Companies in 2024</h4>
+                                <p>We specialize in creating innovative, responsive, and user-friendly websites tailored to meet the needs of businesses in 2024.</p>
+                                <a class="text-uppercase" href="./Blogs/Website_Development_Companies_in_2024.html" style="color: #800080;"> <br> Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                        <div class="blog-item bg-light rounded overflow-hidden">
+                            <div class="blog-img position-relative overflow-hidden">
+                                <a href="./Blogs/Best_Backend_Companies_in_india.html">
+                                    <img src="./img/Backend.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                                </a>
+                                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Best_Backend_Companies_in_india.html" style="background-color: #800080;">-->
+                                <!--    Best Backend Companies in India-->
+                                <!--</a>-->
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3">Best Backend Companies in India</h4>
+                                <p>India is home to some of the world’s top backend development companies, offering robust, scalable, and secure solutions to businesses across the globe.</p>
+                                <a class="text-uppercase" href="./Blogs/Best_Backend_Companies_in_india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- End of row for blogs -->
+            </div> <!-- End of col-lg-12 -->
+        </div> <!-- End of row g-3 -->
+    </div> <!-- End of container -->
+</div> <!-- End of container-fluid -->
+<div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s"  style=" padding-right:30px;padding-left:30px;">
+    <div class="container-fluid py-1">
+        <div class="row new_gy">
+            <!-- 4th -->
+            <div class="col-lg-4 col-md-4 col-sm-12 wow slideInUp">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <a href="./Blogs/Top_Software_Development_Trends_to_Watch_in_2024.html">
+                            <img src="./img/software_dev_trends.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                        </a>
+                        <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Software_Development_Trends_to_Watch_in_2024.html" style="background-color: #800080;">Top Software Development Trends to Watch in 2024</a>-->
+                    </div>
+                    <div class="p-4">
+                        <h4 class="mb-3">Top Software Development Trends to Watch in 2024</h4>
+                        <p>It will continue to shape software development, enhancing automation, predictive analytics, and decision-making in applications.</p><br>
+                        <a class="text-uppercase" href="./Blogs/Top_Software_Development_Trends_to_Watch_in_2024.html" style="color: #800080;"> <br> Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5th -->
+            <div class="col-lg-4 col-md-4 col-sm-12 wow slideInUp">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <a href="./Blogs/cloud_computing.html">
+                            <img src="./img/CloudComputing.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                        </a>
+                        <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/milk_vender_app..html" style="background-color: #800080;">How Cloud Computing is Transforming Software Development</a>-->
+                    </div>
+                    <div class="p-4">
+                        <h4 class="mb-3">How Cloud Computing is Transforming Software Development</h4>
+                        <p>Cloud computing has become a cornerstone of modern software development, reshaping the way developers create, test, and deploy applications.</p>
+                        <a class="text-uppercase" href="./cloud_computing.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6th -->
+            <div class="col-lg-4 col-md-4 col-sm-12 wow slideInUp">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <a href="./Blogs/Best_Software_Development_Company_Near_me.html">
+                            <img src="./img/Best_software_bl.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                        </a>
+                        <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="background-color: #800080;">Best Software Development Company Near me</a>-->
+                    </div>
+                    <div class="p-4">
+                        <h4 class="mb-3">Best Software Development Company Near me</h4>
+                        <p>In today’s technology-driven world, partnering with the right software development company is crucial for your business success.</p><br>
+                        <a class="text-uppercase" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of row for blogs -->
+    </div> <!-- End of container -->
+</div> <!-- End of container-fluid -->
+<div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s" style="padding-right:30px; padding-left:30px;">
+    <div class="container-fluid py-1">
+        <div class="row new_gy">
+            <!-- seventh -->
+            <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <a href="./Blogs/App Development Trends to Watch in 2024.html">
+                            <img src="../img/app_dev_trend_2.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                        </a>
+                        <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies in India</a>-->
+                    </div>
+                    <div class="p-4">
+                        <h4 class="mb-3">App Development Trends to Watch in 2024</h4>
+                        <p>App development is set to be revolutionized by emerging technologies and evolving user demands. </p>
+                        <a class="text-uppercase" href="./Blogs/App Development Trends to Watch in 2024.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- eight -->
+            <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <a href="./Blogs/saaS.html">
+                            <img src="./img/Saas.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                        </a>
+                        <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/saaS.html" style="background-color: #800080;">SaaS Development</a>-->
+                    </div>
+                    <div class="p-4">
+                        <h4 class="mb-3">SaaS Development</h4>
+                        <p>Creating high-quality blog content for your SaaS development company website can greatly enhance search engine optimization (SEO) and attract relevant traffic.</p>
+                        <a class="text-uppercase" href="./Blogs/saaS.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- nineth -->
+            <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                    <div class="blog-img position-relative overflow-hidden">
+                        <a href="./Blogs/Custom_Software_Development_Services.html">
+                            <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                        </a>
+                        <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Custom_Software_Development_Services.html" style="background-color: #800080;">Custom Software Development Services</a>-->
+                    </div>
+                    <div class="p-4">
+                        <h4 class="mb-3">Custom Software Development Services</h4>
+                        <p>In an era where technology drives business success, having the right software solutions is crucial.</p>
+                        <a class="text-uppercase" href="./Blogs/Custom_Software_Development_Services.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of row for blogs -->
+    </div> <!-- End of container -->
+</div> <!-- End of container-fluid -->
+
+
+<!--1st page end-->
+
+
+
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--               <a href="./Blogs/Top_10_Software_Development_Companies_in _india.html">-->
+                     <!--                   <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Top 10 Software Development Companies in India</h4>-->
+                     <!--               <p>India has established itself as a global leader in software development, with numerous companies excelling in providing innovative and tailored solutions.</p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                        
+                     <!--</div>-->
+                     
+                        <!-- Second Page start -->
+                        
+          <div class="container-fluid px-4" style="margin-top: -65px;">
+ <!-- Added px-4 for horizontal padding -->
+    <div class="row new_gy">
+        <!-- First Blog -->
+        <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Top_Mobile_App_Development_Companies.html">
+                        <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies in India</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Top Mobile App Development Companies in India</h4>
+                    <p>India is home to some of the top mobile app development companies, renowned for their innovation, technical expertise, and ability to deliver high-quality solutions. </p>
+                    <a class="text-uppercase" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Blog -->
+        
+        <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Top_Mobile_App_Development_Companies.html">
+                        <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies in India</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Top Mobile App Development Companies in India</h4>
+                    <p>India is home to some of the top mobile app development companies, renowned for their innovation, technical expertise, and ability to deliver high-quality solutions. </p>
+                    <a class="text-uppercase" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Third Blog -->
+        <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Custom_Software_Development_Services.html">
+                        <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Custom_Software_Development_Services.html" style="background-color: #800080;">Custom Software Development Services</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Custom Software Development Services</h4>
+                    <p>In an era where technology drives business success, having the right software solutions is crucial.</p><br>
+                    <a class="text-uppercase" href="./Blogs/Custom_Software_Development_Services.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-3" style=" margin-top:07px;">
+        <!-- Fourth Blog -->
+        <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Top_10_Software_Development_Companies_in _india.html">
+                        <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Top 10 Software Development Companies in India</h4>
+                    <p>India has established itself as a global leader in software development, with numerous companies excelling in providing innovative solutions.</p>
+                    <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth Blog -->
+        <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Top_10_android_app_development_company_2024.html">
+                        <img src="./img/mid_top_mob_app.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_android_app_development_company_2024.html" style="background-color: #800080;">Top 10 android app development company 2024</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Top 10 android app development company 2024</h4>
+                    <p>In today’s fast-paced digital landscape, mobile applications have become essential for businesses seeking to engage customers and drive growth.</p>
+                    <a class="text-uppercase" href="./Blogs/Top_10_android_app_development_company_2024.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth Blog -->
+        <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Top_Mobile_App_Development_Companies.html">
+                        <img src="./img/top_mob_app_dev.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Top Mobile App Development Companies</h4>
+                    <p>In today’s digital world, mobile applications have become essential for businesses looking to enhance customer engagement, streamline operations, and increase revenue.</p>
+                    <a class="text-uppercase" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row new_gy" style="margin-top:9px;">
+        <!-- Seventh Blog -->
+        <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/online_E-commerce website development services.html
+">
+                    <img src="./img/ecommerce_web_dev.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/online_meat_delivery_software.html" style="background-color: #800080;">Online Meat Delivery Software</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">E-commerce website development services</h4>
+                <p>The rise of e-commerce has transformed how consumers shop for groceries, including meat products.</p>
+                <a class="text-uppercase" href="./Blogs/online_E-commerce website development services.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- eighth -->
+    <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Custom_Mobile_App_Development_Company.html">
+                    <img src="./img/custom_Mobile_App.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Custom_Mobile_App_Development_Company.html" style="background-color: #800080;">Custom Mobile App Development Company</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Custom Mobile App Development Company</h4>
+                <p>At [Your Company Name], we believe that every great idea deserves a tailored solution.</p>
+                <a class="text-uppercase" href="./Blogs/Custom_Mobile_App_Development_Company.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- nineth -->
+    <div class="col-lg-4 col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/milk_delivery_app_work.html">
+                    <img src="./img/Milk_Delivery_Conculsion.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/milk_delivery_app_work.html" style="background-color: #800080;">Milk Delivery App Work</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk Delivery App Work</h4>
+                <p>In today’s fast-paced world, convenience is key. As busy lifestyles often leave little time for grocery shopping.</p>
+                <a class="text-uppercase" href="./Blogs/milk_delivery_app_work.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--second page end-->
+
+<!--3rd page start-->
+                        
+                    <div class="container-fluid py-1">
+    <div class="row new_gy" style="margin-top:-60px;">
+        
+        <!-- First Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" >
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Software_Companies_list.html">
+                        <img src="./img/Software_companies_list.jpeg" class="img-fluid w-100" alt="Software Companies list" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Software_Companies_list.html" style="background-color: #800080;">Software Companies list</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Software Companies list</h4>
+                    <p>Discover a curated list of leading software development companies known for their innovative solutions, technical expertise, and commitment to excellence. </p>
+                    <a class="text-uppercase" href="./Blogs/Software_Companies_list.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Software_Development_Company_in_Delhi.html">
+                        <img src="./img/web_Design.jpeg" class="img-fluid w-100" alt="Software Development Company in Delhi" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Software_Development_Company_in_Delhi.html" style="background-color: #800080;">Software Development Company in Delhi</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Software Development Company in Delhi</h4>
+                    <p>As businesses increasingly rely on technology to drive growth, the demand for reliable software development services has surged.</p>
+                    <a class="text-uppercase" href="./Blogs/Software_Development_Company_in_Delhi.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Hire_a_Software_Development_Team.html">
+                        <img src="./img/hire_Software_blog.jpeg" class="img-fluid w-100" alt="Hire a Software Development Team" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Hire_a_Software_Development_Team.html" style="background-color: #800080;">Hire a Software Development Team</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Hire a Software Development Team</h4>
+                    <p>In today’s fast-paced digital landscape, the need for robust software solutions has never been greater.</p>
+                    <a class="text-uppercase" href="./Blogs/Hire_a_Software_Development_Team.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+                        
+                       <div class="container-fluid" style=" margin-top:10px;">
+    <div class="row new_gy">
+        <div class="col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Top_20_Companies.html">
+                        <img src="./img/mid_top10_sw_dev_campany.jpg" class="img-fluid w-100" alt="Top 20 IT Companies in India" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_20_Companies.html" style="background-color: #800080;">Top 20 IT Companies in India</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Top 20 IT Companies in India</h4>
+                    <p>In an ever-evolving technological landscape, software companies play a crucial role in driving innovation and enhancing business efficiency.</p><br> <br> <br> 
+                    <a class="text-uppercase" href="./Blogs/Top_20_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/Top_50+_App_Development_Companies.html">
+                        <img src="./img/top 50 App_blog.jpeg" class="img-fluid w-100" alt="Top 50+ App Development Companies" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_50+_App_Development_Companies.html" style="background-color: #800080;">Top 50+ App Development Companies</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Top 50+ App Development Companies</h4>
+                    <p>In today’s digital landscape, having a robust mobile application is essential for businesses aiming to enhance their reach and engagement.</p><br> <br>
+                    <a class="text-uppercase" href="./Blogs/Top_50+_App_Development_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/continuousIntegration.html">
+                        <img src="./img/35_leading_sw.jpeg" class="img-fluid w-100" alt="Continuous Integration" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/continuousIntegration.html" style="background-color: #800080;">Continuous Integration/Continuous Deployment (CI/CD)</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Continuous Integration/Continuous Deployment (CI/CD)</h4>
+                    <p>Continuous Integration (CI) and Continuous Deployment (CD) are practices that allow development teams to automate the software delivery process, improving the speed.</p>
+                    <a class="text-uppercase" href="./Blogs/continuousIntegration.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                      <div class="container-fluid" style=" margin-top:10px;">
+    <div class="row new_gy">
+        <div class="col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/cyberSecurity.html">
+                        <img src="./img/Custom_Software_Development_.jpg" class="img-fluid w-100" alt="Cyber Security" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/cyberSecurity.html" style="background-color: #800080;">Cyber Security</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Cyber Security</h4>
+                    <p>In an increasingly digital world, where cyber threats loom large, protecting sensitive data and maintaining the integrity of systems is more critical than ever.</p>
+                    <a class="text-uppercase" href="./Blogs/cyberSecurity.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/devOps.html">
+                        <img src="./img/software_companies_tcs.jpeg" class="img-fluid w-100" alt="DevOps Consulting" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/devOps.html" style="background-color: #800080;">DevOps Consulting</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">DevOps Consulting</h4>
+                    <p>In today's fast-paced digital landscape, organizations are under constant pressure to deliver software quickly, efficiently, and reliably.</p><br> 
+                    <a class="text-uppercase" href="./Blogs/devOps.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="col-md-4 col-12 wow slideInUp">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/digital_Transformation.html">
+                        <img src="./img/Milk_delivery_App.jpeg" class="img-fluid w-100" alt="Digital Transformation" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/digital_Transformation.html" style="background-color: #800080;">Digital Transformation</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Digital Transformation</h4>
+                    <p>In today's fast-paced digital landscape, businesses are under immense pressure to adapt to evolving technologies and changing consumer expectations.</p>
+                    <a class="text-uppercase" href="./Blogs/digital_Transformation.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--3rd page end-->
+<!--4th start-->
+                        
+    <div class="container-fluid py-1" style="padding-left: 0px; padding-right: 0px; margin-top: -60px;">
+    <div class="row new_gy" style="margin-left: 0; margin-right: 0;">
+
+       
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" style= "overflow: hidden;">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/e-commerce.html">
+                        <img src="./img/milk_vender_app.jpg" class="img-fluid w-100" alt="E-commerce Solutions" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/e-commerce.html" style="background-color: #800080;">-->
+                    <!--    E-commerce Solutions-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">E-commerce Solutions</h4>
+                    <p>In an increasingly digital world, businesses must adapt to consumer demands for convenience and accessibility.</p> <br> 
+                    <a class="text-uppercase" href="./Blogs/e-commerce.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" style=" overflow: hidden;">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/finTech.html">
+                        <img src="./img/Best_software_bl.jpeg" class="img-fluid w-100" alt="Fintech Solutions" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/finTech.html" style="background-color: #800080;">-->
+                    <!--    Fintech Solutions-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Fintech Solutions</h4>
+                    <p>In an era where technology continually reshapes industries, financial technology (fintech) stands at the forefront of innovation in the finance sector.</p>
+                    <a class="text-uppercase" href="./Blogs/finTech.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" style=" overflow: hidden;">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/frontend.html">
+                        <img src="./img/sw_outsorcing.jpeg" class="img-fluid w-100" alt="Frontend Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/frontend.html" style="background-color: #800080;">-->
+                    <!--    Frontend Development-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Frontend Development</h4>
+                    <p>In a world where users expect fast, responsive, and visually appealing applications, frontend development plays a crucial role in delivering smooth digital experiences.</p>
+                    <a class="text-uppercase" href="./Blogs/frontend.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+                        <div class="container-fluid py-1" >
+    <div class="row new_gy" style="margin-left: 0; margin-right: 0; margin-top: 10px;">
+
+        <!-- First Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" style=" overflow: hidden;">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/fullStack.html">
+                        <img src="./img/Top_20_App_blogs.jpeg" class="img-fluid w-100" alt="Full Stack Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/fullStack.html" style="background-color: #800080;">-->
+                    <!--    Full Stack Development-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Full Stack Development</h4>
+                    <p>In today’s fast-paced digital landscape, businesses need robust, scalable, and efficient web and mobile applications.</p>
+                    <a class="text-uppercase" href="./Blogs/fullStack.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" style=" overflow: hidden;">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/internet.html">
+                        <img src="./img/software_development_near_me_blogs.jpeg" class="img-fluid w-100" alt="Internet of Things" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/internet.html" style="background-color: #800080;">-->
+                    <!--    Internet of Things (IOT)-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Internet of Things (IOT)</h4>
+                    <p>The Internet of Things (IoT) is rapidly transforming the way we live, work, and interact with the world around us.</p>
+                    <a class="text-uppercase" href="./Blogs/internet.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" style=" overflow: hidden;">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/responsive.html">
+                        <img src="./img/software_companies_tcs.jpeg" class="img-fluid w-100" alt="Responsive Design" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/responsive.html" style="background-color: #800080;">-->
+                    <!--    Responsive Design-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Responsive Design</h4>
+                    <p>In an era where users access websites and applications, responsive design has become essential for web development.</p>
+                    <a class="text-uppercase" href="./Blogs/responsive.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid py-1" >
+    <div class="row new_gy" style="margin-left: 0; margin-right: 0; margin-top: 10px;">
+
+        <!-- First Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" style="  padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" >
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/saaS.html">
+                        <img src="./img/Software_companies_list.jpeg" class="img-fluid w-100" alt="SaaS Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/saaS.html" style="background-color: #800080;">-->
+                    <!--    SaaS Development-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">SaaS Development</h4>
+                    <p>Creating high-quality blog content for your SaaS development company website can greatly enhance search engine optimization (SEO) and attract relevant traffic.</p>
+                    <a class="text-uppercase" href="./Blogs/saaS.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" >
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/webApplication.html">
+                        <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Web Application Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/webApplication.html" style="background-color: #800080;">-->
+                    <!--    Web Application Development-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Web Application Development</h4>
+                    <p> Web applications have become essential tools for businesses to offer seamless online services, and engage customers.</p> <br> 
+                    <a class="text-uppercase" href="./Blogs/webApplication.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Blog -->
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden" >
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/backend.html">
+                        <img src="./img/Saas.jpeg" class="img-fluid w-100" alt="Backend Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/backend.html" style="background-color: #800080;">-->
+                    <!--    Backend Development-->
+                    <!--</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Backend Development</h4>
+                    <p>While users interact with beautifully designed interfaces, it’s the backend that ensures everything runs smoothly under the hood.</p><br> 
+                    <a class="text-uppercase" href="./Blogs/backend.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--4thpage end-->
+<!--5thth page start-->
+
+                         <div class="container-fluid p-0">
+    <div class="row new_gy" style="margin-left: 0; margin-right: 0; margin-top:-80px; ">
+        
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 0px; padding-right: 0px;">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/CRM.html">
+                        <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="CRM Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/CRM.html" style="background-color: #800080;">CRM Development</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">CRM Development</h4>
+                    <p>In today’s customer-centric landscape, businesses must prioritize building strong relationships with their clients.</p><br> 
+                    <a class="text-uppercase" href="./Blogs/CRM.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/edge_computing.html">
+                        <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Edtech Solution" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/edge_computing.html" style="background-color: #800080;">Edtech Solution</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Edtech Solution</h4>
+                    <p>In a rapidly changing world, education must evolve to meet the needs of students, educators, and institutions.</p><br>
+                    <a class="text-uppercase" href="./Blogs/edge_computing.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12 wow slideInUp" style="padding-left: 10px; padding-right: 10px;">
+            <div class="blog-item bg-light rounded overflow-hidden">
+                <div class="blog-img position-relative overflow-hidden">
+                    <a href="./Blogs/enterprise.html">
+                        <img src="./img/manage_sw_blog.jpeg" class="img-fluid w-100" alt="Enterprise Software Development" style="height: 200px; object-fit: cover;">
+                    </a>
+                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/enterprise.html" style="background-color: #800080;">Enterprise Software Development</a>-->
+                </div>
+                <div class="p-4">
+                    <h4 class="mb-3">Enterprise Software Development</h4>
+                    <p>India boasts a vibrant mobile app development landscape, with numerous companies offering top-notch services .</p>
+                    <a class="text-uppercase" href="./Blogs/enterprise.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+                    <div class="row new_gy" style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/IT_Consulting.html">
+                    <img src="./img/35_leading_sw.jpeg" class="img-fluid w-100" alt="IT Consulting Services" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-3 py-2 px-4" href="./Blogs/IT_Consulting.html" style="z-index: 1; background-color:#800080;">-->
+                <!--    IT Consulting Services-->
+                <!--</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">IT Consulting Services</h4>
+                <p>In today’s digital era, businesses rely heavily on technology to stay competitive. However, navigating the ever-changing IT landscape can be overwhelming without expert guidance.</p>
+                <a class="text-uppercase" href="./Blogs/IT_Consulting.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/legacy.html">
+                    <img src="./img/Custom_Software_Development_.jpg" class="img-fluid w-100" alt="Legacy System Migration" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/legacy.html" style="background-color: #800080;">-->
+                <!--    Legacy System Migration-->
+                <!--</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Legacy System Migration</h4>
+                <p>In an era of rapid technological advancement, many businesses find themselves encumbered by outdated legacy systems that hinder growth, innovation, and efficiency.</p>
+                <a class="text-uppercase" href="./Blogs/legacy.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/machineLearning.html">
+                    <img src="./img/software_companies_tcs.jpeg" class="img-fluid w-100" alt="Machine Learning Solutions" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/machineLearning.html" style="background-color: #800080;">-->
+                <!--    Machine Learning Solutions-->
+                <!--</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Machine Learning Solutions</h4>
+                <p>Machine learning (ML) has transformed how organizations solve complex problems, automate processes, and make data-driven decisions.</p> <br> 
+                <a class="text-uppercase" href="./Blogs/machineLearning.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        
+<div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/manufacturing.html">
+                    <img src="./img/Milk_delivery_App.jpeg" class="img-fluid w-100" alt="Manufacturing Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Milk_subscription_management_software.html" style="background-color: #800080;">-->
+                <!--    Manufacturing Software Development-->
+                <!--</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Manufacturing Software Development</h4>
+                <p>In an era of rapid technological advancement, the manufacturing industry is undergoing a transformative shift.</p>
+                <a class="text-uppercase" href="./Blogs/manufacturing.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/microService.html">
+                    <img src="./img/milk_vender_app.jpg" class="img-fluid w-100" alt="Microservices Architecture" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/milk_vender_app..html" style="background-color: #800080;">-->
+                <!--    Microservices Architecture-->
+                <!--</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Microservices Architecture</h4>
+                <p>In today's rapidly evolving digital landscape, businesses face increasing demands for agility, scalability, and resilience in their software solutions.</p>
+                <a class="text-uppercase" href="./Blogs/microService.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/retail_software.html">
+                    <img src="./img/Best_software_bl.jpeg" class="img-fluid w-100" alt="Retail Software Solutions" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/retail_software.html" style="background-color: #800080;">-->
+                <!--    Retail Software Solutions-->
+                <!--</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Retail Software Solutions</h4>
+                <p>In today's fast-paced retail landscape, businesses must adapt to evolving consumer demands and technological advancements.</p><br> 
+                <a class="text-uppercase" href="./Blogs/retail_software.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--5th page end -->
+
+<!--6th page start-->
+
+                        
+                      <div class="row new_gy"  style="margin-top:-80px; ">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/software_firms.html">
+                    <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Software Development Firms" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/software_firms.html" style="background-color: #800080;">Software Development Firms</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Software Development Firms</h4>
+                <p>In today’s fast-paced digital world, partnering with a reliable software development firm can be a game-changer for businesses of all sizes.</p> <br>
+                <a class="text-uppercase" href="./Blogs/software_firms.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/soft_maintainance.html">
+                    <img src="./img/Saas.jpeg" class="img-fluid w-100" alt="Software Maintenance and Support" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/soft_maintainance.html" style="background-color: #800080;">Software Maintenance and Support</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Software Maintenance and Support</h4>
+                <p>In today’s fast-paced digital landscape, businesses rely heavily on software applications to streamline operations.</p>
+                <a class="text-uppercase" href="./Blogs/soft_maintainance.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/userExperiance.html">
+                    <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="User Experience (UX) Design" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/userExperiance.html" style="background-color: #800080;">User Experience (UX) Design</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">User Experience (UX) Design</h4>
+                <p>In the digital age, the user experience (UX) is a critical factor that determines the success of any application, website, or software product.</p><br> 
+                <a class="text-uppercase" href="./Blogs/userExperiance.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        
+                       <div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_10_Software_Development_Companies_in _india.html">
+                    <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Top 10 Software Development Companies in India" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top 10 Software Development Companies in India</h4>
+                <p>India has established itself as a global leader in software development, with numerous companies excelling in providing innovative and tailored solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/35_leading_company.html">
+                    <img src="./img/35_leading_sw.jpeg" class="img-fluid w-100" alt="35 Leading Software Companies in India" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-3 py-2 px-4" href="./Blogs/35_leading_company.html" style="background-color: #800080;">35 Leading Software Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">35 Leading Software Companies in India</h4>
+                <p>India has emerged as a global hub for software development, offering a rich talent pool and a vibrant ecosystem for tech innovation.</p><br> 
+                <a class="text-uppercase" href="./Blogs/35_leading_company.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_10_Software_Development_Companies_in _india.html">
+                    <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Top 10 Software Development Companies in India" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top 10 Software Development Companies in India</h4>
+                <p>India has established itself as a global leader in software development, with numerous companies excelling in providing innovative and tailored solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Website_Development_Companies_in_2024.html">
+                    <img src="./img/Custom_Software_Development_.jpg" class="img-fluid w-100" alt="Website Development Companies in 2024" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Website_Development_Companies_in_2024.html" style="background-color: #800080;">Website Development Companies in 2024</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Website Development Companies in 2024</h4>
+                <p>In the ever-evolving tech landscape, software companies play a pivotal role in driving innovation that power businesses across the globe.</p>
+                <a class="text-uppercase" href="./Blogs/Website_Development_Companies_in_2024.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Banking_Software_Companies_in_India.html">
+                    <img src="./img/software_companies_tcs.jpeg" class="img-fluid w-100" alt="Banking Software Companies in India" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Banking_Software_Companies_in_India.html" style="background-color: #800080;">Banking Software Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Banking Software Companies in India</h4>
+                <p>As the financial landscape evolves, banking software companies in India play a pivotal role in transforming how financial institutions operate.</p>
+                <a class="text-uppercase" href="./Blogs/Banking_Software_Companies_in_India.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Milk_subscription_management_software.html">
+                    <img src="./img/Milk_delivery_App.jpeg" class="img-fluid w-100" alt="Milk subscription management software" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Milk_subscription_management_software.html" style="background-color: #800080;">Milk subscription management software</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk subscription management software</h4>
+                <p>In an era where convenience is paramount, the dairy industry is evolving to meet consumer demands through innovative solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Milk_subscription_management_software.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--6th page end-->
+
+<!--7th page start-->
+                        <div class="row new_gy"  style="margin-top:-80px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/milk_vender_app..html">
+                    <img src="./img/milk_vender_app.jpg" class="img-fluid w-100" alt="Milk Vender App" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/milk_vender_app..html" style="background-color: #800080;">Milk Vender App</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk Vender App</h4>
+                <p>In a world where culinary experiences are just a tap away, our multi-vendor food delivery app is transforming the way you enjoy meals.</p> <br> 
+                <a class="text-uppercase" href="./Blogs/milk_vender_app..html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Best_Software_Development_Company_Near_me.html">
+                    <img src="./img/Best_software_bl.jpeg" class="img-fluid w-100" alt="Best Software Development Company Near me" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="background-color: #800080;">Best Software Development Company Near me</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Best Software Development Company Near me</h4>
+                <p>In today’s technology-driven world, partnering with the right software development company is crucial for your business success.</p>
+                <a class="text-uppercase" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_Mobile_App_Development_Companies.html">
+                    <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Top Mobile App Development Companies in India" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top Mobile App Development Companies in India</h4>
+                <p>India has emerged as a global hub for mobile app development, with numerous companies offering innovative solutions to various business needs.</p>
+                <a class="text-uppercase" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        
+                        <div class="row new_gy" style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/saaS.html">
+                    <img src="./img/Saas.jpeg" class="img-fluid w-100" alt="SaaS Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/saaS.html" style="background-color: #800080;">SaaS Development</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">SaaS Development</h4>
+                <p>Creating high-quality blog content for your SaaS development company website can greatly enhance search engine optimization (SEO) and attract relevant traffic.</p>
+                <a class="text-uppercase" href="./Blogs/saaS.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Custom_Software_Development_Services.html">
+                    <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Custom_Software_Development_Services.html" style="background-color: #800080;">Custom Software Development Services</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Custom Software Development Services</h4>
+                <p>In an era where technology drives business success, having the right software solutions is crucial.</p>
+                <a class="text-uppercase" href="./Blogs/Custom_Software_Development_Services.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_10_Software_Development_Companies_in _india.html">
+                    <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Top 10 Software Development Companies in India" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top 10 Software Development Companies in India</h4>
+                <p>India has established itself as a global leader in software development, with numerous companies providing innovative  solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        
+                       <div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/35_leading_company.html">
+                    <img src="./img/35_leading_sw.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-3 py-2 px-4" href="./Blogs/35_leading_company.html" style="z-index: 1; background-color:#800080;">-->
+                <!--    35 Leading Software Companies in India-->
+                <!--</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">35 Leading Software Companies in India</h4>
+                <p>India has emerged as a global hub for software development, offering a rich talent pool and a vibrant ecosystem for tech innovation.</p> 
+                <a class="text-uppercase" href="./Blogs/35_leading_company.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Website_Development_Companies_in_2024.html">
+                    <img src="./img/Custom_Software_Development_.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Website_Development_Companies_in_2024.html" style="background-color: #800080;">Website Development Companies in 2024</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Website Development Companies in 2024</h4>
+                <p>In the ever-evolving tech landscape, software companies play a pivotal role in driving innovation that power businesses across the globe.</p>
+                <a class="text-uppercase" href="./Blogs/Website_Development_Companies_in_2024.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Banking_Software_Companies_in_India.html">
+                    <img src="./img/software_companies_tcs.jpeg" class="img-fluid w-100" alt="Banking Software" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Banking_Software_Companies_in_India.html" style="background-color: #800080;">Banking Software Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Banking Software Companies in India</h4>
+                <p>As the financial landscape evolves, banking software companies in India play a pivotal role in transforming how financial institutions operate.</p>
+                <a class="text-uppercase" href="./Blogs/Banking_Software_Companies_in_India.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--7th page end -->
+
+<!--8th page start-->
+                        <div class="row new_gy" style="margin-top: -80px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Milk_subscription_management_software.html">
+                    <img src="./img/Milk_delivery_App.jpeg" class="img-fluid w-100" alt="Milk Subscription Management Software" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Milk_subscription_management_software.html" style="background-color: #800080;">Milk subscription management software</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk subscription management software</h4>
+                <p>In an era where convenience is paramount, the dairy industry is evolving to meet consumer demands through innovative solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Milk_subscription_management_software.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/milk_vender_app..html">
+                    <img src="./img/milk_vender_app.jpg" class="img-fluid w-100" alt="Milk Vender App" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/milk_vender_app..html" style="background-color: #800080;">Milk Vender App</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk Vender App</h4>
+                <p>In a world where culinary experiences are just a tap away, our multi-vendor food delivery app is transforming the way you enjoy meals.</p> <br>
+                <a class="text-uppercase" href="./Blogs/milk_vender_app..html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Best_Software_Development_Company_Near_me.html">
+                    <img src="./img/Best_software_bl.jpeg" class="img-fluid w-100" alt="Best Software Development Company Near me" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="background-color: #800080;">Best Software Development Company Near me</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Best Software Development Company Near me</h4>
+                <p>In today’s technology-driven world, partnering with the right software development company is crucial for your business success.</p>
+                <a class="text-uppercase" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                      <div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_Mobile_App_Development_Companies.html">
+                    <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Top Mobile App Development Companies" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top Mobile App Development Companies in India</h4>
+                <p>India has emerged as a global hub for mobile app development, with numerous companies offering innovative solutions to various business needs.</p>
+                <a class="text-uppercase" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/saaS.html">
+                    <img src="./img/Saas.jpeg" class="img-fluid w-100" alt="SaaS Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/saaS.html" style="background-color: #800080;">SaaS Development</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">SaaS Development</h4>
+                <p>Creating high-quality blog content for your SaaS development company website can greatly enhance search engine optimization (SEO) and attract relevant traffic.</p>
+                <a class="text-uppercase" href="./Blogs/saaS.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Custom_Software_Development_Services.html">
+                    <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="Custom Software Development Services" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Custom_Software_Development_Services.html" style="background-color: #800080;">Custom Software Development Services</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Custom Software Development Services</h4>
+                <p>In an era where technology drives business success, having the right software solutions is crucial.</p>
+                <a class="text-uppercase" href="./Blogs/Custom_Software_Development_Services.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
+                        
+                    <div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_10_Software_Development_Companies_in _india.html">
+                    <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top 10 Software Development Companies in India</h4>
+                <p>India has established itself as a global leader in software development, with numerous companies providing innovative solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/35_leading_company.html">
+                    <img src="./img/35_leading_sw.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-3 py-2 px-4" href="./Blogs/35_leading_company.html" style="z-index: 1; background-color:#800080;">-->
+                <!--    35 Leading Software Companies in India-->
+                <!--</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">35 Leading Software Companies in India</h4>
+                <p>India has emerged as a global hub for software development, offering a rich talent pool and a vibrant ecosystem for tech innovation.</p>
+                <a class="text-uppercase" href="./Blogs/35_leading_company.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Website_Development_Companies_in_2024.html">
+                    <img src="./img/Custom_Software_Development_.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Website_Development_Companies_in_2024.html" style="background-color: #800080;">Website Development Companies in 2024</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Website Development Companies in 2024</h4>
+                <p>In the ever-evolving tech landscape, software companies play a pivotal role in driving innovation that power businesses across the globe.</p>
+                <a class="text-uppercase" href="./Blogs/Website_Development_Companies_in_2024.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--8th page end-->
+
+<!--9th page start-->
+                       <div class="row new_gy" style="margin-top:-80px;" >
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Banking_Software_Companies _in_India.html">
+                    <img src="./img/software_companies_tcs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Banking_Software_Companies _in_India.html" style="background-color: #800080;">Banking Software Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Banking Software Companies in India</h4>
+                <p>As the financial landscape evolves, banking software companies in India play a pivotal role in transforming how financial institutions operate.</p>
+                <a class="text-uppercase" href="./Blogs/Banking_Software_Companies _in_India.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Milk_subscription_management_software.html">
+                    <img src="./img/Milk_delivery_App.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Milk_subscription_management_software.html" style="background-color: #800080;">Milk subscription management software</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk subscription management software</h4>
+                <p>In an era where convenience is paramount, the dairy industry is evolving to meet consumer demands through innovative solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Milk_subscription_management_software.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/milk_vender_app..html">
+                    <img src="./img/milk_vender_app.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/milk_vender_app..html" style="background-color: #800080;">Milk Vender App</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk Vender App</h4>
+                <p>In a world where culinary experiences are just a tap away, our multi-vendor food delivery app is transforming the way you enjoy meals.</p> <br> 
+                <a class="text-uppercase" href="./Blogs/milk_vender_app..html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        
+                      <div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Best_Software_Development_Company_Near_me.html">
+                    <img src="./img/Best_software_bl.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="background-color: #800080;">Best Software Development Company Near me</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Best Software Development Company Near me</h4>
+                <p>In today’s technology-driven world, partnering with the right software development company is crucial for your business success.</p>
+                <a class="text-uppercase" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_Mobile_App_Development_Companies.html">
+                    <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top Mobile App Development Companies in India</h4>
+                <p>India has emerged as a global hub for mobile app development, with numerous companies offering innovative solutions to various business needs.</p>
+                <a class="text-uppercase" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/saaS.html">
+                    <img src="./img/Saas.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/saaS.html" style="background-color: #800080;">SaaS Development</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">SaaS Development</h4>
+                <p>Creating high-quality blog content for your SaaS development company website can greatly enhance search engine optimization (SEO) and attract relevant traffic.</p>
+                <a class="text-uppercase" href="./Blogs/saaS.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                       <div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Custom_Software_Development_Services.html">
+                    <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Custom_Software_Development_Services.html" style="background-color: #800080;">Custom Software Development Services</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Custom Software Development Services</h4>
+                <p>In an era where technology drives business success, having the right software solutions is crucial. </p> <br> 
+                <a class="text-uppercase" href="./Blogs/Custom_Software_Development_Services.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_10_Software_Development_Companies_in _india.html">
+                    <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top 10 Software Development Companies in India</h4>
+                <p>India has established as a global leader in software development, with numerous companies excelling in providing innovative solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in _india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/35_leading_company.html">
+                    <img src="./img/35_leading_sw.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-3 py-2 px-4" href="./Blogs/35_leading_company.html" style="background-color:#800080;">35 Leading Software Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">35 Leading Software Companies in India</h4>
+                <p>India has emerged as a global hub for software development, offering a rich talent pool and a vibrant ecosystem for tech innovation.</p><br> 
+                <a class="text-uppercase" href="./Blogs/35_leading_company.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+ <!--9th page end-->
+ 
+ <!--10th page start-->
+                      
+                       <div class="row new_gy" style=" margin-top:-80px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Website_Development_Companies_in_2024.html">
+                    <img src="./img/Custom_Software_Development_.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Website_Development_Companies_in_2024.html" style="background-color: #800080;">Website Development Companies in 2024</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Website Development Companies in 2024</h4>
+                <p>In the ever-evolving tech landscape, software companies play a pivotal role in driving innovation solutions that power businesses across the globe.</p>
+                <a class="text-uppercase" href="./Blogs/Website_Development_Companies_in_2024.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Banking_Software_Companies _in_India.html">
+                    <img src="./img/software_companies_tcs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Banking_Software_Companies _in_India.html" style="background-color: #800080;">Banking Software Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Banking Software Companies in India</h4>
+                <p>As the financial landscape evolves, banking software companies in India play a pivotal role in transforming how financial institutions operate.</p>
+                <a class="text-uppercase" href="./Blogs/Banking_Software_Companies _in_India.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Milk_subscription_management_software.html">
+                    <img src="./img/Milk_delivery_App.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Milk_subscription_management_software.html" style="background-color: #800080;">Milk subscription management software</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk subscription management software</h4>
+                <p>In an era where convenience is paramount, the dairy industry is evolving to meet consumer demands through innovative solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Milk_subscription_management_software.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        
+                      <div class="row new_gy"  style="margin-top:10px;">
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/milk_vender_app..html">
+                    <img src="./img/milk_vender_app.jpg" class="img-fluid w-100" alt="Milk Vender App" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/milk_vender_app..html" style="background-color: #800080;">Milk Vender App</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Milk Vender App</h4>
+                <p>In a world where culinary experiences are just a tap away, our multi-vendor food delivery app is transforming the way you enjoy meals.</p><br> 
+                <a class="text-uppercase" href="./Blogs/milk_vender_app..html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Best_Software_Development_Company_Near_me.html">
+                    <img src="./img/Best_software_bl.jpeg" class="img-fluid w-100" alt="Best Software Development Company Near me" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="background-color: #800080;">Best Software Development Company Near me</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Best Software Development Company Near me</h4>
+                <p>In today’s technology-driven world, partnering with the right software development company is crucial for your business success.</p>
+                <a class="text-uppercase" href="./Blogs/Best_Software_Development_Company_Near_me.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_Mobile_App_Development_Companies.html">
+                    <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Top Mobile App Development Companies" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top Mobile App Development Companies in India</h4>
+                <p>India has emerged as a global hub for mobile app development, with numerous companies offering solutions tailored to various business needs.</p>
+                <a class="text-uppercase" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row new_gy"  style="margin-top:10px;">
+    <!-- First Blog -->
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/saaS.html">
+                    <img src="./img/Saas.jpeg" class="img-fluid w-100" alt="SaaS Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/saaS.html" style="background-color: #800080;">SaaS Development</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">SaaS Development</h4>
+                <p>Creating high-quality blog content for your SaaS development company website can greatly enhance search engine optimization (SEO) and attract relevant traffic.</p>
+                <a class="text-uppercase" href="./Blogs/saaS.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Blog -->
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Custom_Software_Development_Services.html">
+                    <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Custom_Software_Development_Services.html" style="background-color: #800080;">Custom Software Development Services</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Custom Software Development Services</h4>
+                <p>In an era where technology drives business success, having the right software solutions is crucial.</p>
+                <a class="text-uppercase" href="./Blogs/Custom_Software_Development_Services.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Blog -->
+    <div class="col-md-4 col-12 wow slideInUp">
+        <div class="blog-item bg-light rounded overflow-hidden">
+            <div class="blog-img position-relative overflow-hidden">
+                <a href="./Blogs/Top_10_Software_Development_Companies_in_india.html">
+                    <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Top 10 Software Development Companies in India" style="height: 200px; object-fit: cover;">
+                </a>
+                <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in_india.html" style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+            </div>
+            <div class="p-4">
+                <h4 class="mb-3">Top 10 Software Development Companies in India</h4>
+                <p>India has established itself as a global leader in software development, with numerous companies excelling in providing solutions.</p>
+                <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in_india.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--10th page end -->
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                     <!--                <a href="./Blogs/Website_Development_Companies_in_2024.html">-->
+                     <!--                   <img src="./img/Custom_Software_Development_.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Website_Development_Companies_in_2024.html" style="background-color: #800080;">Website Development Companies in 2024-->
+                     <!--               </a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Website Development Companies in 2024</h4>-->
+                     <!--               <p>In the ever-evolving tech landscape, software companies play a pivotal role in driving innovation and providing solutions that power businesses across the globe.</p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/Website_Development_Companies_in_2024.html" style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                        
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--               <a href="./Blogs/Banking_Software_Companies _in_India.html">-->
+                     <!--                   <img src="./img/software_companies_tcs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Banking_Software_Companies _in_India.html"style="background-color: #800080;">Banking Software Companies in India</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Banking Software Companies in India</h4>-->
+                     <!--               <p>As the financial landscape evolves, banking software companies in India play a pivotal role in transforming how financial institutions operate.</p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/Banking_Software_Companies _in_India.html"style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                        
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--                 <a href="./Blogs/Milk_subscription_management_software.html">-->
+                     <!--                   <img src="./img/Milk_delivery_App.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Milk_subscription_management_software.html"style="background-color: #800080;">Milk subscription management software</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Milk subscription management software</h4>-->
+                     <!--               <p>In an era where convenience is paramount, the dairy industry is evolving to meet consumer demands through innovative solutions.</p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/Milk_subscription_management_software.html"style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                        
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--                 <a href="./Blogs/milk_vender_app..html">-->
+                     <!--                   <img src="./img/milk_vender_app.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/milk_vender_app..html"style="background-color: #800080;">Milk Vender App</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Milk Vender App</h4>-->
+                     <!--               <p>In a world where culinary experiences are just a tap away, our multi-vendor food delivery app is transforming the way you enjoy meals. </p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/milk_vender_app..html"style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                        
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--                 <a href="./Blogs/Best_Software_Development_Company_Near_me.html">-->
+                     <!--                   <img src="./img/Best_software_bl.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Best_Software_Development_Company_Near_me.html"style="background-color: #800080;">Best Software Development Company Near me</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Best Software Development Company Near me</h4>-->
+                     <!--               <p>In today’s technology-driven world, partnering with the right software development company is crucial for your business success.</p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/Best_Software_Development_Company_Near_me.html"style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                        
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--                <a href="./Blogs/Top_Mobile_App_Development_Companies.html">-->
+                     <!--                   <img src="./img/Top Mobile App.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                                    
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_Mobile_App_Development_Companies.html" style="background-color: #800080;">Top Mobile App Development Companies in India</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Top Mobile App Development Companies in India</h4>-->
+                     <!--               <p>India has emerged as a global hub for mobile app development, with numerous companies offering innovative solutions tailored to various business needs.</p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/Top_Mobile_App_Development_Companies.html"style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                        
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--                <a href="./Blogs/saaS.html">-->
+                     <!--                   <img src="./img/Saas.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/saaS.html" style="background-color: #800080;">SaaS Development</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">SaaS Development</h4>-->
+                     <!--               <p>Creating high-quality blog content for your SaaS development company website can greatly enhance search engine optimization (SEO) and attract relevant traffic.</p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/saaS.html"style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--                <a href="./Blogs/Custom_Software_Development_Services.html">-->
+                     <!--                   <img src="./img/Custom_blogs.jpeg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Custom_Software_Development_Services.html"style="background-color: #800080;">Custom Software Development Services</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Custom Software Development Services</h4>-->
+                     <!--               <p>In an era where technology drives business success, having the right software solutions is crucial. </p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/Custom_Software_Development_Services.html"style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                        
+                     <!--   <div class="col-md-6 wow slideInUp">-->
+                     <!--       <div class="blog-item bg-light rounded overflow-hidden">-->
+                     <!--           <div class="blog-img position-relative overflow-hidden">-->
+                                    <!--<img class="img-fluid" href="./" src="./case-study/blog-img/car-washie-1.png" alt="">-->
+                     <!--               <a href="./Blogs/Top_10_Software_Development_Companies_in _india.html">-->
+                     <!--                   <img src="./img/uiUxDesignT.jpg" class="img-fluid w-100" alt="Custom Software Development" style="height: 200px; object-fit: cover;">-->
+                     <!--                </a>-->
+                     <!--               <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="./Blogs/Top_10_Software_Development_Companies_in _india.html"style="background-color: #800080;">Top 10 Software Development Companies in India</a>-->
+                     <!--           </div>-->
+                     <!--           <div class="p-4">-->
+                                     
+                     <!--               <h4 class="mb-3">Top 10 Software Development Companies in India</h4>-->
+                     <!--               <p>India has established itself as a global leader in software development, with numerous companies excelling in providing innovative and tailored solutions.</p>-->
+                     <!--               <a class="text-uppercase" href="./Blogs/Top_10_Software_Development_Companies_in _india.html"style="color: #800080;">Read More <i class="bi bi-arrow-right"></i></a>-->
+                     <!--           </div>-->
+                     <!--       </div>-->
+                     <!--   </div>-->
+                     <!--</div>    -->
+                        
+                    <!--</div>  -->
+                   
+                    
+                    
+                     <!--Pagination start -->
+                <!-- <div class="col-12 wow slideInUp" data-wow-delay="0.1s" >-->
+                <!--     <nav aria-label="Page navigation">-->
+                <!-- <ul class="pagination pagination-lg m-auto p-auto" id="pagination" ></ul>-->
+                <!--     </nav>-->
+                <!--</div>-->
+                <div class="col-12 wow slideInUp" data-wow-delay="0.1s" style="display: flex; justify-content:center; align-items: center; width: 100%; margin:60px auto;">
+    <nav aria-label="Page navigation" style="width: 100%; max-width: 600px;">
+        <ul class="pagination pagination-lg" id="pagination" style="margin: 0; justify-content: center; width: 100%;">
+            <!-- Pagination items will be dynamically generated here -->
+        </ul>
+    </nav>
+</div>
+
+
+                    <!-- Pagination End -->
+           </div>
+          
+
+          <!-- Include Bootstrap JS -->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+          <!--Pagination Script start-->
+<script>
+    const itemsPerPage = 9; // Number of blog items per page
+    let currentPage = 1;
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const blogItems = document.querySelectorAll(".blog-item"); // Ensure this selector matches all blog items
+        const totalItems = blogItems.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        
+        // Function to show items for the current page
+        function showPage(page) {
+            currentPage = page;
+            blogItems.forEach((item, index) => {
+                // Display items only if within the range for the current page
+                item.style.display = (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) ? "block" : "none";
+            });
+            updatePagination(totalPages);
+
+            // Update the browser's URL using pushState if page differs
+            if (history.state?.page !== page) {
+                history.pushState({ page: page }, `Page ${page}`, `?page=${page}`);
+            }
+        }
+
+        // Function to update pagination buttons
+        function updatePagination(totalPages) {
+            const pagination = document.querySelector("#pagination"); // Ensure this matches the pagination container
+            pagination.innerHTML = "";
+
+            // Previous button
+            const prevItem = document.createElement("li");
+            prevItem.className = `page-item ${currentPage === 1 ? "disabled" : ""}`;
+            prevItem.innerHTML = `<a class="page-link rounded-0" style="padding:1.5vmin 2.5vmin; font-size:2.5vmin;" href="#" aria-label="Previous"><span aria-hidden="true"><i class="bi bi-arrow-left"></i></span></a>`;
+            prevItem.addEventListener("click", (e) => {
+                e.preventDefault();
+                if (currentPage > 1) showPage(currentPage - 1);
+            });
+            pagination.appendChild(prevItem);
+
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                const pageItem = document.createElement("li");
+                pageItem.className = `page-item ${i === currentPage ? "active" : ""}`;
+                pageItem.innerHTML = `<a class="page-link"  style="padding:1.5vmin 2.5vmin; font-size:2.5vmin;"  href="#">${i}</a>`;
+                pageItem.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    showPage(i);
+                });
+                pagination.appendChild(pageItem);
+            }
+
+            // Next button
+            const nextItem = document.createElement("li");
+            nextItem.className = `page-item ${currentPage === totalPages ? "disabled" : ""}`;
+            nextItem.innerHTML = `<a class="page-link rounded-0"  style="padding:1.5vmin 2.5vmin; font-size:2.5vmin;"  href="#" aria-label="Next"><span aria-hidden="true"><i class="bi bi-arrow-right"></i></span></a>`;
+            nextItem.addEventListener("click", (e) => {
+                e.preventDefault();
+                if (currentPage < totalPages) showPage(currentPage + 1);
+            });
+            pagination.appendChild(nextItem);
+        }
+        
+
+        // Function to handle browser history state changes (when using back or forward buttons)
+        window.onpopstate = function(event) {
+            if (event.state && event.state.page) {
+                showPage(event.state.page);
+            }
+        };
+
+        // Check for initial page in the URL (query parameter ?page=)
+        const urlParams = new URLSearchParams(window.location.search);
+        const pageFromUrl = parseInt(urlParams.get("page")) || 1;
+        showPage(pageFromUrl);
+    });
+    
+
+</script>
+
+
+  <!--Pagination Script End-->
+                     
+            <!-- Blog list End -->
+
+           <!--Sidebar Start -->
+<!--                <div class="col-lg-4">-->
+<!--                     Search Form Start -->
+<!--                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+<!--                        <div class="input-group" id="searchForm">-->
+<!--                            <input type="text" class="form-control p-3" id="searchInput" placeholder="Keyword">-->
+<!--                            <button class="btn btn-primary px-4" type="submit" style="background-color: #800080;"><i class="bi bi-search"></i></button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                     <!--Search Form End -->
+    
+                     <!--Category Start -->
+<!--                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+<!--                        <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+<!--                            <h3 class="mb-0">Categories</h3>-->
+<!--                        </div>-->
+<!--                      <div class="link-animated d-flex flex-column justify-content-start">-->
+<!--    <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#" -->
+<!--        style="transition: color 0.3s;" -->
+<!--        onmouseover="this.style.color='#800080';" -->
+<!--        onmouseout="this.style.color='';">-->
+<!--        <i class="bi bi-arrow-right me-2"></i>Big Data Solution For IoT Pet Trackers-->
+<!--    </a>-->
+<!--    <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#" -->
+<!--        style="transition: color 0.3s;" -->
+<!--        onmouseover="this.style.color='#800080';" -->
+<!--        onmouseout="this.style.color='';">-->
+<!--        <i class="bi bi-arrow-right me-2"></i>Data Analytics For a Telecom Company-->
+<!--    </a>-->
+<!--    <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#" -->
+<!--        style="transition: color 0.3s;" -->
+<!--        onmouseover="this.style.color='#800080';" -->
+<!--        onmouseout="this.style.color='';">-->
+<!--        <i class="bi bi-arrow-right me-2"></i>Machine Learning In Banking-->
+<!--    </a>-->
+<!--    <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#" -->
+<!--        style="transition: color 0.3s;" -->
+<!--        onmouseover="this.style.color='#800080';" -->
+<!--        onmouseout="this.style.color='';">-->
+<!--        <i class="bi bi-arrow-right me-2"></i>Hotel Business Intelligence-->
+<!--    </a>-->
+<!--    <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#" -->
+<!--        style="transition: color 0.3s;" -->
+<!--        onmouseover="this.style.color='#800080';" -->
+<!--        onmouseout="this.style.color='';">-->
+<!--        <i class="bi bi-arrow-right me-2"></i>Customer Behavior Analysis To Boost Online Purchase-->
+<!--    </a>-->
+<!--</div>-->
+
+<!--                    </div>-->
+                     <!--Category End -->
+    
+                     <!--Recent Post Start -->
+<!--                   <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+<!--    <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+<!--        <h3 class="mb-0">Case Study</h3>-->
+<!--    </div>-->
+<!--    <div class="d-flex rounded overflow-hidden mb-3">-->
+<!--        <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+<!--        <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0" -->
+<!--           style="transition: color 0.3s;" -->
+<!--           onmouseover="this.style.color='#800080';" -->
+<!--           onmouseout="this.style.color='';">-->
+<!--            Intelligent Traffic Rules Violation Detection System-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="d-flex rounded overflow-hidden mb-3">-->
+<!--        <img class="img-fluid" src="img/blog-2.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+<!--        <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0" -->
+<!--           style="transition: color 0.3s;" -->
+<!--           onmouseover="this.style.color='#800080';" -->
+<!--           onmouseout="this.style.color='';">-->
+<!--            Implementing AI in the IoT-based Healthcare App-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="d-flex rounded overflow-hidden mb-3">-->
+<!--        <img class="img-fluid" src="img/blog-3.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+<!--        <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0" -->
+<!--           style="transition: color 0.3s;" -->
+<!--           onmouseover="this.style.color='#800080';" -->
+<!--           onmouseout="this.style.color='';">-->
+<!--            Deep Learning for Face Anti-Spoofing-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="d-flex rounded overflow-hidden mb-3">-->
+<!--        <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+<!--        <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0" -->
+<!--           style="transition: color 0.3s;" -->
+<!--           onmouseover="this.style.color='#800080';" -->
+<!--           onmouseout="this.style.color='';">-->
+<!--            Pose Estimation For Fitness & Physical Therapy Application-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="d-flex rounded overflow-hidden mb-3">-->
+<!--        <img class="img-fluid" src="img/blog-2.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+<!--        <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0" -->
+<!--           style="transition: color 0.3s;" -->
+<!--           onmouseover="this.style.color='#800080';" -->
+<!--           onmouseout="this.style.color='';">-->
+<!--            Face Recognition SDK For Surveillance System-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="d-flex rounded overflow-hidden mb-3">-->
+<!--        <img class="img-fluid" src="img/blog-3.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+<!--        <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0" -->
+<!--           style="transition: color 0.3s;" -->
+<!--           onmouseover="this.style.color='#800080';" -->
+<!--           onmouseout="this.style.color='';">-->
+<!--            BI-Based Baby Care Mobile App-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</div>-->
+
+                     <!--Recent Post End -->
+    
+                     <!--Image Start -->
+                    <!--<div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+                    <!--    <img src="../img/blog-1.jpg" alt="" class="img-fluid rounded">-->
+                    <!--</div>-->
+                     <!--Image End -->
+    
+                     <!--Tags Start -->
+                    <!--<div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+                    <!--    <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+                    <!--        <h3 class="mb-0">Tag Cloud</h3>-->
+                    <!--    </div>-->
+                    <!--    <div class="d-flex flex-wrap m-n1">-->
+                    <!--        <a href="" class="btn btn-light m-1">App Development</a>-->
+                    <!--        <a href="" class="btn btn-light m-1">Web Development</a>-->
+                    <!--        <a href="" class="btn btn-light m-1">Ecommerce Development</a>-->
+                    <!--        <a href="" class="btn btn-light m-1">Digital Marketing</a>-->
+                    <!--        <a href="" class="btn btn-light m-1">Blockchain Development</a>-->
+                    <!--        <a href="" class="btn btn-light m-1">ERP Application Development</a>-->
+                    <!--        <a href="" class="btn btn-light m-1">AI & ML</a>-->
+                    <!--        <a href="" class="btn btn-light m-1">IoT & Embeddedt</a>-->
+                    <!--        <a href="" class="btn btn-light m-1">Devops</a>-->
+                            
+                    <!--    </div>-->
+                    <!--</div>-->
+                     <!--Tags End -->
+    
+                     <!--Plain Text Start -->
+                <!--    <div class="wow slideInUp" data-wow-delay="0.1s">-->
+                <!--        <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+                <!--            <h3 class="mb-0">Taxi Trip Time Prediction Analysis</h3>-->
+                <!--        </div>-->
+                <!--        <div class="bg-light text-center" style="padding: 30px;">-->
+                <!--            <p>Machine learning has been of significant help as it has helped businesses in abundant ways. ML is a subset of AI and does not need to be directly trained like AI to perform tasks. ML is used for prediction analysis in businesses, which we will learn in this case study. </p>-->
+                <!--            <a href="" class="btn btn-primary py-2 px-4" style="background-color: #800080; border-color:#800080;" >Read More</a>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                     <!--Plain Text End -->
+
+
+                <!--</div>-->
+              <!--Sidebar End -->
+              </div>   
+        </div>
+</div>
+
+
+<!-- Blog End -->
+
+
+ <!-- Footer Start -->
+       <div class="container-fluid text-light mt-5 fadeInUp" data-wow-delay="0.1s" style="background-color: #993399;">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-99 p-4" style="background-color: #993399;">
+                    <a href="index.html" class="navbar-brand">
+                        <h4 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Technokrate</h4>
+                    </a>
+                    
+                    <p class="mt-3 mb-4" style="text-align: justify; color: white;">Technokrate is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.</p>
+                    <form action="https://appt.link/meet-with-chetan-chitriv-0E0czwAl/web-conference">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="Your Email" style="color: white;">
+                            <button class="btn btn-dark" style="color: white;">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0" style="color: white;">Get In Touch</h3>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-white me-2"></i>
+                            <p class="mb-0" style="color: white;">4th floor, Prince Complex, Chatrapati Nagar, Nagpur, Maharashtra 440015</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-white me-2"></i>
+                            <p class="mb-0" style="color: white;">info@technokrate.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-white me-2"></i>
+                            <p class="mb-0" style="color: white;">+91-8956992803</p>
+                        </div>
+                         <div class="d-flex mt-4">
+                                <a class="btn btn-light btn-square me-2" href="https://x.com/Talentrise59788"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-light btn-square me-2" href="https://www.facebook.com/profile.php?id=100093741976560"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-light btn-square me-2" href="https://www.linkedin.com/company/telentrisetechnokrate/?viewAsMember=true"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-light btn-square" href="https://www.instagram.com/talentrise_technokrate/"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0" style="color: white;">Quick Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="https://technokrate.com/" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/about.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/service.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/projects.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Project</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/case-study/casestudy.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Case Study</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/career.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Career</a>
+                            <a class="text-light" href="https://technokrate.com/contact.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0" style="color: white;">Popular Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="https://technokrate.com/" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/about.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/service.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/projects.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Project</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/case-study/casestudy.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Case Study</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/career.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Career</a>
+                            <a class="text-light" href="https://technokrate.com/contact.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-white" style="background: #061429;">
+ 
+    <div class="container text-center">
+        
+        <div class="row justify-content-end">
+            <div class="#">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <p class="mb-0" style="color: white; text-align: center;">&copy; <a class="text-white border-bottom" href="#" style="color: white; text-align: center;">Talentrise Technokrate Pvt Ltd</a>. All Rights Reserved. 
+                    Designed by <a class="text-white border-bottom" href="" style="color: white; text-align: center;">Talentrise Technokrate Pvt Ltd</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+        <!-- Footer End -->
+        <!--whatsapp log-->
+        <div class="position-fixed" style="bottom: 20px; left: 25px;">
+           <a href="https://wa.link/e39gdk" class="rounded-circle d-flex align-items-center justify-content-center"
+            style="background-color: #28a745; width: 63px; height: 63px;">
+             <i class="bi bi-whatsapp fs-1 text-white"></i>
+          </a>
+     </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="search.js"></script>
+     <script src="./js/navbar.js" type="module"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+     <script>
+        $(document).ready(function(){
+          $('#loginModal').modal('show');
+        });
+      </script>
+      <script>
+          function hideModal() {
+        $('#loginModal').modal('hide'); // Use Bootstrap's hide method to close the modal
+      }
+      
+      // $('#loginModass').modal('hide');
+      </script>
+</body>
+
+</html>

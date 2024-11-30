@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="play-btn" transform="translate(-567 -1661)">
+    <g id="Rectangle_18775" data-name="Rectangle 18775" transform="translate(567 1661)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1" stroke-dasharray="21 10">
+      <rect width="46" height="46" rx="23" stroke="none"/>
+      <rect x="0.5" y="0.5" width="45" height="45" rx="22.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_18774" data-name="Rectangle 18774" width="36" height="36" rx="18" transform="translate(572 1666)" fill="#fff"/>
+    <path id="Polygon_1" data-name="Polygon 1" d="M6,0l6,10H0Z" transform="translate(595 1678) rotate(90)" fill="#4842a8"/>
+  </g>
+</svg>

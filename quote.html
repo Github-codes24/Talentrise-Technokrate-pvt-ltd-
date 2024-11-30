@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Technokrate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+  <link href="img/technokrate.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/formrequest.css" rel="stylesheet">
+    <link href="js/pavan.js" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Styles for the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Styles for the button that triggers the dropdown */
+        .dropdown button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styles for the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -400px;
+            
+        }
+
+        /* Styles for each item in the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #800080;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused */
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+        /* Styles for the dropdown content of about (hidden by default) */
+        .dropdown-content-about {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -50px;
+        }
+
+        /* Styles for each item in the dropdown of about */
+        .dropdown-content-about a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+
+        /* Change color on hover of about */
+        .dropdown-content-about a:hover {
+            background-color: #800080;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused for about*/
+        .dropdown:hover .dropdown-content-about,
+        .dropdown:focus-within .dropdown-content-about {
+            display: block;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <!--<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">-->
+    <!--    <div class="spinner"></div>-->
+    <!--</div>-->
+    <!-- Spinner End -->
+
+    <!-- <div id="wa-logo">
+        <a href="https://wa.me/+918381009662" target="_blank"><img src="./img/whatsapp.png" alt="Avestan Technology"></a>
+    </div> -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-e8ed3f66-befe-4c31-b424-4487bbed5463" data-elfsight-app-lazy></div>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                
+                    <small class="me-3 text-light"><a href="tel:+918381009662" class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91-8956992803</a></small>
+                    <small class="me-3 text-light"><a href="mailto:info@technokrate.com" class="text-light"><i class="fa fa-envelope-open me-2"></i>info@technorate.com</a></small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://twitter.com/avestantechnol1"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.facebook.com/avestantechnologies"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.linkedin.com/company/avestan-technologies/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.instagram.com/avestantechnologies/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+           <a href="index.html" class="navbar-brand p-0">
+                <img src="../img/Techknokrate logo 2.png" alt="Technokrate" class="img-fluid" style="height: 100px; width:200px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0" style="margin-right: 89px;">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <!--<a href="about.html" class="nav-item nav-link">About</a>-->
+                    <div class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <div class="dropdown-content-about" style="width: 180px; padding-top: 10px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <a href="projects.html"><b>Projects</b></a>
+                                        <a href="casestudy.html"><b>Case-Study</b></a>
+                                        <a href="Blogs.html"><b>Blogs</b></a>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <!--<a href="projects.html" class="nav-item nav-link">Projects</a>-->
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <!-- <a href="service.html" class="nav-item nav-link" style="font-size: 16px;">Services</a> -->
+                    <div class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a href="" class="nav-item nav-link" style="font-size: 16px;">Hire Us</a>
+                            <div class="dropdown-content" style="width: 850px; padding-top: 20px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Trending</h6>
+                                        <a href="./Others/MERN_Developer.html">MERN Developers</a>
+                                        <a href="./Others/MEAN_Developer.html">MEAN Developers</a>
+                                        <a href="./Others/Hire-Meteor-Devloper.html">Meteor Developers</a>
+                                        <a href="./Others/Blockchain_Developer.html">Blockchain Developers</a>
+                                        <a href="./Others/Devops_Engineer.html">DevOps Engineers</a>
+                                        <a href="./Others/Fintech_Developer.html">Fintech Developers</a>
+                                        <a href="./Others/Hire Automation Tester.html">Automation Testers</a>
+                                        <a href="./Others/Software_Developer.html">Software Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <br>
+                                        <a href="./Others/Hire AR Developers.html">AR Developers</a>
+                                        <a href="./Others/Hire-VueJS-Developer.html">VueJS Developers</a>
+                                        <a href="./Others/Hire-Meteor-Devloper.html">Meteor Developers</a>
+                                        <a href="./Others/Hire-RoR-Devloper.html">RoR Developers</a>
+                                        <li><a href="./Others/Hire Django Developers.html">Django Developers</a></li>
+                                        <li><a href="./Others/Ruby_on_rail_Developer.html">Ruby on Rails Developers</a></li>
+                                        <a href="./Others/Hire UI Developer.html">UI UX Designers</a>
+                                        <a href="./Others/AWS_Developer.html">AWS Developers</a>
+                                        <a href="./Others/PHP_Developer.html">PHP Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Front-End Developers</h6>
+                                        <a href="./Others/Hire Java Script Developer.html">JavaScript Developers</a>
+                                        <a href="./Others/Typescript_Developer.html">TypeScript Developers</a>
+                                        <a href="./Others/Hire HTML5 Developers.html">HTML5 Developers</a>
+                                        <a href="./Others/TailwindCSS_Developer.html">Tailwind CSS Developers</a>
+                                        <a href="./Others/Angular_Developer.html">Angular Developers</a>
+                                        <a href="./Others/hire-reactjs-Developers.html">ReactJS Developers</a>
+                                        <a href="./Others/NextJS_Developer.html">NextJS Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Back-End Developers</h6>
+                                        <li><a href="./Others/Node JS Developer.html">Node JS Developers</a></li>
+                                        <li><a href="./Others/Hire UI Developer.html">UI Developers</a></li>
+                                        <li><a href="./Others/Laravel Development.html">Laravel Developers</a></li>
+                                        <li><a href="./Others/Hire-ASPNET-Devloper.html">ASPNET Developers</a></li>
+                                        <li><a href="./Others/Hire Python Developer.html">Python Developers</a></li>
+                                        <li><a href="./Others/Hire Java Developer.html">Java Developers</a></li>
+                                        <li><a href="./Others/ExpressJS_Developer.html">ExpressJS Developers</a></li>
+                                        <li><a href="./Others/SpringBoot_Developer.html">Spring Boot Developers</a></li>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Mobile App Developers</h6>
+                                        <li><a href="./Others/Hire Android Developer.html">Android Developers</a>
+                                        </li>
+                                        <li><a href="./Others/Hire IOS Developer.html">IOS Developers</a></li>
+                                        <li><a href="./Others/Hire Swift App Developers.html">Swift App Developers</a>
+                                        </li>
+                                        <li><a href="./Others/Hire-Flutter-Developer.html">Flutter Developers</a></li>
+                                        <li><a href="./Others/Hire Ionic Developers.html">Ionic Developers</a></li>
+                                        <li><a href="./Others/Hire-React-Native-developer.html">React Native Developers</a></li>
+                                        <li><a href="./Others/HIRE XAMARIN DEVELOPER.html">Xamarin Developers</a></li>
+                                        <li><a href="./Others/Hire CodeIgniter developer.html">CodeIgniter Developers</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Add more items as needed -->
+                            </div>
+                        </div>
+                        </div>
+              
+                    <a href="career.html" class="nav-item nav-link" style="font-size: 16px;">Career</a>
+                    <a href="contact.html" class="nav-item nav-link" style="font-size: 16px;">Contact</a>
+                     <a href="quote.html" class="nav-item nav-link" style="padding-top: 23px;">
+                        <button type="button" 
+                                style="background-color: #800080; 
+                                       min-height: 1px; 
+                                       font-size: 16px; 
+                                       color: #fff; 
+                                       border: 1px solid white; 
+                                       outline: none;" 
+                                class="btn btn-primary btn-lg btn-block">
+                          <b>Request Free Quote</b>
+                        </button>
+                      </a>
+                </div>
+
+
+                <!-- <a href="" class="btn btn-primary py-2 px-4 ms-3" style="background-color: #091E3E;">Get IN Touch</a> -->
+            </div>
+        </nav>
+
+        
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Request Free Quote</h1>
+                    <!--<a href="" class="h5 text-white">Home</a>-->
+                    <!--<i class="far fa-circle text-white px-2"></i>-->
+                    <a href="" class="h5 text-white">Request Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <section style="text-align:center;">
+        <b  style="text-align:center; font-size: 39px; color: #435585;">  Request Free Quote</b>
+        <p style="padding-left: 15%; padding-right: 15%; padding-top: 20px; color: black;">Please fill out the following request free quote form and we will get back to you ASAP. Alternatively, In case if you require any urgent<br>
+           assistance; you can email us at <span style="color: blueviolet; text-decoration: underline;">info@technokrate.com</span> or call us at <span style="color: blueviolet; text-decoration: underline;"> +91-8956992803</span>.</p>
+           
+    </section>        
+           
+    <main>
+        <div class="Container">
+            <header>Regisration</header>
+            <form action="https://formspree.io/f/xqkvvjbr" method="POST">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+
+                        
+                        <div class="fields">
+                            <div class="input-field">
+                                <label><b style="font-size: 14px;">Company Name :</b></label>
+                                <input type="text" name="Company-Name" placeholder="Enter Comany Name" required />
+                            </div>
+
+                            <div class="input-field">
+                                <label><b style="font-size: 14px;">Mobile Number :</b></label>
+                                <input type="text" name="Mobile Number" placeholder="Enter Mobile Number" required />
+                            </div>
+
+                            <div class="input-field">
+                                <label><b style="font-size: 14px;">E-mail Address<span style="color: red; font-size: 13px;">*</span> :</b></label>
+                                <input type="email" name="Email" placeholder="Enter e-mail address" required />
+                            </div>
+                            
+                            <div class="input-field">
+                                <label><b style="font-size: 14px;">Occupation</b></label>
+                                <input type="text" name="Occupation" placeholder="Enter your occupation">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="gender-select"><strong style="font-size: 14px;">Gender</strong></label>
+                                <select id="gender-select" name="Gender" style="height:42px; box-shadow: 0 3px 6px rgba(0,0,0,0.13); padding:5px;">
+                                    <option value="">Select Your Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="TransGender">TransGender</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label><b style="font-size: 14px;">Country<span style="color: red; font-size: 13px;">*</span></b></label>
+                                <input type="text" name="Country" placeholder="Enter your country" required />
+                            </div> 
+                        </div>
+
+
+
+                    </div>
+                    <div class="details ID">
+                        <span class="title">Identity Details</span>
+
+                        
+                        <div class="fields">
+                            <!-- <div class="input-field">
+                                <label>Country*</label>
+                                <input type="text" placeholder="Enter ID type">
+                            </div> -->
+
+                            <div class="input-field">
+                                <label><b style="font-size: 14px;" >State:</b></label>
+                                <input type="text" name="State" placeholder="Enter your sate" required />
+                            </div>
+
+                            <div class="input-field">
+                                <label><b style="font-size: 14px;" >City:</b></label>
+                                
+                                <input type="text" name="City" placeholder="Enter your city" required />
+                            </div>
+                            
+                            <div class="input-field">
+                                <label><b>Postal Code<span style="color: red; font-size: 13px;">*</span> :</b></label>
+                                
+                                <input type="number" name="Postal-Code" placeholder="Enter your postal code" required />
+                            </div>
+
+                            <!-- <div class="input-field">
+                                <label>Gender</label>
+                                <input type="date" placeholder="Enter your name">
+                            </div> -->
+
+                            <!-- <div class="input-field">
+                                <label>Occupation</label>
+                                <input type="text" placeholder="Enter your occupation">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="second" style="padding-top: 30px;">
+                    <b style="color: black;">Project Specification</b>
+                    <p style="padding-top: 30px; color: black;">Please select type of service you are looking for?<span style="color: red;">*</span></p>
+                </div>
+                <div class="radio" style="display: flex; justify-content: space-around; flex-wrap:wrap; width:95%;">
+                    <div class="1">
+                        <input type="radio" id="html" name="Project-Specification" value="New Website">
+                    <b>New Website</b>
+                    </div>
+                    <div class="2">
+                        <input type="radio" id="html" name="Project-Specification" value="Website Redesign">
+                    <b>Website Redesign</b>
+                    </div>
+                    <div class="3">
+                        <input type="radio" id="html" name="Project-Specification" value="Website Maintenance">
+                    <b>Website Maintenance</b>
+                    </div>
+                    <div class="4">
+                        <input type="radio" id="html" name="Project-Specification" value="SEO Services">
+                    <b>SEO Services</b>
+                    </div>
+                    <div class="5" style="padding-right: 1px;">
+                        <input type="radio" id="html" name="Project-Specification" value="Hire Developer">
+                    <b>Hire Developer</b>
+                    </div> 
+                </div>
+                <div class="1radio" style="display: flex; justify-content: space-around; padding-right: 60px;">
+                   
+                    <div class="6" style="padding-left: 60px; padding-top: 10px;">
+                        <input type="radio" id="html" name="Project-Specification" value="App Development">
+                      <b >App Development</b>
+                    </div>
+                </div>
+
+                <div class="KGF" style="padding-top: 30px;">
+                 <p style="padding-top: 30px; color: black;">Please select type of service you are looking for?<span style="color: red;">*</span></p>
+                </div>
+
+                <div class="msg">
+                    <textarea style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px; " name="Type of service you are looking for?" placeholder="Industry reference URL(http://)" ></textarea>
+                 </div>
+                 <div class="KGF" style="padding-top: 30px;">
+                    <p style="padding-top: 30px;color: black;">Provide at least 2 links to websites with design you feel are closely aligned with your taste and needs. (One url in single line)<span style="color: red;">*</span></p>
+                   </div>
+   
+                   <div class="msg">
+                       <textarea style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px;" name="Provide at least 2 links to websites with design you feel are closely aligned with your taste and needs." placeholder="Design reference URL(http://)" ></textarea>
+                    </div>
+                
+               <div class="zero">
+                    <div class="nitro" style="padding-top: 1px;  ">
+                        <p style="padding-top: 30px;color: black; ">Do you need Brand Development?<span style="color: red;">*</span></p>
+                        <input type="radio" id="html" name="Brand-Development?" value="Yes">
+                        <b>Yes</b>
+                        <input type="radio" id="html" name="Brand-Development?" value="No">
+                        <b>No</b>
+                    </div>
+                </div>
+
+                <div class="KGF" style="padding-top: 30px;">
+                    <p style="padding-top: 30px;color: black;">What would you identify as the primary purpose of your website?<span style="color: red;">*</span></p>
+                </div>
+   
+                <div class="msg">
+                       <textarea style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px;" name="Primary purpose of your website?" placeholder="Enter primary purpose like ypu want an ecommerce, real.social media website" ></textarea>
+                </div>
+                <div class="KGF" style="padding-top: 30px;">
+                    <p style="padding-top: 30px;color: black;">Please brief us about your competitors information?<span style="color: red;">*</span></p>
+                </div>
+   
+                <div class="msg">
+                       <textarea style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px;" name="Please brief us about your competitors information?" placeholder="Brief us about your competitor website" ></textarea>
+                </div>
+                <div class="KGF" style="padding-top: 30px;">
+                    <p style="padding-top: 30px;color: black;">Do you have a color palette in mind, please brief us?<span style="color: red;">*</span></p>
+                </div>
+   
+                <div class="msg">
+                       <textarea style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px;" name="Do you have a color palette in mind, please brief us?" placeholder="Enter color like red,green,blue,etc." ></textarea>
+                </div>
+                <div class="KGF" style="padding-top: 30px;">
+                    <p style="padding-top: 30px;color: black;">How would someone 'Google' you if they were browsing?<span style="color: red;">*</span></p>
+                </div>
+   
+                <div class="msg">
+                       <textarea style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px; " name="How would someone Google you if they were browsing?" placeholder="Packer & Mover in New York...." ></textarea>
+                </div>
+                <div class="KGF" style="padding-top: 30px;">
+                    <p style="padding-top: 30px; color: black;">You can write name of pages, separated by comma.?OR alternatively you can use our <span style="color: blueviolet; text-decoration: underline; cursor: pointer;">free sitemap generator</span> .<span style="color: red;">*</span></p>
+                        
+                </div>
+   
+                <div class="msg">
+                       <textarea name="You can write name of pages, separated by comma.?OR alternatively you can use our" style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px; " placeholder="Enter page name like i.e. home, service, about,etc..." ></textarea>
+                </div>
+                <div class="CheckBox" style="padding-top: 30px; ">
+                    <p style="color: black;" >Please select additional services which are required to you:</p><br><br>
+                    
+                    <input type="checkbox" id="Additional-Services-1" name="Additional-Services-1" value="ADA Compliance">
+                    <label for="Additional-Services-1"> ADA Compliance</label><br>
+                    
+                    <input type="checkbox" id="Additional-Services-2" name="Additional-Services-2" value="Security(PCI Compliance)">
+                    <label for="Additional-Services-2">Security(PCI Compliance)</label><br>
+                    
+                    <input type="checkbox" id="Additional-Services-3" name="Additional-Services-3" value="E-Commerce Functionality">
+                    <label for="Additional-Services-3"> E-Commerce Functionality</label><br>
+                    
+                    <input type="checkbox" id="Additional-Services-4" name="Additional-Services-4" value="Website Hosting">
+                    <label for="Additional-Services-4"> Website Hosting</label><br>
+                    
+                    <input type="checkbox" id="Additional-Services-5" name="Additional-Services-5" value="Content Writing">
+                    <label for="Additional-Services-5"> Content Writing</label><br>
+                    
+                    <input type="checkbox" id="Additional-Services-6" name="Additional-Services-6" value="Social Media Marketing (Digital Marketing)">
+                    <label for="Additional-Services-6"> Social Media Marketing (Digital Marketing)</label><br>
+                    
+                    <input type="checkbox" id="Additional-Services-7" name="Additional-Services-7" value="Copyright Protection">
+                    <label for="Additional-Services-7"> Copyright Protection</label><br>
+                    
+                    <input type="checkbox" id="Additional-Services-8" name="Additional-Services-8" value="Website Backup/Restore">
+                    <label for="Additional-Services-8">Website Backup/Restore</label><br><br>
+                    
+                    <div class="Box" >
+                     <input type="checkbox" id="Additional-Services-9" name="Additional-Services-9" value="SSL Certification">
+                     <label for="Additional-Services-9"> SSL Certification</label><br>
+                     
+                     <input type="checkbox" id="Additional-Services-10" name="Additional-Services-10" value="Domain Registration">
+                     <label for="Additional-Services-10">Domain Registration</label><br>
+                     
+                     <input type="checkbox" id="Additional-Services-11" name="Additional-Services-11" value="Animation (Desktop/Mobile Friendly)">
+                     <label for="Additional-Services-11">Animation (Desktop/Mobile Friendly)</label><br>
+                     
+                     <input type="checkbox" id="Additional-Services-12" name="Additional-Services-12" value="Inquiry Forms">
+                     <label for="Additional-Services-12"> Inquiry Forms</label><br>
+                     
+                     <input type="checkbox" id="Additional-Services-13" name="Additional-Services-13" value="Organic SEO (Search Engine Optimization)">
+                     <label for="Additional-Services-13"> Organic SEO (Search Engine Optimization)</label><br>
+                     
+                     <input type="checkbox" id="Additional-Services-14" name="Additional-Services-14" value="PPC (Pay Per Click for Google,Facebook & others)">
+                     <label for="Additional-Services-14"> PPC (Pay Per Click for Google,Facebook & others)</label><br>
+                     
+                     <input type="checkbox" id="Additional-Services-15" name="Additional-Services-15" value="Custom Template development">
+                     <label for="Additional-Services-15"> Custom Template development</label><br>
+                     
+                     <input type="checkbox" id="Additional-Services-16" name="Additional-Services-16" value="Email Marketing Campaign">
+                     <label for="Additional-Services-16">Email Marketing Campaign</label><br>
+
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    
+                        <label    for="country" style="color: black;">Estimate Budget?</label>
+                        <select id="country" name="Project-budget">
+                         <option  value="">What is your project budget (US$)</option>
+                         <option value="less than $2500">less than $2500</option>
+                         <option value="$2500 - $5,000"> $2500 - $5,000</option>
+                         <option value="$5000 - $10,000">$5000 - $10,000</option>
+                         <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                         <option value="More than $20,000">More than $20,000</option>
+                         <option value="I dont know yet, I am on a budget">I don't know yet, I'm on a budget</option>
+                         <option value="Havant decided but I want the best">Havan't decided but I want the best</option>
+                       </select>
+                  
+                 </div>
+                <div class="container" >
+                        <label    for="country" style="color: black;">What’s your timeframe for development/ What’s the target launch date? Be as transparent as possible.</label>
+                        <select id="country" name="How soon would you like to get started?" style="color: black;">
+                           <option  value="">How soon would you like to get started?</option>
+                           <option value="Not decided/Information gathering">Not decided/Information gathering</option>
+                           <option value="We needed it yeterday!">We needed it yeterday!</option>
+                           <option value="Within a month">Within a month</option>
+                           <option value="Within 1-3 month">Within 1-3 month</option>
+                           <option value="Within 3-5 month">Within 3-5 month</option>
+                           <option value="not in rush">not in rush</option>
+                        </select>
+                        <section>
+                            <div class="KGF" style="padding-top: 10px;">
+                                <p style="padding-top: 30px;color: black;">Anything else we should know about project?</p>
+                            </div>
+               
+                            <div class="msg">
+                                   <textarea style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px; " placeholder="Brief us about your competitor website" ></textarea>
+                            </div>
+                         </section>  
+
+                        <section>
+                            
+                            <label for="formFileLg" class="form-label" style="color: black;" >If you have any project specifications, Please upload it here :</label>
+                            <input style="background-color: white; border-color: none;" class="form-control form-control-lg"  type="file" />
+                            <p style="padding-top: 12px; color: black;">Supported Formats: png, jpeg, jpg, gif, doc, docx, xlsx, xls, csv, rtf, pdf, zip, gzip, rar. Max. file size: 4mb.</p>
+
+                            <div class="KGF" style="padding-top: 10px;">
+                                <p style="padding-top: 30px; color: black;">If you have any questions; please write here :</p>
+                               </div>
+               
+                               <div class="msg">
+                                   <textarea name="If you have any questions; please write here :" style="width: 95%; height: 80px;padding-top: 10px; padding-left: 10px; font-size: 14px; " placeholder="Enter your message here..." ></textarea>
+                                </div>
+                        </section>
+                        <!--<div class="Mainbutton" style="margin: 5px auto; display:flex; justify-content:center;">-->
+                        <!--    <button style="margin: 5px auto; background-color: #0C356A;" type="submit" class="btn btn-primary btn-lg btn-block"><b>REQUEST FREE QUOTE</b></button>-->
+                        <!--</div>-->
+                        <div class="Mainbutton" style="margin: 5px auto; display:flex; justify-content:center;">
+                        <a href="https://appt.link/meet-with-chetan-chitriv-0E0czwAl/web-conference" class="nav-item nav-link" style="padding-top: 23px;">
+                        <button type="button" 
+                                style="background-color: #800080; 
+                                       min-height: 1px; 
+                                       font-size: 16px; 
+                                       color: #fff; 
+                                       border: 1px solid white; 
+                                       outline: none;" 
+                                class="btn btn-primary btn-lg btn-block">
+                          <b>Request Free Quote</b>
+                        </button>
+                      </a>
+                      </div>
+
+                        
+                  
+                </div>
+
+            </form>
+        </div>
+
+
+    </main>
+           
+     
+       
+      
+    
+   
+    
+
+    <!-- Footer Start -->
+      <div class="container-fluid text-light mt-5 fadeInUp" data-wow-delay="0.1s" style="background-color: #993399;">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-80 p-4" style="background-color: #993399;">
+                    <a href="index.html" class="navbar-brand">
+                        <h4 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Technokrate</h4>
+                    </a>
+                    
+                    <p class="mt-3 mb-4" style="text-align: justify; color: white;">Technokrate is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.</p>
+                   <form action="https://appt.link/meet-with-chetan-chitriv-0E0czwAl/web-conference">
+                       <div class="input-group" style="display: flex; align-items: center;">
+                           <input type="text" class="form-control border-white p-3" placeholder="Your Email" style="color: white; flex: 1; height: 50px;">
+                           <button class="btn btn-dark" style="color: white; height: 50px; padding: 0 20px; margin-bottom: 10px;">Sign Up</button>
+                       </div>
+                   </form>
+
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0" style="color: white;">Get In Touch</h3>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-white me-2"></i>
+                            <p class="mb-0" style="color: white;">4th floor, Prince Complex, Chatrapati Nagar, Nagpur, Maharashtra 440015</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-white me-2"></i>
+                            <p class="mb-0" style="color: white;">info@technokrate.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-white me-2"></i>
+                            <p class="mb-0" style="color: white;">+91-8956992803</p>
+                        </div>
+                         <div class="d-flex mt-4">
+                                <a class="btn btn-light btn-square me-2" href="https://x.com/Talentrise59788"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-light btn-square me-2" href="https://www.facebook.com/profile.php?id=100093741976560"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-light btn-square me-2" href="https://www.linkedin.com/company/telentrisetechnokrate/?viewAsMember=true"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-light btn-square" href="https://www.instagram.com/talentrise_technokrate/"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0" style="color: white;">Quick Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="https://technokrate.com/" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/about.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/service.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/projects.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Project</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/case-study/casestudy.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Case Study</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/career.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Career</a>
+                            <a class="text-light" href="https://technokrate.com/contact.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0" style="color: white;">Popular Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="https://technokrate.com/" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/about.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/service.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/projects.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Project</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/case-study/casestudy.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Case Study</a>
+                            <a class="text-light mb-2" href="https://technokrate.com/career.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Career</a>
+                            <a class="text-light" href="https://technokrate.com/contact.html" style="color: white;"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-white" style="background: #061429;">
+ 
+    <div class="container text-center">
+        
+        <div class="row justify-content-end">
+            <div class="#">
+                <div class="d-flex align-items-center justify-content-center" style="height: 30px;">
+                    <p class="mb-0" style="color: white; text-align: center;">&copy; <a class="text-white border-bottom" href="#" style="color: white; text-align: center;">Talentrise Technokrate Pvt Ltd</a>. All Rights Reserved. 
+                    Designed by <a class="text-white border-bottom" href="" style="color: white; text-align: center;">Talentrise Technokrate Pvt Ltd</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

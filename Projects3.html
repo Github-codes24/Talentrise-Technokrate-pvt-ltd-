@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Technokrate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/technokrate.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        
+        .slide-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 80px;
+            transition: transform 1s ease;
+            justify-content: space-around;
+            row-gap: 30px;
+        }
+        .slide-content
+        {
+            text-align: center;
+            width: 28%;
+        }
+
+        /* Styles for the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Styles for the button that triggers the dropdown */
+        .dropdown button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styles for the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -400px;
+            
+        }
+
+        /* Styles for each item in the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #800080;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused */
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+        
+          .new_gy {
+        margin-bottom: 10px; /* Decrease space between rows */
+    }
+
+    .new_gy .col-lg-4 {
+        margin-bottom: 10px; /* Decrease space between items in the same row */
+    }
+    
+    .pagination .page-link {
+    background-color: white;
+    color: black;
+    border: 1px solid #800080;
+}
+    
+ .new-m{
+        margin-bottom:70px;
+    }
+    
+@media (max-width:768px){
+    .new-m{
+        margin-bottom:70px;
+    }
+}
+/* Ensure the blog items stretch equally */
+.blog-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Stretch items to equal height */
+}
+
+/* Blog item styling to ensure it grows and fills the available space */
+.blog-item {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    height: 100%; /* Let the height adjust based on content */
+}
+
+/* Ensure images are responsive */
+.blog-img img {
+    height: 350px; /* Set a fixed height for images */
+    width: 100%; /* Make sure images scale responsively */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+/* Blog item content should stretch and use available height */
+.blog-item .p-4 {
+    flex-grow: 1; /* Make content area expand to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure consistent spacing in the item */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .blog-item-container {
+        flex-direction: column; /* Stack blog items vertically on medium screens */
+        height: auto; /* Let height adjust for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-img img {
+        height: 250px; /* Resize images for smaller screens */
+    }
+}
+
+        
+    </style>
+
+    
+</head>
+
+<body>
+
+    <!-- Topbar Start -->
+   <div class="container-fluid px-5 d-none d-lg-block" style="background-color: rgba(128, 0, 128, 0.8);">
+    <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <small class="me-3 text-light">
+                    <a href="tel:+918956992803" class="me-3 text-white" style="color: white;">
+                        <i class="fa fa-phone-alt me-2"></i>+91-8956992803
+                    </a>
+                </small>
+                <small class="me-3 text-light">
+                    <a href="mailto:info@technokrate.com" class="text-white" style="color: white;">
+                        <i class="fa fa-envelope-open me-2"></i>info@technokrate.com
+                    </a>
+                </small>
+            </div>
+        </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://twitter.com/avestantechnol1"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.facebook.com/avestantechnologies"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.linkedin.com/company/avestan-technologies/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.instagram.com/avestantechnologies/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- <div id="wa-logo">
+        <a href="https://wa.me/+918381009662" target="_blank"><img src="./img/whatsapp.png" alt="Avestan Technology"></a>
+    </div> -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-e8ed3f66-befe-4c31-b424-4487bbed5463" data-elfsight-app-lazy></div>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                                <img src="../img/Techknokrate logo 2.png" alt="Technokrate" class="img-fluid" style="height: 100px; width:200px;">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link"><strong style="color: #061429;">Home</strong></a>
+                    <a href="about.html" class="nav-item nav-link"><strong style="color: #061429;">About</strong></a>
+                    <a href="projects.html" class="nav-item nav-link active"><strong style="color: #061429;">Projects</strong></a>
+                    <a href="service.html" class="nav-item nav-link"><strong style="color: #061429;">Services</strong></a>
+                    <div class="nav-item dropdown">
+                        
+                        <div class="dropdown">
+                            <a href="" class="nav-item nav-link"><strong style="color: #061429;">Hire-Us</strong></a>
+                            <div class="dropdown-content"  style="width: 680px; padding-top: 20px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Front-End Technologies</h6>
+                                        <a href="./Others/hire-reactjs-developers.html">ReactJS Developer</a>
+                                        <a href="./Others/Hire-VueJS-Developer.html">VueJS Developer</a>
+                                        <a href="./Others/Hire-Meteor-Devloper.html">Meteor Developer</a>
+                                        <a href="./Others/Hire-RoR-Devloper.html">RoR Developer</a>
+                                        <a href="./Others/Hire HTML5 Developers.html">HTML5 Developer</a>
+                                        <a href="./Others/Hire-Software-Tester.html">Software Tester</a>
+                                        <a href="./Others/Hire Automation Tester.html">Automation Tester</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Back-End Technologies</h6>
+                                        <li><a href="./Others/Node JS Developer.html">NodeJS Developers</a></li>
+                                        <li><a href="./Others/Hire UI Developer.html">HTML Developers</a></li>
+                                        <li><a href="./Others/Laravel Development.html">Laravel Developers</a></li>
+                                        <li><a href="./Others/Hire-ASPNET-Devloper.html">ASP.Net Developers</a></li>
+                                        <li><a href="./Others/Hire Python Developer.html">Python Developers</a></li>
+                                        <li><a href="./Others/Hire Django Developers.html">Django Developers</a></li>
+                                        <li><a href="./Others/Hire CodeIgniter developer.html">CodeIgniter Developers</a></li>
+                                        <li><a href="./Others/Hire Java Script Developer.html">JavaScript Developers</a></li>
+                                        <li><a href="./Others/Hire AR Developers.html">AR Developers</a></li>
+                                        
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Mobile App Development</h6>
+                                        <li><a href="./Others/Hire Android Developer.html">Android Developer</a></li>
+                                        <li><a href="./Others/Hire IOS Developer.html">IOS Developer</a></li>
+                                        <li><a href="./Others/Hire Swift App Developers.html">Swift Developer</a></li>
+                                        <li><a href="./Others/Hire-React-Native-developer.html">React Native Developer</a></li>
+                                        <li><a href="./Others/Hire-Flutter-Devloper.html">Flutter Developer</a></li>
+                                        <li><a href="./Others/Hire Kotlin App Developers.html">Kotlin Developer</a></li>
+                                        <li><a href="./Others/Hire Ionic Developers.html">Ionic Developer</a></li>
+                                        <li><a href="./Others/HIRE XAMARIN DEVELOPER.html">Xamarin Developer</a></li>
+                                        <li><a href="./Others/Hire Java Developer.html">Java Developer</a></li>
+                                        <li><a href="./Others/Hire UI Developer.html">UI/UX Developer</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Add more items as needed -->
+                            </div>
+                        </div>
+                    </div>
+                    <a href="career.html" class="nav-item nav-link"><strong style="color: #061429;">Career</strong></a>
+                    <a href="contact.html" class="nav-item nav-link"><strong style="color: #061429;">Contact</strong></a>
+                </div>
+                <!-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+                <!-- <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> -->
+            </div>
+        </nav>
+   <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 40px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-black animated zoomIn">Projects</h1>
+                    <!--<a href="" class="h5 text-white">Home</a>-->
+                    <!--<i class="far fa-circle text-white px-2"></i>-->
+                    <!--<a href="" class="h5 text-white">Projects</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <!-- Navbar End -->
+<div>
+    <div style="width: fit-content; margin: auto;">
+        <h3 class="display-1 new-m animated zoomIn" style="font-size: 40px;">Successfully Completed Projects</h3>
+        <!-- <h5 class="text-uppercase mb-3 mt-3 animated slideInDown" style="text-align: center; text-decoration: underline;">Available Jobs</h5> -->
+    </div>
+</div>
+
+   <!--Blogs Start-->
+<div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -30px; padding-right:30px;padding-left:30px;">
+    <div class="container-fluid py-1">
+        <div class="row new_gy">
+            <!-- Blog list Start -->
+            <div class="col-lg-12">
+                <!--Row for blogs-->
+                <div class="row new_gy">
+                    <!-- First Blog -->
+                   <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/main page.jpg" alt="">
+                                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">STARCLUSIVE</a>-->
+                                    <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">Lotus Education</a>-->
+
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>STARCLUSIVE</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">STARCLUSIVE</h4>
+                                    <p>Client intends to develop the exclusive Social Media Platform where Fans (Members) can connect with the celebrities (Performers) by subscribing or add as Favourite their personalities, idols, stars,content creators, artists and celebrities. Here during the registration as normal user (Member), they need to purchase the “Startip Package”.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Second -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/UniSol Finance Dahboard.jpg" alt="">
+                                 <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">GDAY HIVE</a>-->
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>GDAY HIVE</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">GDAY HIVE</h4>
+                                    <p>Gday hive is a proprietary telecommunications application that specializes in providing video chat and voice calls between computers, tablets, mobile devices, the Xbox One console, and smartwatches over the Internet. Gday hive also provides instant messaging services. Users may transmit text, video, audio and images. Gday hive allows video conference calls.
+
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Third -->
+                      <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/main page.jpg" alt="">
+                                    <!--<a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">STARCLUSIVE</a>-->
+                                    <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">Lotus Education</a>-->
+
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>STARCLUSIVE</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">STARCLUSIVE</h4>
+                                    <p>Client intends to develop the exclusive Social Media Platform where Fans (Members) can connect with the celebrities (Performers) by subscribing or add as Favourite their personalities, idols, stars,content creators, artists and celebrities. Here during the registration as normal user (Member), they need to purchase the “Startip Package”.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                </div> <!-- End of row for blogs -->
+            </div> <!-- End of col-lg-12 -->
+        </div> <!-- End of row g-3 -->
+    </div> <!-- End of container -->
+</div> <!-- End of container-fluid -->
+
+
+<div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -30px; padding-right:30px;padding-left:30px;">
+    <div class="container-fluid py-1">
+        <div class="row new_gy">
+            <!-- Blog list Start -->
+            <div class="col-lg-12">
+                <!--Row for blogs-->
+                <div class="row new_gy">
+                    <!-- First Blog -->
+                  <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/UniSol Finance Dahboard.jpg" alt="">
+                      <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">CRC Digital Marketing</a>-->
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>Project Name</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">FLAVOUR BRIDGE</h4>
+                                    <p>CRC Digital Marketing Company is sale online selling product AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Second -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/main page.jpg" alt="">
+                                <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">AR Security System</a>-->
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>AR Security System</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">AR Security System</h4>
+                                    <p>AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform CRC Digital Marketing Company is sale online selling product</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Third -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/UniSol Finance Dahboard.jpg" alt="">
+                      <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">CRC Digital Marketing</a>-->
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>Project Name</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">CRC Digital Marketing </h4>
+                                    <p>CRC Digital Marketing Company is sale online selling product AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform,AR Security System is total E-Commerce Base Platform</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                </div> <!-- End of row for blogs -->
+            </div> <!-- End of col-lg-12 -->
+        </div> <!-- End of row g-3 -->
+    </div> <!-- End of container -->
+</div> <!-- End of container-fluid -->
+
+
+
+<div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -30px; padding-right:30px;padding-left:30px;">
+    <div class="container-fluid py-1">
+        <div class="row new_gy">
+            <!-- Blog list Start -->
+            <div class="col-lg-12">
+                <!--Row for blogs-->
+                <div class="row new_gy">
+                    <!-- First Blog -->
+                  <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/UniSol Finance Dahboard.jpg" alt="">
+                       <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">DR. Maske</a>-->
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>Project Name</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">DR. Maske</h4>
+                                    <p>IT's totally doctor and Patienct patience Online constant Online Platfrom</p></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Second -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/Enviro Finance Dashboard.jpg" alt="">
+                       <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">Dr. Smite</a>-->
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>Project Name</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">Dr. Smite</h4>
+                                    <p>Home clearning services and Stream Santization</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Third -->
+                     <div class="col-lg-4 col-md-6 col-sm-12 wow slideInUp">
+                            <div class="blog-item bg-light rounded overflow-hidden">
+                                <div class="blog-img position-relative overflow-hidden">
+                                    <img class="img-fluid" src="./img/Projects/UniSol Finance Dahboard.jpg" alt="">
+                       <!--<a class="position-absolute top-0 start-0 text-white rounded-end mt-5 py-2 px-4" href="" style="background-color: #800080;">DR. Maske</a>-->
+                                </div>
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <!--<small class="me-3"><i class="far fa-user text-primary me-2"></i>Project Name</small>-->
+                                        
+                                    </div>
+                                    <h4 class="mb-3">Digital Chetu</h4>
+                                    <p>IT's totally doctor and Patienct patience Online constant Online Platfrom</p></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                   
+                   <!--Blog list End -->     
+                      
+
+                </div> <!-- End of row for blogs -->
+               
+            </div> <!-- End of col-lg-12 -->
+        </div> <!-- End of row g-3 -->
+       
+    </div> <!-- End of container -->
+</div> <!-- End of container-fluid -->
+
+
+
+
+
+    <div class="container-fluid  wow fadeInUp animated slideInDown" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                 <!--Blog list Start -->
+                <div class="col-lg-8">
+                    <div class="row g-5">
+                      
+                        <div class="col-12 wow slideInUp" data-wow-delay="0.1s">
+                            <nav aria-label="Page navigation">
+                              <ul class="pagination pagination-lg m-0">
+                                <li class="page-item ">
+                                  <a class="page-link rounded-0" href="project2.html" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                                  </a>
+                                </li>
+                                <li class="page-item "><a class="page-link" href="projects.html">1</a></li>
+                                <li class="page-item "><a class="page-link" href="projects1.html">2</a></li>
+                                <li class="page-item"><a class="page-link" href="project2.html">3</a></li>
+                                <li class="page-item active"><a class="page-link" href="Projects3.html">4</a></li>
+                                <li class="page-item disabled">
+                                  <a class="page-link rounded-0" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                 
+    
+               
+            </div>
+        </div>
+    </div>
+    
+<!--Blogs End-->
+    
+                <!-- Sidebar Start -->
+                <!--<div class="col-lg-4">-->
+                    <!-- Search Form Start -->
+                <!--    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+                <!--      <div class="input-group">-->
+                <!--      <input type="text" class="form-control p-3" placeholder="Keyword">-->
+                <!--      <button class="btn px-4" style="background-color: #800080; color: white;">-->
+                <!--      <i class="bi bi-search"></i>-->
+                <!--    </button>-->
+                <!--  </div>-->
+                <!--  </div>-->
+                    <!-- Search Form End -->
+    
+                    <!-- Category Start -->
+                <!--    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+                <!--        <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+                <!--            <h3 class="mb-0">Categories</h3>-->
+                <!--        </div>-->
+                <!--        <div class="link-animated d-flex flex-column justify-content-start">-->
+                <!--            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Design Services</a>-->
+                <!--            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development Services</a>-->
+                <!--            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>App Development Services</a>-->
+                <!--            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Software Development Services</a>-->
+                <!--            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Digital Marketing Services</a>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                    <!-- Category End -->
+    
+                    <!-- Recent Post Start -->
+                <!--    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+                <!--        <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+                <!--            <h3 class="mb-0">Recent Post</h3>-->
+                <!--        </div>-->
+                <!--        <div class="d-flex rounded overflow-hidden mb-3">-->
+                <!--            <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+                <!--            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">The Power of Progressive Web Apps: How They're Transforming User Experiences-->
+                <!--            </a>-->
+                <!--        </div>-->
+                <!--        <div class="d-flex rounded overflow-hidden mb-3">-->
+                <!--            <img class="img-fluid" src="img/blog-2.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+                <!--            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">10 Must-Have Features for Your E-commerce Website in 2023-->
+                <!--            </a>-->
+                <!--        </div>-->
+                <!--        <div class="d-flex rounded overflow-hidden mb-3">-->
+                <!--            <img class="img-fluid" src="img/blog-3.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+                <!--            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Web Accessibility Matters: Creating Inclusive Websites for All-->
+                <!--            </a>-->
+                <!--        </div>-->
+                <!--        <div class="d-flex rounded overflow-hidden mb-3">-->
+                <!--            <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+                <!--            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">The Future of Web Design: Trends to Watch Out for in 2023-->
+                <!--            </a>-->
+                <!--        </div>-->
+                <!--        <div class="d-flex rounded overflow-hidden mb-3">-->
+                <!--            <img class="img-fluid" src="img/blog-2.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+                <!--            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Security First: Protecting Your Website from Cyber Threats-->
+                <!--            </a>-->
+                <!--        </div>-->
+                <!--        <div class="d-flex rounded overflow-hidden mb-3">-->
+                <!--            <img class="img-fluid" src="img/blog-3.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+                <!--            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Mobile-First Design: Why It's Crucial for Your Website's Success-->
+                <!--            </a>-->
+                <!--        </div>-->
+                <!--        <div class="d-flex rounded overflow-hidden mb-3">-->
+                <!--            <img class="img-fluid" src="img/blog-3.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">-->
+                <!--            <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0">Website Redesign Checklist: Steps to Modernize Your Online Presence-->
+                <!--            </a>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                    <!-- Recent Post End -->
+    
+                    <!-- Image Start -->
+                <!--    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+                <!--        <img src="img/blog-1.jpg" alt="" class="img-fluid rounded">-->
+                <!--    </div>-->
+                    <!-- Image End -->
+    
+                    <!-- Tags Start -->
+                <!--    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">-->
+                <!--        <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+                <!--            <h3 class="mb-0">Technokrate Services</h3>-->
+                <!--        </div>-->
+                <!--        <div class="d-flex flex-wrap m-n1">-->
+                <!--            <a href="" class="btn btn-light m-1"> Website Design</a>-->
+                <!--            <a href="" class="btn btn-light m-1"> Website Development</a>-->
+                <!--            <a href="" class="btn btn-light m-1">Digital Marketing</a>-->
+                <!--            <a href="" class="btn btn-light m-1">SEO</a>-->
+                <!--            <a href="" class="btn btn-light m-1">E-Commerce Development</a>-->
+                <!--            <a href="" class="btn btn-light m-1">Consulting</a>-->
+                <!--            <a href="" class="btn btn-light m-1">Design</a>-->
+                <!--            <a href="" class="btn btn-light m-1">Development</a>-->
+                <!--            <a href="" class="btn btn-light m-1">Marketing</a>-->
+                <!--            <a href="" class="btn btn-light m-1">SEO</a>-->
+                <!--            <a href="" class="btn btn-light m-1">Writing</a>-->
+                <!--            <a href="" class="btn btn-light m-1">Consulting</a>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                    <!-- Tags End -->
+    
+                    <!-- Plain Text Start -->
+                <!--    <div class="wow slideInUp" data-wow-delay="0.1s">-->
+                <!--        <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+                <!--            <h3 class="mb-0">Plain Text</h3>-->
+                <!--        </div>-->
+                <!--        <div class="bg-light text-center" style="padding: 30px;">-->
+                <!--            <p>"Welcome to Technokrate  Your Partner in Web Development Excellence. We specialize in crafting stunning, functional, and user-friendly websites that empower businesses to thrive online. With our team of experienced developers and designers, we create tailored digital solutions that not only look great but also drive results.</p>-->
+                <!--            <a href="" class="btn py-2 px-4" style="background-color: #800080; color: white;">Read More</a>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                    <!-- Plain Text End -->
+                <!--</div>-->
+                <!-- Sidebar End -->
+            </div>
+        </div>
+    </div>
+
+
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./img/laptop.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./img/carousel-1.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./img/laptop.png" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div> -->
+
+     <!-- Footer Start -->
+     <div class="container-fluid text-white mt-5 fadeInUp" data-wow-delay="0.1s" style="background-color: #993399;">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-99 p-4" style="background-color: #993399;">
+                    <a href="index.html" class="navbar-brand">
+                        <h4 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Technokrate</h4>
+                    </a>
+                    
+                    <p class="mt-3 mb-4 text-white" style="text-align: justify;">Technokrate is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.</p>
+                    <form action="https://appt.link/meet-with-chetan-chitriv-0E0czwAl/web-conference">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3 text-white" placeholder="Your Email" style="color: white;">
+                            <button class="btn btn-dark">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-white mb-0">Get In Touch</h3>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-white me-2"></i>
+                            <p class="mb-0 text-white">4th floor, Prince Complex, Chatrapati Nagar, Nagpur, Maharashtra 440015</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-white me-2"></i>
+                            <p class="mb-0 text-white">info@technokrate.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-white me-2"></i>
+                            <p class="mb-0 text-white">+91-8956992803</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-light btn-square me-2" href="https://x.com/Talentrise59788"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-light btn-square me-2" href="https://www.facebook.com/profile.php?id=100093741976560"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-light btn-square me-2" href="https://www.linkedin.com/company/telentrisetechnokrate/?viewAsMember=true"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-light btn-square" href="https://www.instagram.com/talentrise_technokrate/"><i class="fab fa-instagram fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-white mb-0">Quick Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="https://technokrate.com/"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/about.html"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/service.html"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/projects.html"><i class="bi bi-arrow-right text-white me-2"></i>Project</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/case-study/casestudy.html"><i class="bi bi-arrow-right text-white me-2"></i>Case Study</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/career.html"><i class="bi bi-arrow-right text-white me-2"></i>Career</a>
+                            <a class="text-white" href="https://technokrate.com/contact.html"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-white mb-0">Popular Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="https://technokrate.com/"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/about.html"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/service.html"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/projects.html"><i class="bi bi-arrow-right text-white me-2"></i>Project</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/case-study/casestudy.html"><i class="bi bi-arrow-right text-white me-2"></i>Case Study</a>
+                            <a class="text-white mb-2" href="https://technokrate.com/career.html"><i class="bi bi-arrow-right text-white me-2"></i>Career</a>
+                            <a class="text-white" href="https://technokrate.com/contact.html"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-end">
+            <div class="#">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <p class="mb-0" style="text-align: center;">&copy; <a class="text-white border-bottom" href="#" style="text-align: center;">Talentrise Technokrate Pvt Ltd</a>. All Rights Reserved. 
+                    Designed by <a class="text-white border-bottom" href="" style="text-align: center;">Talentrise Technokrate Pvt Ltd</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer End -->
+    </body>
+
+    </html>

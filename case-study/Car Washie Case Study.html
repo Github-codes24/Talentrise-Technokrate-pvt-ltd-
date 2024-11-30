@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Car Washie Case Study || Technokrate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/technokrate.png">
+    <!-- ----favicon----- -->
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="../img/technokrate.png">
+    <link rel="icon" type="image/jpeg" sizes="16x16" href="../img/technokrate.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+        /* Styles for the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Styles for the button that triggers the dropdown */
+        .dropdown button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styles for the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -600px;
+            
+        }
+
+        /* Styles for each item in the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #1b1414;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused */
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+    
+    </style>
+
+<link rel="stylesheet" href="nk4.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <!--<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">-->
+    <!--    <div class="spinner"></div>-->
+    <!--</div>-->
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <!-- <small class="me-3 text-light"><a href="#" class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Gyatri Nagar IT Park,Nagpur,Maharashtra 440027</a></small> -->
+                    <small class="me-3 text-light"><a href="tel:+918956992803" class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91-8956992803</a></small>
+                    <small class="me-3 text-light"><a href="mailto:info@technokrate.com" class="text-light"><i class="fa fa-envelope-open me-2"></i>info@technokrate.com</a></small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://twitter.com/avestantechnol1"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.facebook.com/avestantechnologies"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.linkedin.com/company/avestan-technologies/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.instagram.com/avestantechnologies/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- <div id="wa-logo">
+        <a href="https://wa.me/+918381009662" target="_blank"><img src="./../img/whatsapp.png" alt="Avestan Technology"></a>
+    </div> -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-f04f416a-42f9-4a81-9478-90603e0e885e"></div>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="../index.html" class="navbar-brand p-0">
+                <h2 class="m-0 text-light"><i class="fa fa-user-tie me-2"></i>Technokrate</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="../index.html" class="nav-item nav-link">Home</a>
+                    <a href="../about.html" class="nav-item nav-link">About</a>
+                    <a href="../projects.html" class="nav-item nav-link">Projects</a>
+                    <a href="../service.html" class="nav-item nav-link">Services</a>
+                    <a href="../casestudy.html" class="nav-item nav-link active">Case Study</a>
+                    <div class="nav-item dropdown">
+                        
+                        <div class="dropdown">
+                            <a href="" class="nav-item nav-link" style="font-size: 16px;">Hire Us</a>
+                            <div class="dropdown-content" style="width: 850px; padding-top: 20px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Trending</h6>
+                                        <a href="../Others/MERN_Developer.html">MERN Developers</a>
+                                        <a href="../Others/MEAN_Developer.html">MEAN Developers</a>
+                                        <a href="../Others/Hire-Meteor-Devloper.html">Meteor Developers</a>
+                                        <a href="../Others/Blockchain_Developer.html">Blockchain Developers</a>
+                                        <a href="../Others/Devops_Engineer.html">DevOps Engineers</a>
+                                        <a href="../Others/Fintech_Developer.html">Fintech Developers</a>
+                                        <a href="../Others/Hire Automation Tester.html">Automation Testers</a>
+                                        <a href="../Others/Software_Developer.html">Software Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <br>
+                                        <a href="../Others/Hire AR Developers.html">AR Developers</a>
+                                        <a href="../Others/Hire-VueJS-Developer.html">VueJS Developers</a>
+                                        <a href="../Others/Hire-Meteor-Devloper.html">Meteor Developers</a>
+                                        <a href="../Others/Hire-RoR-Devloper.html">RoR Developers</a>
+                                        <li><a href="../Others/Hire Django Developers.html">Django Developers</a></li>
+                                        <li><a href="../Others/Ruby_on_rail_Developer.html">Ruby on Rails Developers</a></li>
+                                        <a href="../Others/Hire UI Developer.html">UI UX Designers</a>
+                                        <a href="../Others/AWS_Developer.html">AWS Developers</a>
+                                        <a href="../Others/PHP_Developer.html">PHP Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Front-End Developers</h6>
+                                        <a href="../Others/Hire Java Script Developer.html">JavaScript Developers</a>
+                                        <a href="../Others/Typescript_Developer.html">TypeScript Developers</a>
+                                        <a href="../Others/Hire HTML5 Developers.html">HTML5 Developers</a>
+                                        <a href="../Others/TailwindCSS_Developer.html">Tailwind CSS Developers</a>
+                                        <a href="../Others/Angular_Developer.html">Angular Developers</a>
+                                        <a href="../Others/hire-reactjs-Developers.html">ReactJS Developers</a>
+                                        <a href="../Others/NextJS_Developer.html">NextJS Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Back-End Developers</h6>
+                                        <li><a href="../Others/Node JS Developer.html">Node JS Developers</a></li>
+                                        <li><a href="../Others/Hire UI Developer.html">UI Developers</a></li>
+                                        <li><a href="../Others/Laravel Development.html">Laravel Developers</a></li>
+                                        <li><a href="../Others/Hire-ASPNET-Devloper.html">ASPNET Developers</a></li>
+                                        <li><a href="../Others/Hire Python Developer.html">Python Developers</a></li>
+                                        <li><a href="../Others/Hire Java Developer.html">Java Developers</a></li>
+                                        <li><a href="../Others/ExpressJS_Developer.html">ExpressJS Developers</a></li>
+                                        <li><a href="../Others/SpringBoot_Developer.html">Spring Boot Developers</a></li>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Mobile App Developers</h6>
+                                        <li><a href="../Others/Hire Android Developer.html">Android Developers</a>
+                                        </li>
+                                        <li><a href="../Others/Hire IOS Developer.html">IOS Developers</a></li>
+                                        <li><a href="../Others/Hire Swift App Developers.html">Swift App Developers</a>
+                                        </li>
+                                        <li><a href="../Others/Hire-Flutter-Developer.html">Flutter Developers</a></li>
+                                        <li><a href="../Others/Hire Ionic Developers.html">Ionic Developers</a></li>
+                                        <li><a href="../Others/Hire-React-Native-developer.html">React Native Developers</a></li>
+                                        <li><a href="../Others/HIRE XAMARIN DEVELOPER.html">Xamarin Developers</a></li>
+                                        <li><a href="../Others/Hire CodeIgniter developer.html">CodeIgniter Developers</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Add more items as needed -->
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../career.html" class="nav-item nav-link">Career</a>
+                    <a href="../contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <!-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+                <!-- <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> -->
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 10px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Car Washie Case Study</h1>
+                    <a href="" class="h5 text-white">Home</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="casestudy.html" class="h5 text-white">Case Study</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5" style="padding-bottom: 0px;">
+            <div class="row g-5">
+                <div class="col-lg-8">
+
+                    <section class="sect-pad-t service-details pt-4">
+                        <div class="container">
+                            <div class="row justify-content-center">
+            
+                                <div class="col-12 col-md-12 col-lg-12 text-center mb-4">
+                                    <img src="blog-img/technokrate.png" class="img-fluid mb-3" alt="Logo of this blog">
+                                    <h1 class="main-title mb-0 mt-60 services-title c-black">Car Washie</h1>
+                                    <h3>Your Trusted Partner in Car Maintenance and Repair</h3>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12">
+                                    <p class="desc text-center mb-0">Welcome to the Car Washie Car Service website, your one-stop
+                                        destination for all your car maintenance and repair needs. At Car Washie, we understand that
+                                        your car is more than just a vehicle; it's a part of your daily life, and we're here to
+                                        ensure it runs smoothly and efficiently.</p>
+            
+                                    <p class="desc text-center mb-0">Our mission is simple: to provide car owners like you with a
+                                        hassle-free and reliable solution for all your car service requirements. Whether it's
+                                        routine maintenance, repairs, inspections, or even finding trusted service centers near you,
+                                        Car Washie Car Service has you covered.</p>
+            
+                                    <p class="desc text-center mb-0">So, say goodbye to car service woes and let Car Washie Car
+                                        Service take care of your vehicle. Explore our website, discover a network of trusted
+                                        service providers, and experience a new level of convenience and reliability in car
+                                        maintenance and repair. Your car deserves the best, and Car Washie Car Service is here to
+                                        deliver just that.</p>
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+
+
+
+            
+
+
+
+                    <!-- Blog Detail Start -->
+                    <div class="mb-5" style="margin-bottom: 0px;">
+                        <img class="img-fluid w-100 rounded mb-5" src="blog-img/car-washie-1.png" alt="">
+                    </div>
+                    <!---------- Blog Detail End ==============-->
+    
+                    
+                    
+                    
+
+    
+
+                </div>
+    
+                <!-- Sidebar Start -->
+                <div class="col-lg-4">
+                    <!-- Search Form Start -->
+
+                    <!-- Search Form End -->
+    
+                    <!-- Category Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Categories</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Design</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Keyword Research</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Email Marketing</a>
+                        </div>
+                    </div>
+                    <!-- Category End -->
+    
+                    <!-- Recent Post Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Snapshot</h3>
+                        </div>
+
+    
+                    <!-- Image Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <img src="blog-img/car-washie-2.png" alt="" class="img-fluid rounded">
+                    </div>
+                    <!-- Image End -->
+    
+                    <!-- Tags Start -->
+
+                    <!-- Tags End -->
+    
+                    <!-- Plain Text Start -->
+                    <!-- <div class="wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Plain Text</h3>
+                        </div>
+                        <div class="bg-light text-center" style="padding: 30px;">
+                            <p>Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna takimata, amet sit et diam dolor ipsum amet diam</p>
+                            <a href="" class="btn btn-primary py-2 px-4">Read More</a>
+                        </div>
+                    </div> -->
+                    <!-- Plain Text End -->
+
+
+                    <section class="mb-5 features-list bg-light sect-pad-tb">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-19 col-md-19 col-lg-9 col-xl-9 typography-list">
+                                    <h2 class="main-title mb-8 mt-60 services-title cs-typography-title c-black">Typography</h2>
+                                    <p class="text-type mt-5">Aa</p>
+                                    <p class="font-type">Work Sans</p>
+                                    <p class="text-type2 mb-0">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
+                                        Xx Yy Zz</p>
+                                </div>
+                                <div class="col-19 col-md-19 col-lg-8 col-xl-8 ">
+                                    <h2 class="main-title mb-8 mt-60 services-title cs-color-title c-black">Color Palette</h2>
+                                    <div class="typoflex">
+                                        <div class="color-box text-center mr-4">
+                                            <div class="color-code-box color-1" style="background-color: #09032f;"></div>
+                                            <label class="color-code mb-0 text-uppercase">#09032f</label>
+                                        </div>
+                                        <div class="color-box text-center mr-4">
+                                            <div class="color-code-box color-3" style="background-color: #37a428"></div>
+                                            <label class="color-code mb-0 text-uppercase">#37a428</label>
+                                        </div>
+                                        <div class="color-box text-center">
+                                            <div class="color-code-box color-4" style="background-color: #cccccc;"></div>
+                                            <label class="color-code mb-0 text-uppercase">#cccccc</label>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    
+                </div>
+                <!-- Sidebar End -->
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <section class="bg-blue client-requirements">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-6 bg-white order-1 order-md-1 order-lg-0">
+                    <div class="p-0 pb-5 p-md-5 p-lg-3 p-xl-5 d-flex flex-column h-100 justify-content-center">
+                        <div>
+                            <h2 class="main-title mb-3 mt-60 services-title cs-client-requirements-title c-black">
+                                Background:</h2>
+                            <h3>Pioneering Excellence in Car Maintenance and Repairs</h3>
+                            <p class="desc mb-0">Car Washie is a prominent online marketplace for buying and selling
+                                new and used vehicles in India, known for its innovative approach to the automotive
+                                industry. Car Washie has expanded its services beyond vehicle sales to include
+                                various automotive-related offerings, including vehicle inspections, certification,
+                                and other vehicle-related services. It's possible that Car Washie may have launched
+                                a dedicated car services platform or website after my last update.</p>
+
+                            <p class="desc mb-0">To get the most up-to-date and accurate information about the
+                                background and services of "Car Washie Car Services" </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 col-xl-6 order-0 order-md-0 order-lg-1 align-self-center">
+                    <div class="text-center pt-4">
+                        <img class="img-fluid"
+                            src="blog-img/car-washie-3.png"
+                            alt="avestan car washie 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Case Study Images start -->
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">More UI SnapShots</h5>
+            <h1 class="mb-0">Refer For Design and Look</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/car-washie-1.png"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/car-washie-2.png"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                
+                
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/car-washie-3.png"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+     
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/car-washie-4.png"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/car-washie-5.png"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/car-washie-6.png"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/car-washie-7.png"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/car-washie-8.png"  >
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+<!-- Case Study Images Ends -->
+
+
+    <section class="my-5 features-list service-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <h2 class="main-title mb-3 mt-60 services-title cs-features-title c-black" style="text-align: center;" data-inviewport="scale-in">Features</h2>
+                    <p class="desc mb-0" >Technokrate created the Car Washie Website and Admin side, as per
+                        the
+                        client's requirements. Below are the Objectives, Methodologies, Challanges and Solitions of
+                        this website.</p>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+                            <div class="card p-4 h-100 d-flex flex-column ">
+                                <h3 class="sub-title main-x" data-inviewport="scale-in"><b >Objectives:</b></h3>
+                                <br><br>
+                                <b class="c-blue">The primary objective of the Car Washie Car Service website will
+                                    be featured below:</b>
+                                <br><br><br>
+                                <ol>
+                                    <li>
+                                        <p ><b>Streamline Car Maintenance and Repairs:</b> The primary objective
+                                            would be to
+                                            simplify the process of car maintenance and repairs for vehicle owners,
+                                            making it more convenient and hassle-free.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Connect Car Owners with Service Centers:</b> Facilitate the connection
+                                            between car owners and certified service centers or mechanics, ensuring
+                                            that vehicle owners have access to reliable and professional service
+                                            providers.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Enhance Transparency:</b> Provide transparent information about
+                                            service
+                                            options, pricing, and the status of service appointments, fostering
+                                            trust and confidence among users.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Offer Convenience:</b> Offer an easy-to-use online platform where car
+                                            owners
+                                            can book service appointments, track the progress of their service, and
+                                            receive notifications about job completion.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Ensure Quality Service:</b> Ensure that the partnered service centers
+                                            maintain high standards of service quality and professionalism,
+                                            providing users with a consistent and reliable experience.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Expand Service Options:</b> Offer a variety of car maintenance and
+                                            repair
+                                            services, including routine maintenance, inspections, repairs, and more,
+                                            catering to a wide range of car makes and models.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Prioritize User Satisfaction:</b> Place a strong emphasis on user
+                                            satisfaction by actively seeking and addressing customer feedback and
+                                            concerns.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Promote Safety:</b> Promote safety by recommending necessary repairs
+                                            and
+                                            maintenance to keep vehicles in optimal condition and conducting
+                                            thorough inspections.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Support Vehicle Longevity:</b> Help car owners extend the lifespan of
+                                            their
+                                            vehicles by promoting regular maintenance and addressing issues
+                                            promptly.</p>
+                                    </li><br><br>
+
+                                    <li>
+                                        <p><b>Expand Reach:</b> Increase the network of partnered service centers to
+                                            ensure
+                                            that car owners in various geographic locations have access to
+                                            convenient service options.</p>
+                                    </li><br>
+                                </ol>
+
+
+                                <p>Please note that the specific objectives of the "Car Washie Car Services" website
+                                    may vary depending on its business model, target audience, and the services it
+                                    offers. For the most accurate and up-to-date information on the objectives of
+                                    this specific website, it is recommended to visit the official Car Washie
+                                    website or contact the platform directly.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+                            <div class="card p-4 h-100 d-flex flex-column">
+                                <h3 class="sub-title main-x" data-inviewport="scale-in"><b>Methodology:</b></h3>
+                                <br>
+                                <b class="c-blue">The methodology of the "Car Washie Car Services" website,
+                                    framework for developing and implementing a car services website. The
+                                    methodology typically involves several key stages:</b>
+                                <br>
+                                <ol>
+                                    <li>
+                                        <p><b>Project Initiation:</b></p>
+                                        <ul>
+                                            <li>Define the scope and objectives of the website.</li>
+                                            <li>Identify the target audience and their specific needs.</li>
+                                            <li>Allocate resources, budget, and establish a project team.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Market Research:</b></p>
+                                        <ul>
+                                            <li>Conduct extensive research on the car services industry, including
+                                                customer preferences and pain points.</li>
+                                            <li>Analyze competitors and identify opportunities for differentiation.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Conceptualization and Planning:</b></p>
+                                        <ul>
+                                            <li>Create a detailed project plan outlining timelines, milestones, and
+                                                deliverables.</li>
+                                            <li>Define the website's features and functionality, including user
+                                                registration, service booking, payment processing, and user reviews.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>User Experience (UX) and User Interface (UI) Design:</b></p>
+                                        <ul>
+                                            <li>Design wireframes and prototypes to visualize the website's layout
+                                                and flow.</li>
+                                            <li>Create an intuitive and user-friendly interface for both car owners
+                                                and service providers.</li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <p><b>Website Development:</b></p>
+                                        <ul>
+                                            <li>Develop the website using appropriate programming languages and
+                                                frameworks.</li>
+                                            <li>Implement essential features, ensuring seamless functionality and
+                                                compatibility across different devices and browsers.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Service Provider Onboarding:</b></p>
+                                        <ul>
+                                            <li>Establish a process for vetting and onboarding service centers,
+                                                mechanics, or technicians.</li>
+                                            <li>Develop agreements and partnerships with service providers.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Transparent Pricing and Payment Processing:</b></p>
+                                        <ul>
+                                            <li>Implement transparent pricing structures for various services.</li>
+                                            <li>Integrate secure payment processing options for service bookings.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>User Registration and Authentication:</b></p>
+                                        <ul>
+                                            <li>Create user registration and authentication processes to ensure the
+                                                security of user accounts.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Service Booking and Management:</b></p>
+                                        <ul>
+                                            <li>Develop a user-friendly booking system that allows car owners to
+                                                schedule service appointments.</li>
+                                            <li>Provide a dashboard for users to manage their bookings and view
+                                                service history.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Quality Assurance and Testing:</b></p>
+                                        <ul>
+                                            <li>Conduct thorough testing to identify and resolve any bugs or
+                                                usability issues.</li>
+                                            <li>Ensure that the website functions smoothly and securely.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>User Education and Support:</b></p>
+                                        <ul>
+                                            <li>Develop user guides and onboarding tutorials to help users navigate
+                                                the website.</li>
+                                            <li>Offer customer support channels to address user inquiries and
+                                                issues.</li>
+                                        </ul>
+                                    </li>
+
+
+
+                                    <br>
+                                    <p>This methodology provides a structured approach to developing and launching a
+                                        car services website. However, the specific details and steps may vary
+                                        depending on the goals and business model of the "Car Washie Car Services"
+                                        website or any similar platform.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+                            <div class="card p-4 h-100 d-flex flex-column">
+                                <h3 class="sub-title main-x" data-inviewport="scale-in"><b>Challenges:</b></h3>
+                                <br>
+                                <b class="c-blue">Developing and operating a car services website like Car Washie
+                                    Car Services comes with several challenges, many of which are common in the
+                                    online automotive service industry. Here are some challenges that Car Washie Car
+                                    Services or similar websites might face:</b>
+                                <br>
+                                <ol>
+                                    <li>
+                                        <p><b>Competition:</b> The online car services market can be highly
+                                            competitive,
+                                            with many established players and new entrants. Competing for users'
+                                            attention and trust is a significant challenge.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Trust and Credibility:</b> Building trust and credibility among users
+                                            is
+                                            crucial. Car owners must trust the website's recommendations, pricing,
+                                            and the quality of service providers.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Quality Control:</b> Ensuring consistent service quality across a
+                                            network of
+                                            service providers can be challenging. Maintaining high standards and
+                                            addressing quality issues is essential.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Service Provider Onboarding:</b> Identifying, vetting, and onboarding
+                                            reliable service providers can be time-consuming and resource-intensive.
+                                            It's crucial to have a rigorous selection process.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Pricing and Profitability:</b> Striking the right balance between
+                                            competitive
+                                            pricing for users and profitability for the website and service
+                                            providers can be tricky.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Technical Challenges:</b> Ensuring that the website functions smoothly
+                                            across
+                                            various devices, browsers, and network conditions is a technical
+                                            challenge.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>User Acquisition and Retention:</b> Acquiring new users and retaining
+                                            them in
+                                            a competitive market requires effective marketing and engagement
+                                            strategies.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Customer Support:</b> Providing responsive and effective customer
+                                            support to
+                                            address user inquiries and concerns is crucial for user satisfaction.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Data Security and Privacy:</b> Safeguarding user data and financial
+                                            information is essential to maintain trust and comply with privacy
+                                            regulations.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Operational Efficiency:</b> Efficient scheduling and fulfillment of
+                                            service
+                                            requests are essential to minimize wait times and maximize user
+                                            satisfaction.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Maintaining Service Provider Engagement:</b> Encouraging service
+                                            providers to
+                                            remain active on the platform and deliver high-quality services is an
+                                            ongoing effort.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Technological Advancements:</b> Staying up-to-date with emerging
+                                            technologies, such as vehicle diagnostics and IoT integration, is
+                                            essential to remain competitive.</p>
+                                    </li>
+                                </ol>
+
+                                <br>
+                                <p>Overcoming these challenges requires a combination of careful planning,
+                                    continuous monitoring and improvement, strong partnerships with service
+                                    providers, effective user education, and a commitment to delivering value and
+                                    convenience to both car owners and service providers.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+                            <div class="card p-4 h-100 d-flex flex-column">
+                                <h3 class="sub-title main-x" data-inviewport="scale-in"><b>Solution:</b></h3>
+                                <br>
+                                <b class="c-blue">Addressing the challenges faced by Car Washie Car Services website
+                                    or any similar platform requires strategic solutions that prioritize user
+                                    satisfaction, service quality, and operational efficiency. Here are potential
+                                    solutions to overcome the challenges:</b>
+                                <br>
+                                <ol>
+                                    <li>
+                                        <p><b>Competition:</b><br><b>Solution:</b> Differentiate Car Washie Car
+                                            Services by offering unique features such as transparent pricing,
+                                            quality guarantees, or a wider network of certified service providers.
+                                            Focus on exceptional customer service and reliability to build a loyal
+                                            user base.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Trust and Credibility:</b><br><b>Solution:</b> Implement a rigorous
+                                            vetting process for service providers, including background checks and
+                                            certifications. Establish a transparent review and rating system for
+                                            users to provide feedback on service quality.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Quality Control:</b><br><b>Solution:</b> Regularly assess service
+                                            provider performance and provide training and incentives for
+                                            improvement. Implement quality assurance checks and standards.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Service Provider Onboarding:</b><br><b>Solution:</b> Streamline the
+                                            onboarding process with clear requirements and efficient verification
+                                            procedures. Offer incentives to attract skilled professionals.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Pricing and Profitability:</b><br><b>Solution:</b> Conduct pricing
+                                            research to find a balance between competitive rates and profitability.
+                                            Consider dynamic pricing during peak demand periods.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Technical Challenges:</b><br><b>Solution:</b> Invest in app
+                                            development and maintenance to ensure smooth performance across various
+                                            devices and platforms. Regularly update the website to fix bugs and
+                                            optimize performance.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>User Acquisition and Retention:</b><br><b>Solution:</b> Develop a
+                                            comprehensive marketing strategy that includes targeted advertising,
+                                            referral programs, and promotions. Focus on user engagement and
+                                            satisfaction to retain customers.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>User Reviews and Ratings:</b><br><b>Solution:</b> Implement a review
+                                            moderation system to ensure fairness and accuracy. Encourage users to
+                                            provide constructive feedback. Address negative feedback promptly and
+                                            professionally.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Data Security and Privacy:</b><b>Solution:</b> Implement robust data
+                                            security measures, including encryption and regular security audits.
+                                            Comply with data protection regulations.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Maintaining Service Provider Engagement:</b><br><b>Solution:</b> Offer
+                                            incentives and recognition programs to keep service providers engaged.
+                                            Provide ongoing training and support to improve their skills.</p>
+                                    </li>
+
+
+
+                                </ol>
+
+                                <br>
+                                <p>By proactively addressing these challenges with the right solutions, Car Washie
+                                    Car Services can continue to improve its services, enhance user experiences, and
+                                    maintain a strong presence in the car maintenance and repair industry.</p>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+                            <div class="card p-4 h-100 d-flex flex-column">
+                                <h3 class="sub-title main-x" data-inviewport="scale-in"><b>Implementation:</b></h3>
+                                <br>
+                                <b class="c-blue">The implementation of the Car Washie Car Services website involves
+                                    a series of steps to bring the platform to life and make it accessible to users.
+                                    Here's a general overview of the implementation process:</b>
+                                <br>
+                                <ol>
+                                    <li>
+                                        <p><b>Project Initiation:</b></p>
+                                        <ul>
+                                            <li>Define the project scope, objectives, and key performance indicators
+                                                (KPIs).</li>
+                                            <li>Assemble a project team comprising developers, designers, QA
+                                                testers, and project managers.</li>
+                                            <li>Allocate resources, budget, and timeline for development.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Market Research and Analysis:</b></p>
+                                        <ul>
+                                            <li>Conduct comprehensive market research to understand user needs,
+                                                preferences, and pain points in the car services industry.</li>
+                                            <li>Identify target demographics and regions for initial launch.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Conceptualization and Planning:</b></p>
+                                        <ul>
+                                            <li>Create a detailed project plan with milestones, timelines, and
+                                                deliverables.</li>
+                                            <li>Define the website's features, functionality, and user flow,
+                                                including user registration, service booking, payment processing,
+                                                and review systems.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>User Experience (UX) and User Interface (UI) Design:</b></p>
+                                        <ul>
+                                            <li>Develop wireframes and prototypes to visualize the website's layout
+                                                and user flow.</li>
+                                            <li>Design an intuitive and visually appealing interface for car owners
+                                                and service providers.</li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <p><b>Website Development:</b></p>
+                                        <ul>
+                                            <li>Develop the website using appropriate programming languages,
+                                                frameworks, and technologies.</li>
+                                            <li>Implement key features such as user registration, service booking,
+                                                secure payment processing, and review systems.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Service Booking and Management</b></p>
+                                        <ul>
+                                            <li>Create a user-friendly booking system for car owners to schedule
+                                                service appointments.</li>
+                                            <li>Provide a dashboard for users to manage their bookings and access
+                                                service history.</li>
+                                        </ul>
+                                    </li>
+
+
+                                    <br>
+                                    <p>The successful implementation of the Car Washie Car Services website requires
+                                        careful planning, execution, and ongoing optimization to deliver a reliable
+                                        and user-friendly platform for car owners and service providers in the car
+                                        maintenance and repair industry.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+                            <div class="card p-4 h-100 d-flex flex-column">
+                                <h3 class="sub-title main-x" data-inviewport="scale-in"><b>Results:</b></h3>
+                                <br>
+                                <b class="c-blue">The results of the Car Washie Car Services website would depend on
+                                    various factors, including its execution, user adoption, and market conditions.
+                                    Here are some potential outcomes and results that the website could aim to
+                                    achieve:</b>
+                                <br>
+                                <ol>
+                                    <li>
+                                        <p><b>User Adoption and Engagement:</b></p>
+                                        <ul>
+                                            <li>Increasing numbers of registered users and active user engagement,
+                                                such as service bookings, reviews, and interactions with service
+                                                providers.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Service Quality and Ratings:</b></p>
+                                        <ul>
+                                            <li>Positive ratings and reviews from users, reflecting satisfaction
+                                                with the quality of services provided.</li>
+                                            <li>A robust rating system that helps users make informed decisions when
+                                                selecting service providers.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Safety and Trust:</b></p>
+                                        <ul>
+                                            <li>Zero or minimal incidents of safety breaches or security issues,
+                                                establishing trust among users.</li>
+                                            <li>High user confidence in the safety and reliability of service
+                                                providers</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Market Expansion:</b></p>
+                                        <ul>
+                                            <li>Successful expansion into new geographic regions, demonstrating
+                                                scalability.</li>
+                                            <li>Adaptation to local market conditions and preferences in each region
+                                                of operation.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Operational Efficiency:</b></p>
+                                        <ul>
+                                            <li>Efficient scheduling and fulfillment of service requests, reducing
+                                                wait times for users.</li>
+                                            <li>Streamlined communication between users and service providers.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <p><b>Continuous Improvement:</b></p>
+                                        <ul>
+                                            <li>• Regular updates and enhancements to the website based on user
+                                                feedback and technological advancements.</li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <br>
+                                    <p>These results collectively illustrate the success of the Car Washie Car
+                                        Services website in achieving its objectives, delivering value to users and
+                                        service providers, ensuring safety and trust, and becoming a trusted
+                                        resource for service-related needs in the automotive industry. Regular
+                                        assessment and adaptation will continue to drive the website's growth and
+                                        relevance.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sect-pad-t service-details pt-4">
+        <section class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
+                        <div class="text-center">
+                            <img class="img-fluid"
+                                src="blog-img/car-washie-8.png"
+                                alt="car washie image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 bg-white">
+                        <div class="p-0 p-md-5 p-lg-3 p-xl-5 d-flex flex-column h-100 justify-content-center">
+                            <div>
+                                <h2 class="main-title mb-3 mt-60 services-title cs-challenges-title c-black">Conclusion:
+                                </h2>
+                                <p class="desc mb-1 c-black"><b></b></p>
+                                <p class="desc mb-4">In conclusion, the Car Washie Car Services website has embarked on a transformative journey to simplify and enhance the car maintenance and repair experience for vehicle owners across India. This digital platform has successfully bridged the gap between car owners seeking reliable services and certified service providers eager to meet those needs. Throughout its evolution, Car Washie Car Services has striven to overcome challenges, establish trust, and deliver exceptional value to its users.</p>
+                                <p class="desc mb-1 c-black"><b></b></p>
+                                <p class="desc mb-0">Car Washie Car Services' success story is characterized by its unwavering commitment to user-centric principles, emphasizing transparency, quality, and safety. The platform has curated a network of certified service providers, each held to rigorous standards, ensuring that every service appointment is a positive experience.</p>
+                                <br>
+                                <p class="desc mb-0">The website's development and operation have not been without challenges, from competition and trust-building to technical complexities and regulatory compliance. However, Car Washie Car Services has met these challenges with innovation, resilience, and a continuous pursuit of excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+    </section>
+
+    
+
+
+    <!-- Vendor Start -->
+
+    <section class="sect-pad-t service-details pt-4">
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class=" py-5 mb-5 " >
+    
+                <div class=" col-lg-6 col-xl-6 text-center mb-5 tech-stack">
+                    <h2 class="main-title item-x">Technology Stacks</h2>
+                    <p class="desc mb-3">We have used the latest technologies that can justify client requirements
+                        at the best to deliver bug-free solutions.</p>
+                </div>
+                <div class="bg-white" >
+                    <div class="owl-carousel vendor-carousel">
+
+
+                        <div class="swiper-slide"><img class src="../img/icons/html-ico.png" alt="html"></div>
+                        <div class="swiper-slide"><img class src="../img/icons/css-ico.png" alt="html"></div>
+                        <div class="swiper-slide"><img class src="../img/icons/js-ico.png" alt="html"></div>
+                        <div class="swiper-slide"><img class src="../img/icons/bootstrap-ico.png" alt="html"></div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Vendor End -->
+    
+
+    <!-- Footer Start -->
+    <div class=" bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-99  p-4" style="background-color: #2a446d;">
+                        <a href="../index.html" class="navbar-brand">
+                            <h4 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Technokrate</h4>
+                        </a>
+                        <p class="mt-3 mb-4" style="text-align: justify;">Technokrate is the partner of choice for many of the world's leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">4th floor , Prince Complex, Chatrapati Nagar, Nagpur, Maharashtra 440015</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@technokrate.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+91-8956992803</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="https://twitter.com/avestantechnol1"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/avestantechnologies"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/company/avestan-technologies/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="https://www.instagram.com/avestantechnologies/"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Talentrise Technokrate Pvt Ltd</a>. All Rights Reserved. 
+						
+						Designed by <a class="text-white border-bottom" href="">Talentrise Technokrate Pvt Ltd</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="nk4.js"></script>
+
+
+
+</body>
+
+</html>

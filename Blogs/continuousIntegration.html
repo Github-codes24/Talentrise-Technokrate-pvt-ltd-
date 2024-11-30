@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> G Day Hive| Case Study || Technokrate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/technokrate.png">
+    <!-- ----favicon----- -->
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="../img/technokrate.png">
+    <link rel="icon" type="image/jpeg" sizes="16x16" href="../img/technokrate.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+        /* Styles for the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Styles for the button that triggers the dropdown */
+        .dropdown button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styles for the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -400px;
+            
+        }
+
+        /* Styles for each item in the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #1b1414;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused */
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+
+        /* Styles for the dropdown content of about (hidden by default) */
+        .dropdown-content-about {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -50px;
+        }
+
+        /* Styles for each item in the dropdown of about */
+        .dropdown-content-about a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+
+        /* Change color on hover of about */
+        .dropdown-content-about a:hover {
+            background-color: #1b1414;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused for about*/
+        .dropdown:hover .dropdown-content-about,
+        .dropdown:focus-within .dropdown-content-about {
+            display: block;
+        }
+    
+    </style>
+
+<link rel="stylesheet" href="nk4.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <!--<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">-->
+    <!--    <div class="spinner"></div>-->
+    <!--</div>-->
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <!-- <small class="me-3 text-light"><a href="#" class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Gyatri Nagar IT Park,Nagpur,Maharashtra 440027</a></small> -->
+                    <small class="me-3 text-light"><a href="tel:+918956992803" class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91-8956992803</a></small>
+                    <small class="me-3 text-light"><a href="mailto:info@technookrate.com" class="text-light"><i class="fa fa-envelope-open me-2"></i>info@technokrate.com</a></small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://twitter.com/avestantechnol1"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.facebook.com/avestantechnologies"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.linkedin.com/company/avestan-technologies/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.instagram.com/avestantechnologies/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- <div id="wa-logo">
+        <a href="https://wa.me/+918381009662" target="_blank"><img src="./../img/whatsapp.png" alt="Avestan Technology"></a>
+    </div> -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-f04f416a-42f9-4a81-9478-90603e0e885e"></div>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="../index.html" class="navbar-brand p-0">
+                <h2 class="m-0 text-light"><i class="fa fa-user-tie me-2"></i>Technokrate</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="../index.html" class="nav-item nav-link">Home</a>
+
+                    <div class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <div class="dropdown-content-about" style="width: 180px; padding-top: 10px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <a href="../projects.html"><b>Projects</b></a>
+                                        <a href="../casestudy.html"><b>Case-Study</b></a>
+                                        <a href="../Blogs.html"><b>Blogs</b></a>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    <!-- <a href="../projects.html" class="nav-item nav-link">Projects</a> -->
+                    <a href="../service.html" class="nav-item nav-link">Services</a>
+                    <!-- <a href="../casestudy.html" class="nav-item nav-link active">Case Study</a> -->
+                    <div class="nav-item dropdown">
+                        
+                        <div class="dropdown">
+                            <a href="" class="nav-item nav-link" style="font-size: 16px;">Hire Us</a>
+                            <div class="dropdown-content" style="width: 850px; padding-top: 20px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Trending</h6>
+                                        <a href="../Others/MERN_Developer.html">MERN Developers</a>
+                                        <a href="../Others/MEAN_Developer.html">MEAN Developers</a>
+                                        <a href="../Others/Hire-Meteor-Devloper.html">Meteor Developers</a>
+                                        <a href="../Others/Blockchain_Developer.html">Blockchain Developers</a>
+                                        <a href="../Others/Devops_Engineer.html">DevOps Engineers</a>
+                                        <a href="../Others/Fintech_Developer.html">Fintech Developers</a>
+                                        <a href="../Others/Hire Automation Tester.html">Automation Testers</a>
+                                        <a href="../Others/Software_Developer.html">Software Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <br>
+                                        <a href="../Others/Hire AR Developers.html">AR Developers</a>
+                                        <a href="../Others/Hire-VueJS-Developer.html">VueJS Developers</a>
+                                        <a href="../Others/Hire-Meteor-Devloper.html">Meteor Developers</a>
+                                        <a href="../Others/Hire-RoR-Devloper.html">RoR Developers</a>
+                                        <li><a href="../Others/Hire Django Developers.html">Django Developers</a></li>
+                                        <li><a href="../Others/Ruby_on_rail_Developer.html">Ruby on Rails Developers</a></li>
+                                        <a href="../Others/Hire UI Developer.html">UI UX Designers</a>
+                                        <a href="../Others/AWS_Developer.html">AWS Developers</a>
+                                        <a href="../Others/PHP_Developer.html">PHP Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Front-End Developers</h6>
+                                        <a href="../Others/Hire Java Script Developer.html">JavaScript Developers</a>
+                                        <a href="../Others/Typescript_Developer.html">TypeScript Developers</a>
+                                        <a href="../Others/Hire HTML5 Developers.html">HTML5 Developers</a>
+                                        <a href="../Others/TailwindCSS_Developer.html">Tailwind CSS Developers</a>
+                                        <a href="../Others/Angular_Developer.html">Angular Developers</a>
+                                        <a href="../Others/hire-reactjs-Developers.html">ReactJS Developers</a>
+                                        <a href="../Others/NextJS_Developer.html">NextJS Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Back-End Developers</h6>
+                                        <li><a href="../Others/Node JS Developer.html">Node JS Developers</a></li>
+                                        <li><a href="../Others/Hire UI Developer.html">UI Developers</a></li>
+                                        <li><a href="../Others/Laravel Development.html">Laravel Developers</a></li>
+                                        <li><a href="../Others/Hire-ASPNET-Devloper.html">ASPNET Developers</a></li>
+                                        <li><a href="../Others/Hire Python Developer.html">Python Developers</a></li>
+                                        <li><a href="../Others/Hire Java Developer.html">Java Developers</a></li>
+                                        <li><a href="../Others/ExpressJS_Developer.html">ExpressJS Developers</a></li>
+                                        <li><a href="../Others/SpringBoot_Developer.html">Spring Boot Developers</a></li>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Mobile App Developers</h6>
+                                        <li><a href="../Others/Hire Android Developer.html">Android Developers</a>
+                                        </li>
+                                        <li><a href="../Others/Hire IOS Developer.html">IOS Developers</a></li>
+                                        <li><a href="../Others/Hire Swift App Developers.html">Swift App Developers</a>
+                                        </li>
+                                        <li><a href="../Others/Hire-Flutter-Developer.html">Flutter Developers</a></li>
+                                        <li><a href="../Others/Hire Ionic Developers.html">Ionic Developers</a></li>
+                                        <li><a href="../Others/Hire-React-Native-developer.html">React Native Developers</a></li>
+                                        <li><a href="../Others/HIRE XAMARIN DEVELOPER.html">Xamarin Developers</a></li>
+                                        <li><a href="../Others/Hire CodeIgniter developer.html">CodeIgniter Developers</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Add more items as needed -->
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../career.html" class="nav-item nav-link">Career</a>
+                    <a href="../contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="../quote.html" class="nav-item nav-link" style="padding-top: 23px;"><button type="button" style="background-color:#0C356A ;  min-height: 1px; font-size: 16px; " class="btn btn-primary btn-lg btn-block"><b>Request Free Quote</b></button></a>
+                </div>
+                <!-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
+                <!-- <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> -->
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 10px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Continuous Integration/Continuous Deployment (CI/CD)</h1>
+                    <!--<a href="" class="h5 text-white">Home</a>-->
+                    <!--<i class="far fa-circle text-white px-2"></i>-->
+                    <a href="casestudy.html" class="h5 text-white">Blogs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-8">
+
+                    <section class="sect-pad-t service-details pt-4">
+                        <div class="container">
+                            <div class="row justify-content-center">
+            
+                                <div class="col-12 col-md-12 col-lg-12 text-center mb-4">
+                                    <img src="blog-img/technokrate.png" class="img-fluid mb-3" alt="Logo of this blog">
+                                    <h1 class="main-title mb-0 mt-60 services-title c-black">Unlocking Agility:</h1>
+                                    <h3>The Importance of Continuous Integration and Continuous Deployment (CI/CD)</h3>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12">
+                                    <p class="desc mb-0">In today's fast-paced digital landscape, delivering high-quality software quickly and efficiently is more crucial than ever. Continuous Integration (CI) and Continuous Deployment (CD) are practices that allow development teams to automate the software delivery process, improving the speed and reliability of releases. By implementing CI/CD, organizations can respond to market demands faster, enhance product quality, and ensure a smoother development workflow.</p>
+            
+                                    <br>
+                                    <b class="c-blue">This post will cover:</b>
+                                    <br><br>
+                <ol>
+                    <li>
+                        <p>What is CI/CD?</p>
+                    </li>
+        
+                    <li>
+                        <p>Key Benefits of CI/CD</p>
+                    </li>
+        
+                    <li>
+                        <p>Core Components of CI/CD</p>
+                    </li>
+
+                    <li>
+                        <p>Best Practices for Implementing CI/CD</p>
+                    </li>
+
+                    <li>
+                        <p>Common Challenges and Solutions</p>
+                    </li>
+                    
+                     <li>
+                        <p>How to Choose the Right CI/CD Tools</p>
+                    </li>
+                    
+                     <li>
+                        <p>Conclusion and Next Steps</p>
+                    </li>
+                </ol>    
+
+                                    <!-- <p class="desc text-center mb-0">G Day Hiveis not just any ordinary app; it's your passport to a world of fun, where learning feels like an incredible adventure. Whether you're exploring fascinating facts about animals, solving puzzles, creating colourful artwork, or mastering math challenges, G Day Hiveis here to make every moment a joyful learning experience.</p>
+            
+                                    <p class="desc text-center mb-0">Our mission at G Day Hiveis to spark your curiosity, inspire your creativity, and help you grow smarter every day while having a blast. </p>
+
+                                    <p class="desc text-center mb-0">But that's not all! G Day Hiveis also your safe and trusted companion on the digital journey. We've made sure that parents are in control, so they can be sure you're having a great time while staying secure. With parental controls and a commitment to privacy, G Day Hiveis a place where you can learn, play, and explore with confidence.</p>
+                                    
+                                    <p class="desc text-center mb-0">So, are you ready to dive into a world of wonders, embark on exciting quests, and become a superstar learner? Get ready to exploreG Day HiveDO, your ultimate learning buddy that's just a tap away. Let the adventure begin!</p> -->
+            
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+
+
+
+            
+
+
+
+                    <!-- Blog Detail Start -->
+                    <div class="mb-5">
+                        <img class="img-fluid w-100 rounded mb-5" src="blog-img/gitis.png" alt="">
+                        <h1 class="mb-4"></h1>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <!---------- Blog Detail End ==============-->
+    
+                    
+                    
+                    
+
+    
+
+                </div>
+    
+                <!-- Sidebar Start -->
+                <div class="col-lg-4">
+                    <!-- Search Form Start -->
+
+                    <!-- Search Form End -->
+    
+                    <!-- Category Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Categories</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Design</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Web Development</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Keyword Research</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Email Marketing</a>
+                        </div>
+                    </div>
+                    <!-- Category End -->
+    
+                    <!-- Recent Post Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Snapshot</h3>
+                        </div>
+
+    
+                    <!-- Image Start -->
+                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                        <img src="blog-img/gdayhive1.JPG" alt="" class="img-fluid rounded">
+                    </div>
+                    <!-- Image End -->
+    
+                    <!-- Tags Start -->
+
+                    <!-- Tags End -->
+    
+                    <!-- Plain Text Start -->
+                    <!-- <div class="wow slideInUp" data-wow-delay="0.1s">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="mb-0">Plain Text</h3>
+                        </div>
+                        <div class="bg-light text-center" style="padding: 30px;">
+                            <p>Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna takimata, amet sit et diam dolor ipsum amet diam</p>
+                            <a href="" class="btn btn-primary py-2 px-4">Read More</a>
+                        </div>
+                    </div> -->
+                    <!-- Plain Text End -->
+
+
+                    <section class="mb-5 features-list bg-light sect-pad-tb">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-19 col-md-19 col-lg-9 col-xl-9 typography-list">
+                                    <h2 class="main-title mb-8 mt-60 services-title cs-typography-title c-black">Typography</h2>
+                                    <p class="text-type mt-5">Aa</p>
+                                    <p class="font-type">Work Sans</p>
+                                    <p class="text-type2 mb-0">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
+                                        Xx Yy Zz</p>
+                                </div>
+                                <div class="">
+                                    <h2 class="main-title mb-8 mt-60 services-title cs-color-title c-black">Color Palette</h2>
+                                    <div class="typoflex color-pal-color">
+                                        <div class="color-box text-center mr-4 ">
+                                            <div class="color-code-box color-1" style="background-color: #8b60fd;"></div>
+                                            <label class="color-code mb-0 text-uppercase">#8b60fd</label>
+                                        </div>
+                                        <div class="color-box text-center mr-4">
+                                            <div class="color-code-box color-3" style="background-color:#6deea5"></div>
+                                            <label class="color-code mb-0 text-uppercase">#6deea5</label>
+                                        </div>
+                                        <div class="color-box text-center">
+                                            <div class="color-code-box color-4" style="background-color: #e97838;"></div>
+                                            <label class="color-code mb-0 text-uppercase">#e97838</label>
+                                        </div>
+
+                                        <div class="color-box text-center">
+                                            <div class="color-code-box color-4" style="background-color: #ffdb70;"></div>
+                                            <label class="color-code mb-0 text-uppercase">#ffdb70</label>
+                                        </div>
+
+                                        <div class="color-box text-center">
+                                            <div class="color-code-box color-4" style="background-color: #cccccc;"></div>
+                                            <label class="color-code mb-0 text-uppercase">#cccccc</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    
+                </div>
+                <!-- Sidebar End -->
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    
+    <!-- Case Study Images start -->
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">More UI SnapShots</h5>
+            <h1 class="mb-0">Refer For Design and Look</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/gdayhive1.JPG"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/gdivechetan.JPG"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                
+                
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/gitis.png"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+     
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/gdividvinkal.JPG"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/gdivideravi.JPG"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/gdavichitra.JPG"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/divide.JPG"  >
+            </div>
+
+            <div class="testimonial-item bg-light my-4">
+                  
+                <div class="pt-4 pb-5 px-5">
+
+                </div>
+                <img class="img-fluid rounded" src="blog-img/gdivechetan.JPG"  >
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+<!-- Case Study Images Ends -->
+
+
+
+
+    <section class="sect-pad-t service-details pt-4">
+        <div class="">
+            <div class="card p-4 h-100 d-flex flex-column">
+                <h3 class="sub-title main-x" data-inviewport="scale-in"><b>What is CI/CD?</b></h3>
+                <p>Continuous Integration (CI) is a software development practice that involves regularly integrating code changes into a shared repository. Automated tests are run to validate these changes, allowing teams to detect and address issues early in the development process.</p>
+                <p>Continuous Integration (CI) is a software development practice that involves regularly integrating code changes into a shared repository. Automated tests are run to validate these changes, allowing teams to detect and address issues early in the development process.</p>
+                <br>
+                <!-- <b class="c-blue">Lessons learned from the G Day HiveG Day Hive project can provide valuable insights for future development and similar initiatives. Here are some key lessons that can be drawn from the project:</b> -->
+                <br>
+                 <ol>
+                    <!--<li>-->
+                    <!--    <p><b>Automation</b><br>-->
+                    <!--       CI/CD automates the processes of testing and deploying code changes, reducing manual intervention and human error.</p>-->
+                    <!--</li>-->
+                
+                    <b>Key Characteristics of CI/CD:</b><br>
+                    <ul>
+                        <li>
+                           <p> <b>Automation</b>CI/CD automates the processes of testing and deploying code changes, reducing manual intervention and human error.</p>
+                        </li>
+                         <li>
+                           <p> <b>Frequent Releases: </b>With CI/CD, teams can release updates and new features more frequently, providing value to customers faster.</p>
+                        </li>
+                         <li>
+                           <p> <b>Rapid Feedback:</b>Continuous testing provides immediate feedback on code changes, allowing developers to address issues before they escalate.</p>
+                        </li>
+                    </ul>
+                    
+        
+                  <b>Key Benefits of CI/CD</b><br>
+                    <ul>
+                        <li>
+                           <p> <b>Faster Time to Market:</b>By streamlining the development and deployment processes, CI/CD enables organizations to deliver software more quickly.</p>
+                        </li>
+                         <li>
+                           <p> <b>Improved Software Quality:</b>Automated testing ensures that code changes are validated before deployment, reducing the risk of defects in production.</p>
+                        </li>
+                         <li>
+                           <p> <b>Enhanced Collaboration:</b>CI/CD fosters collaboration between development, operations, and quality assurance teams, creating a shared responsibility for the software lifecycle.</p>
+                        </li>
+                         <li>
+                           <p> <b>Reduced Risk</b>Continuous deployment reduces the risk associated with releases, as smaller, more frequent updates can be rolled back easily if issues arise.</p>
+                        </li>
+                         <li>
+                           <p> <b>Greater Customer Satisfaction:</b>With faster releases and improved software quality, organizations can respond to customer needs and feedback more effectively.</p>
+                        </li>
+                    </ul>
+                    
+                    <b>Core Components of CI/CD</b><br>
+                    <ul>
+                        <li>
+                           <p> <b>Version Control</b>A system for tracking changes in code, allowing teams to collaborate effectively and maintain a history of code changes.</p>
+                        </li>
+                         <li>
+                           <p> <b>Automated Testing:</b>The use of automated tests to validate code changes, ensuring that new features and bug fixes do not introduce defects.</p>
+                        </li>
+                         <li>
+                           <p> <b>Build Automation:</b>Automatically compiling and building code to ensure that it can be deployed successfully.</p>
+                        </li>
+                        <li>
+                           <p> <b>Deployment Automation:</b>Streamlining the deployment process to production environments, reducing manual intervention and risk.</p>
+                        </li>
+                        <li>
+                           <p> <b>Monitoring and Feedback:</b>Implementing monitoring tools to track application performance and gather feedback from users.</p>
+                        </li>
+                    </ul>
+                    
+                    <b>Best Practices for Implementing CI/CD</b><br>
+                    <ul>
+                        <li>
+                           <p> <b>Start Small</b>Begin by implementing CI for a single project, gradually expanding to other projects as you gain experience.</p>
+                        </li>
+                         <li>
+                           <p> <b>Automate Early and Often: </b>Automate the testing, building, and deployment processes as early as possible to reap the benefits of CI/CD.</p>
+                        </li>
+                         <li>
+                           <p> <b>Maintain a Clean Codebase:</b>Encourage developers to write clean, modular code to reduce the likelihood of integration issues.</p>
+                        </li>
+                        <li>
+                           <p> <b>Implement Comprehensive Testing: </b>Use a combination of unit tests, integration tests, and end-to-end tests to ensure thorough validation of code changes.</p>
+                        </li>
+                        <li>
+                           <p> <b>Monitor and Iterate:</b>Continuously monitor the CI/CD pipeline and gather feedback to identify areas for improvement.</p>
+                        </li>
+                    </ul>
+                    
+                    <b>Common Challenges and Solutions</b><br>
+                    <ul>
+                        <li>
+                           <p> <b>Resistance to Change: Teams may be hesitant to adopt CI/CD practices due to a preference for traditional development methods.</b>Solution: Provide training and highlight the benefits of CI/CD through pilot projects and success stories.</p>
+                        </li>
+                         <li>
+                           <p> <b>Integration Issues: Integrating CI/CD tools with existing systems can be challenging.</b>Solution: Choose tools that are compatible with your existing infrastructure and offer seamless integration capabilities.</p>
+                        </li>
+                         <li>
+                           <p> <b>Overly Complex Pipelines: A complex CI/CD pipeline can hinder productivity and lead to confusion.</b>Solution: Keep your pipeline simple and streamlined, focusing on essential steps that add value.</p>
+                        </li>
+                    </ul>
+                    
+                     <b>How to Choose the Right CI/CD Tools</b><br>
+                     <p>When selecting CI/CD tools, consider the following:</p><br>
+                    <ul>
+                        <li>
+                           <p> <b>Compatibility:</b>Ensure the tools integrate seamlessly with your existing development environment and tools.</p>
+                        </li>
+                         <li>
+                           <p> <b>Ease of Use:</b>Look for tools with user-friendly interfaces that make it easy for teams to adopt and use them effectively.</p>
+                        </li>
+                         <li>
+                           <p> <b>Scalability:</b>Choose tools that can scale with your organization as your needs grow.</p>
+                        </li>
+                         <li>
+                           <p> <b>Community Support:</b> Opt for tools with strong community support and extensive documentation to help troubleshoot issues</p>
+                        </li>
+                    </ul>
+                </ol>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="sect-pad-t service-details pt-4">
+        <section class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
+                        <div class="text-center">
+                            <img class="img-fluid"
+                                src="blog-img/gitis.png"
+                                alt="G Day Hive end">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 bg-white">
+                        <div class="p-0 p-md-5 p-lg-3 p-xl-5 d-flex flex-column h-100 justify-content-center">
+                            <div>
+                                <h2 class="main-title mb-3 mt-60 services-title cs-challenges-title c-black">Conclusion:</h2>
+                                <!-- <p class="desc mb-1 c-black"><b>Nurturing Young Minds for a Brighter Future</b></p> -->
+                                <p class="desc mb-4">India boasts a vibrant mobile app development landscape, with numerous companies offering top-notch services tailored to diverse business requirements. Whether you’re a startup looking to build your first app or an established enterprise seeking to enhance your digital offerings, these top mobile app development companies in India can help you turn your vision into reality. Choose a partner that aligns with your business goals and take the first step toward digital transformation today.</p>
+                                <p class="desc mb-1 c-black"><b></b></p>
+                                <br>
+                                <!-- <p class="desc mb-0">The website's development and operation have not been without challenges, from competition and trust-building to technical complexities and regulatory compliance. However, Car Washie Car Services has met these challenges with innovation, resilience, and a continuous pursuit of excellence.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    
+        
+    </section>
+
+    
+
+    <!-- Footer Start -->
+    <div class=" bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-99  p-4" style="background-color: #2a446d;">
+                        <a href="../index.html" class="navbar-brand">
+                            <h4 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Technokrate</h4>
+                        </a>
+                        <p class="mt-3 mb-4" style="text-align: justify;">Technokrate is the partner of choice for many of the world's leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">4th floor ,  Prince Complex,  Chatrapati Nagar, Nagpur, Maharashtra 440015</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@technokrate.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+91-8956992803</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="https://twitter.com/avestantechnol1"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/avestantechnologies"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/company/avestan-technologies/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="https://www.instagram.com/avestantechnologies/"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Talentrise Technokrate Pvt Ltd</a>. All Rights Reserved. 
+						
+						Designed by <a class="text-white border-bottom" href=""> Talentrise Technokrate Pvt Ltd</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="nk4.js"></script>
+
+
+
+</body>
+
+</html>

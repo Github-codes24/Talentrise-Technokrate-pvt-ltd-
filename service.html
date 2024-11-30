@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Technorate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/technokrate.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;family=Rubik:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/style-p1.css" rel="stylesheet"> -->
+    <style>
+        /* Styles for the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Styles for the button that triggers the dropdown */
+        .dropdown button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styles for the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin-left: -400px;
+
+        }
+
+        /* Styles for each item in the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #800080;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused */
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+
+        /* Styles for the dropdown content of about (hidden by default) */
+        .dropdown-content-about {
+            display: none;
+            padding-right: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            /* min-width: 160px; */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -50px;
+        }
+
+        /* Styles for each item in the dropdown of about */
+        .dropdown-content-about a {
+            color: black;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+
+        /* Change color on hover of about */
+        .dropdown-content-about a:hover {
+            background-color: #800080;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        /* Show the dropdown content when the button is hovered or focused for about*/
+        .dropdown:hover .dropdown-content-about,
+        .dropdown:focus-within .dropdown-content-about {
+            display: block;
+        }
+        
+        .sticky-top .new-nav-link {
+    padding: 20px 0;
+    color:#000000;
+}
+
+ 
+
+  .new-nav-link {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin-right: 20px;
+    padding: 30px 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    transition: .5s;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+}
+
+.new-nav-link:hover,
+ .new-nav-link.active {
+    color: #fff;
+     /*color: #00056d;*/
+    font-weight: bolder;
+   text-shadow: 6px 6px 4px rgb(141, 18, 158) !important;
+}
+
+.new-nav-link {
+    padding: 20px 0;
+    color:#fff;
+}
+
+.new-nav-link.new-active {
+    color: #fff;
+     /*color: #00056d;*/
+    font-weight: bolder;
+   text-shadow: 4px 4px 5px rgb(141, 18, 158) !important;
+   padding-bottom:23px;
+}
+
+@media (min-width: 992px) {
+    
+    .new-nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        /*background: var(--primary);*/
+        background:#fff;
+        transition: .5s;
+    }
+
+     .new-nav-link:hover::before,
+     .new-nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+
+     .new-nav-link.nav-contact::before {
+        display: none;
+    }
+
+    .sticky-top.navbar-dark .navbar-brand h1 {
+        color: var(--primary);
+    }
+}
+@media (max-width:990px){
+      .new-nav-link{
+    color:#000000;
+}
+}    
+    
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <!-- Spinner Start -->
+        <!--<div id="spinner"-->
+        <!--    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">-->
+        <!--    <div class="spinner"></div>-->
+        <!--</div>-->
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <!--<div class="container-fluid bg-dark px-5 d-none d-lg-block">-->
+         <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #800080;">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                       
+                    <small class="me-3 text-light"><a href="tel:+918956992803" class="me-3 text-light" style="color: white;"><i class="fa fa-phone-alt me-2"></i>+91-8956992803</a></small>
+                    <small class="me-3 text-light"><a href="mailto:info@technokrate.com" class="text-light" style="color: white;"><i class="fa fa-envelope-open me-2"></i>info@technokrate.com</a>
+                    </small>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank"
+                            href="https://x.com/Talentrise59788"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank"
+                            href="https://www.facebook.com/profile.php?id=100093741976560"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank"
+                            href="https://www.linkedin.com/company/telentrisetechnokrate/?viewAsMember=true"><i
+                                class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank"
+                            href="https://www.instagram.com/talentrise_technokrate/"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                        <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- <div id="wa-logo">
+        <a href="https://wa.me/+918381009662" target="_blank"><img src="./img/whatsapp.png" alt="Technokrate"></a>
+            </div> -->
+
+        <!-- Navbar & Carousel Start -->
+  <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <!--<a href="index.html" class="navbar-brand p-0">-->
+            <!--    <img src="" alt=""><h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Technokrate</h1>-->
+            <!--</a>-->
+            <a href="../index.html" class="navbar-brand p-0">
+               <img src="../img/Techknokrate logo 2.png" alt="Technokrate" class="img-fluid" style="height: 100px; width:200px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="text-black nav-item new-nav-link">Home</a>
+
+                    <div class="nav-item dropdown"  style="display:flex; align-items:center">
+                        <div class="dropdown">
+                            <a href="about.html" class="text-black nav-item new-nav-link">About</a>
+                            <div class="dropdown-content-about" style="width: 180px; padding-top: 10px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <a href="projects.html"><b>Projects</b></a>
+                                        <a href="casestudy.html"><b>Case-Study</b></a>
+                                        <a href="Blogs.html"><b>Blogs</b></a>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <!-- <a href="projects.html" class="nav-item nav-link">Projects</a> -->
+                    
+                    <!--<a href="service.html" class="nav-item nav-link active">Services</a>-->
+                    <a href="service.html" class="text-black nav-item new-nav-link new-active" style="text-shadow: none; outline: none; box-shadow: none;">Services</a>
+
+                    
+
+                    <!-- <a href="service.html" class="nav-item nav-link" style="font-size: 16px;">Services</a> -->
+                    <div class="nav-item dropdown"  style="display:flex; align-items:center">
+                        <div class="dropdown">
+                            <a href="" class="text-black nav-item new-nav-link" style="font-size: 16px;">Hire Us</a>
+                            <div class="dropdown-content" style="width: 850px; padding-top: 20px;">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Trending</h6>
+                                        <a href="./Others/MERN_Developer.html">MERN Developers</a>
+                                        <a href="./Others/MEAN_Developer.html">MEAN Developers</a>
+                                        <a href="./Others/Hire-Meteor-Devloper.html">Meteor Developers</a>
+                                        <a href="./Others/Blockchain_Developer.html">Blockchain Developers</a>
+                                        <a href="./Others/Devops_Engineer.html">DevOps Engineers</a>
+                                        <a href="./Others/Fintech_Developer.html">Fintech Developers</a>
+                                        <a href="./Others/Hire Automation Tester.html">Automation Testers</a>
+                                        <a href="./Others/Software_Developer.html">Software Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <!-- <h6 style="font-size: 16px;">Trending</h6> -->
+                                        <br>
+                                        <a href="./Others/Hire AR Developers.html">AR Developers</a>
+                                        <a href="./Others/Hire-VueJS-Developer.html">VueJS Developers</a>
+                                        <a href="./Others/Hire Kotlin App Developers.html">Kotlin Developers</a>
+                                        <a href="./Others/Hire-RoR-Devloper.html">RoR Developers</a>
+                                        <li><a href="./Others/Hire Django Developers.html">Django Developers</a></li>
+                                        <li><a href="./Others/Ruby_on_rail_Developer.html">Ruby on Rails Developers</a></li>
+                                        <a href="./Others/Hire UI Developer.html">UI UX Designers</a>
+                                        <a href="./Others/AWS_Developer.html">AWS Developers</a>
+                                        <a href="./Others/PHP_Developer.html">PHP Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Front-End Developers</h6>
+                                        <a href="./Others/Hire Java Script Developer.html">JavaScript Developers</a>
+                                        <a href="./Others/Typescript_Developer.html">TypeScript Developers</a>
+                                        <a href="./Others/Hire HTML5 Developers.html">HTML5 Developers</a>
+                                        <a href="./Others/TailwindCSS_Developer.html">Tailwind CSS Developers</a>
+                                        <a href="./Others/Angular_Developer.html">Angular Developers</a>
+                                        <a href="./Others/hire-reactjs-developers.html">ReactJS Developers</a>
+                                        <a href="./Others/NextJS_Developer.html">NextJS Developers</a>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Back-End Developers</h6>
+                                        <li><a href="./Others/Node JS Developer.html">Node JS Developers</a></li>
+                                        <li><a href="./Others/Hire UI Developer.html">UI Developers</a></li>
+                                        <li><a href="./Others/Laravel Development.html">Laravel Developers</a></li>
+                                        <li><a href="./Others/Hire-ASPNET-Devloper.html">ASPNET Developers</a></li>
+                                        <li><a href="./Others/Hire Python Developer.html">Python Developers</a></li>
+                                        <li><a href="./Others/Hire Java Developer.html">Java Developers</a></li>
+                                        <li><a href="./Others/ExpressJS_Developer.html">ExpressJS Developers</a></li>
+                                        <li><a href="./Others/SpringBoot_Developer.html">Spring Boot Developers</a></li>
+                                    </ul>
+                                    <ul style="list-style: none;">
+                                        <h6 style="font-size: 16px;">Mobile App Developers</h6>
+                                        <li><a href="./Others/Hire Android Developer.html">Android Developers</a>
+                                        </li>
+                                        <li><a href="./Others/Hire IOS Developer.html">IOS Developers</a></li>
+                                        <li><a href="./Others/Hire Swift App Developers.html">Swift App Developers</a>
+                                        </li>
+                                        <li><a href="./Others/Hire-Flutter-Developer.html">Flutter Developers</a></li>
+                                        <li><a href="./Others/Hire Ionic Developers.html">Ionic Developers</a></li>
+                                        <li><a href="./Others/Hire-React-Native-developer.html">React Native Developers</a></li>
+                                        <li><a href="./Others/HIRE XAMARIN DEVELOPER.html">Xamarin Developers</a></li>
+                                        <li><a href="./Others/Hire CodeIgniter developer.html">CodeIgniter Developers</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Add more items as needed -->
+                            </div>
+                        </div>
+                        </div>
+                    <!-- <a href="casestudy.html" class="nav-item nav-link" style="font-size: 16px;">Case-Study</a> -->
+                    <a href="career.html" class="text-black nav-item new-nav-link" style="font-size: 16px;">Career</a>
+                    <a href="contact.html" class="text-black nav-item new-nav-link" style="font-size: 16px;">Contact</a>
+                   <a href="quote.html" class="nav-item nav-link" style="padding-top: 23px;">
+                        <button type="button" 
+                                style="background-color: #800080; 
+                                       min-height: 1px; 
+                                       font-size: 16px; 
+                                       color: #fff; 
+                                       border: 1px solid white; 
+                                       outline: none;" 
+                                class="btn btn-primary btn-lg btn-block">
+                          <b>Request Free Quote</b>
+                        </button>
+                      </a>
+                </div>
+
+
+                <!-- <a href="" class="btn btn-primary py-2 px-4 ms-3" style="background-color: #091E3E;">Get IN Touch</a> -->
+            </div>
+        </nav>
+
+        
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <!--<h1 class="display-4 text-black animated zoomIn">Services</h1><br>-->
+                    <h4 class="display-4 text-black animated zoomIn" style="font-size: 2.5rem;">
+                       Transforming Challenges Into Opportunities With Our Services
+                    </h4>
+                   
+       </div>
+            </div>
+        </div>
+    </div>
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var navLinks = document.querySelectorAll('.nav-item.nav-link');
+        
+        navLinks.forEach(function(link) {
+            link.addEventListener('mouseenter', function() {
+                this.style.textShadow = "0 2px 4px rgba(128, 0, 128, 0.8)"; // Purple text-shadow only
+            });
+
+            link.addEventListener('mouseleave', function() {
+                this.style.textShadow = "none"; // Remove text-shadow when mouse leaves
+            });
+        });
+    });
+</script>
+    <!-- Navbar End -->
+    
+    <!--Modal Start-->
+ <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-height: 400px; max-width: 600px;"> <!-- Custom width with inline CSS -->
+        <div class="modal-content rounded-0 border-0">
+            <div class="modal-body">
+                <div class="row align-items-center"> <!-- Added align-items-center to vertically center the content -->
+                    <!-- Left column for the image -->
+                    <div class="col-md-6 d-flex justify-content-center"> <!-- Center image horizontally -->
+                        <!--<img src="../img/technokrate.png" alt="Techknokrate Logo" style="width: 200px; height: 250px; object-fit: cover;">-->
+                        <img src="../img/Techknokrate logo 2.png" alt="Technokrate" class="img-fluid" style="height: 100px; width:200px;">
+                    </div>
+
+                    <!-- Right column for the form -->
+                    <div class="col-md-6">
+                        <div class="modal-header border-0 d-flex justify-content-between p-0">
+                            <h6 class="text-start" style="font-size: 20px; text-shadow: none; box-shadow: none; margin: 0;">
+                                Kindly Fill The Details !
+                            </h6>
+                            <a href="javascript:void(0)" class="close" data-dismiss="modal" aria-label="Close" onclick="hideModal()" 
+                               style="border: 2px solid black; padding: 6px; padding-bottom: 4px; padding-top: 4px; color:black;">
+                                <span aria-hidden="true">&times;</span>
+                            </a>
+                        </div>
+
+                        <form action="https://formspree.io/f/mnnqnyjy" class="row" method="post" id="formSubmit">
+                            <!-- Add margin-top to create space between close button and the first input field -->
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="loginPhone" name="loginName" placeholder="First Name" required style="font-size: 14px; margin-top: 20px;">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="loginName" name="loginEmail" placeholder="E-mail address" required style="font-size: 14px;">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Phone" maxlength="10" required style="font-size: 14px;">
+                            </div>
+                            <div class="col-12">
+                                <a href="https://appt.link/meet-with-chetan-chitriv-0E0czwAl/web-conference" class="btn btn-primary w-100 mb-3" role="button">
+                                    Submit
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--Modal end-->
+
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-primary p-3"
+                                placeholder="Type search keyword">
+                            <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- Service Start -->
+
+<div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-1">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-uppercase" style="color: #800080; font-size: 36px;">Our Services</h5>
+            <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon">
+                        <a href="Custom-P.html" style="text-decoration: none;">
+                            <img src="https://www.pskitservices.com/wp-content/uploads/2021/02/imageedit_5_3521625852-min.gif" width="100px" />
+                        </a>
+                    </div>
+                    <h4 class="mb-3" style="color: #800080;">Custom Software Development</h4>
+                    <p class="m-0" style="color: black;">Elevate your operations with our cutting-edge custom software development solutions.</p>
+                    <a class="btn btn-lg btn-primary rounded" href="Custom-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon">
+                        <a href="Product-P.html" style="text-decoration: none;">
+                            <img src="https://www.pskitservices.com/wp-content/uploads/2021/02/imageedit_3_8432864280.gif" width="100px" />
+                        </a>
+                    </div>
+                    <h4 class="mb-3" style="color: #800080;">Product Development</h4>
+                    <p class="m-0" style="color: black;">Develop your own custom digital product and unique business offering with Technokrate’s product development services.</p>
+                    <a class="btn btn-lg btn-primary rounded" href="Product-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon">
+                        <a href="Web-P.html" style="text-decoration: none;">
+                            <img src="https://www.pskitservices.com/wp-content/uploads/2021/02/imageedit_6_9824045125-min.gif" width="100px" />
+                        </a>
+                    </div>
+                    <h4 class="mb-3" style="color: #800080;">Web Application Development</h4>
+                    <p class="m-0" style="color:black;">Whatever your needs are, we have a solution for you, whether you need a new website to engage consumers, a web portal to better organize.</p>
+                    <a class="btn btn-lg btn-primary rounded" href="Web-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon">
+                        <a href="Apps-P.html" style="text-decoration: none;">
+                            <img src="https://www.pskitservices.com/wp-content/uploads/2021/03/imageedit_5_9396458617-min.gif" width="100px" />
+                        </a>
+                    </div>
+                    <h4 class="mb-3" style="color: #800080;">Apps Development Services</h4>
+                    <p class="m-0" style="color: black;">Transforming your app ideas into reality with expert app development.</p>
+                    <a class="btn btn-lg btn-primary rounded" href="Apps-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon">
+                        <a href="Digital-Mark-P.html" style="text-decoration: none;">
+                            <img src="https://www.pskitservices.com/wp-content/uploads/2021/02/imageedit_1_8462565443.gif" width="100px" />
+                        </a>
+                    </div>
+                    <h4 class="mb-3" style="color: #800080;">Digital Marketing Services</h4>
+                    <p class="m-0" style="color: black;">Unleash the Full Potential of Your Business with Comprehensive and Customized Digital Marketing Solutions.</p>
+                    <a class="btn btn-lg btn-primary rounded" href="Digital-Mark-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="service-icon">
+                        <a href="CMS-Service-P.html" style="text-decoration: none;">
+                            <img src="https://www.pskitservices.com/wp-content/uploads/2021/02/e-commerce-2-unscreen.gif" width="100px" />
+                        </a>
+                    </div>
+                    <h4 class="mb-3" style="color: #800080;">CMS Service</h4>
+                    <p class="m-0" style="color:black;">For a wide variety of businesses, our digital team can use CMS to transform your ideas to reality with tangible results.</p>
+                    <a class="btn btn-lg btn-primary rounded" href="CMS-Service-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+                  <div class="row g-5">
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+              <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                  <div class="service-icon">
+                      <a href="Digital-trans-P.html" style="text-decoration: none;">
+                          <img src="https://www.pskitservices.com/wp-content/uploads/2021/02/imageedit_6_3222184753.gif" width="100px" />
+                      </a>
+                  </div>
+                  <h4 class="mb-3" style="color: #800080;">Digital Transformation</h4>
+                  <p class="m-0" style="color:black;">Technokrate has helped transform the online presence of many businesses by providing tailor-made digital solutions.</p>
+                  <a class="btn btn-lg btn-primary rounded" href="Digital-trans-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                      <i class="bi bi-arrow-right"></i>
+                  </a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+              <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                  <div class="service-icon">
+                      <a href="E-com-P.html" style="text-decoration: none;">
+                          <img src="https://www.pskitservices.com/wp-content/uploads/2021/02/imageedit_1_4583164996-min.gif" width="100px" />
+                      </a>
+                  </div>
+                  <h4 class="mb-3" style="color: #800080;">E-commerce</h4>
+                  <p class="m-0" style="color: black;">We offer a full suite of ecommerce development services that can deliver incredible business outcomes and take your business to new heights.</p>
+                  <a class="btn btn-lg btn-primary rounded" href="E-com-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                      <i class="bi bi-arrow-right"></i>
+                  </a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+              <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                  <div class="service-icon">
+                      <a href="Mob-P.html" style="text-decoration: none;">
+                          <img src="https://www.pskitservices.com/wp-content/uploads/2021/02/ezgif.com-gif-maker-11.gif" width="100px" />
+                      </a>
+                  </div>
+                  <h4 class="mb-3" style="color: #800080;">Mobile App Development</h4>
+                  <p class="m-0" style="color:black;">Technokrate provides mobile app development services that can be customized for clients in various industries.</p>
+                  <a class="btn btn-lg btn-primary rounded" href="Mob-P.html" style="background-color: #800080; border-color: #800080; text-decoration: none;">
+                      <i class="bi bi-arrow-right"></i>
+                  </a>
+              </div>
+          </div>
+       </div>
+       
+
+        </div>
+    </div>
+</div>
+
+        <!-- Service End -->
+
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                    <!--<h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>-->
+                    <h5 class="fw-bold text-uppercase" style="color: #800080; font-size: 36px;">Testimonial</h5>
+
+                    <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="testimonial-item bg-light my-4">
+                        <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img class="img-fluid rounded" src="img/testimonial-1.jpg"
+                                style="width: 60px; height: 60px;">
+                            <div class="ps-4">
+                                <!--<h4 class="text-primary mb-1" >Sampada</h4>-->
+                                <h4 class="mb-1" style="color: #800080;">Sampada</h4>
+
+                                <small class="text-uppercase">Uni Sergikal</small>
+                            </div>
+                        </div>
+                        <div class="pt-4 pb-5 px-5">
+                            I had a fantastic experience working with Technokrate. They are great
+
+                            experts in creating the most appealing websites for you. The SEO team is all affluent
+
+                            with the latest marketing techniques. They deliver what they promise and there is no
+
+                            looking back. I got the perfect delivery of my projects.
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light my-4">
+                        <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img class="img-fluid rounded" src="img/testimonial-2.jpg"
+                                style="width: 60px; height: 60px;">
+                            <div class="ps-4">
+                                 <h4 class="mb-1" style="color: #800080;">Sachin</h4>
+
+                                <small class="text-uppercase">FREZKO</small>
+                            </div>
+                        </div>
+                        <div class="pt-4 pb-5 px-5">
+                            The best part of Technokrate is its dedicated team of experts. They pay the
+
+                            utmost attention to your requirements and deliver you a perfect solution. I am satisfied
+
+                            with the quality of the project they deliver. The best part is that they ensure timely
+
+                            delivery of projects. I have recommended Technokrate to my friends as
+
+                            well who are looking for such top-notch services.
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light my-4">
+                        <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img class="img-fluid rounded" src="img/testimonial-3.jpg"
+                                style="width: 60px; height: 60px;">
+                            <div class="ps-4">
+                                 <h4 class="mb-1" style="color: #800080;">Vikash</h4>
+
+                                <small class="text-uppercase">Phol Mala</small>
+                            </div>
+                        </div>
+                        <div class="pt-4 pb-5 px-5">
+                            I’m glad to write this testimonial for Technokrate and its dedicated team.
+
+                            I can describe them and the work done by them is just two words, “Simply Awesome”! Be it
+
+                            the turnaround, quality or the concept understanding, I got the best from them. In fact,
+
+                            before writing all this, I’ve already recommended them to many of my friends. Keep up
+
+                            the good work!"
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light my-4">
+                        <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img class="img-fluid rounded" src="img/testimonial-4.jpg"
+                                style="width: 60px; height: 60px;">
+                            <div class="ps-4">
+                                 <h4 class="mb-1" style="color: #800080;">Yogita</h4>
+
+                                <small class="text-uppercase">Dura Tech</small>
+                            </div>
+                        </div>
+                        <div class="pt-4 pb-5 px-5">
+                             I’m glad to write this testimonial for Technokrate and its dedicated team.
+
+                            I can describe them and the work done by them is just two words, “Simply Awesome”! Be it
+
+                            the turnaround, quality or the concept understanding, I got the best from them. In fact,
+
+                            before writing all this, I’ve already recommended them to many of my friends. Keep up
+
+                            the good work!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+
+
+
+        <!-- Footer Start -->
+        <!--<div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">-->
+         <div class="container-fluid text-light mt-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #993399;">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-6 footer-about">
+                        <!--<div class="d-flex flex-column align-items-center justify-content-center text-center h-99  p-4"-->
+                        <!--    style="background-color: #2a446d;">-->
+                        <!--    <a href="index.html" class="navbar-brand">-->
+                        <!--        <h4 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Technokrate</h4>-->
+                        <!--    </a>-->
+                        <!--    <p class="mt-3 mb-4" style="text-align: justify;">Technokrate is the partner of-->
+                        <!--        choice for many of the world’s leading enterprises, SMEs and technology challengers. We-->
+                        <!--        help businesses elevate their value through custom software development, product design,-->
+                        <!--        QA and consultancy services.</p>-->
+                        <!--    <form action="">-->
+                        <!--        <div class="input-group">-->
+                        <!--            <input type="text" class="form-control border-white p-3" placeholder="Your Email">-->
+                        <!--            <button class="btn btn-dark">Sign Up</button>-->
+                        <!--        </div>-->
+                        <!--    </form>-->
+                        <!--</div>-->
+                                   <div class="d-flex flex-column align-items-center justify-content-center text-center h-99 p-4" style="background-color: #993399;">
+               <a href="index.html" class="navbar-brand">
+                    <h4 class="m-0" style="color: #ffffff;">
+                        <i class="fa fa-user-tie me-2"></i>Technokrate
+                    </h4>
+                </a>
+                <p class="mt-3 mb-4" style="color: #ffffff; text-align: justify;">
+                    Technokrate is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.
+                </p>
+                <form action="">
+                    <div class="input-group" style="border: 2px solid #993399; border-radius: 8px;">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark">Sign Up</button>
+                    </div>
+                </form>
+             </div>
+             
+
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="row gx-5">
+                            <!--<div class="col-lg-4 col-md-12 pt-5 mb-5">-->
+                            <!--    <div class="section-title section-title-sm position-relative pb-3 mb-4">-->
+                            <!--        <h3 class="text-light mb-0">Get In Touch</h3>-->
+                            <!--    </div>-->
+                            <!--    <div class="d-flex mb-2">-->
+                            <!--        <i class="bi bi-geo-alt text-primary me-2"></i>-->
+                            <!--        <p class="mb-0">4th floor , Prince Complex,  Chatrapati Nagar, Nagpur, Maharashtra 440015</p>-->
+                            <!--    </div>-->
+                            <!--    <div class="d-flex mb-2">-->
+                            <!--        <i class="bi bi-envelope-open text-primary me-2"></i>-->
+                            <!--        <p class="mb-0">info@technokrate.com</p>-->
+                            <!--    </div>-->
+                            <!--    <div class="d-flex mb-2">-->
+                            <!--        <i class="bi bi-telephone text-primary me-2"></i>-->
+                            <!--        <p class="mb-0">+91-8956992803</p>-->
+                            <!--    </div>-->
+                            <!--    <div class="d-flex mt-4">-->
+                            <!--        <a class="btn btn-light btn-square me-2"-->
+                            <!--            href="https://x.com/Talentrise59788"><i-->
+                            <!--                class="fab fa-twitter fw-normal"></i></a>-->
+                            <!--        <a class="btn btn-light btn-square me-2"-->
+                            <!--            href="https://www.facebook.com/profile.php?id=100093741976560"><i-->
+                            <!--                class="fab fa-facebook-f fw-normal"></i></a>-->
+                            <!--        <a class="btn btn-light btn-square me-2"-->
+                            <!--            href="https://www.linkedin.com/company/telentrisetechnokrate/?viewAsMember=true"><i-->
+                            <!--                class="fab fa-linkedin-in fw-normal"></i></a>-->
+                            <!--        <a class="btn btn-light btn-square"-->
+                            <!--            href="https://www.instagram.com/talentrise_technokrate/"><i-->
+                            <!--                class="fab fa-instagram fw-normal"></i></a>-->
+                            <!--    </div>-->
+
+                            <!--</div>-->
+                            
+                                          <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                  <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                      <h3 class="text-light mb-0">Get In Touch</h3>
+                  </div>
+                  <div class="d-flex mb-2">
+                      <i class="bi bi-geo-alt text-white me-2"></i>
+                      <p class="mb-0">4th floor , Prince Complex,  Chatrapati Nagar, Nagpur, Maharashtra 440015</p>
+                  </div>
+                  <div class="d-flex mb-2">
+                      <i class="bi bi-envelope-open text-white me-2"></i>
+                      <p class="mb-0">info@technokrate.com</p>
+                  </div>
+                  <div class="d-flex mb-2">
+                      <i class="bi bi-telephone text-white me-2"></i>
+                      <p class="mb-0">+91-8956992803</p>
+                  </div>
+                  <div class="d-flex mt-4">
+                      <a class="btn btn-light btn-square me-2" href="https://x.com/Talentrise59788"><i class="fab fa-twitter fw-normal"></i></a>
+                      <a class="btn btn-light btn-square me-2" href="https://www.facebook.com/profile.php?id=100093741976560"><i class="fab fa-facebook-f fw-normal"></i></a>
+                      <a class="btn btn-light btn-square me-2" href="https://www.linkedin.com/company/telentrisetechnokrate/?viewAsMember=true"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                      <a class="btn btn-light btn-square" href="https://www.instagram.com/talentrise_technokrate/"><i class="fab fa-instagram fw-normal"></i></a>
+                  </div>
+              </div>
+
+                            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                    <h3 class="text-light mb-0">Quick Links</h3>
+                                </div>
+                                <div class="link-animated d-flex flex-column justify-content-start">
+                                    <a class="text-light mb-2" href="https://technokrate.com/"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/about.html"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/service.html"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/projects.html"><i class="bi bi-arrow-right text-white me-2"></i>Project</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/case-study/casestudy.html"><i class="bi bi-arrow-right text-white me-2"></i>Case Study</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/career.html"><i class="bi bi-arrow-right text-white me-2"></i>Career</a>
+                                    <a class="text-light" href="https://technokrate.com/contact.html"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                    <h3 class="text-light mb-0">Popular Links</h3>
+                                </div>
+                                 <div class="link-animated d-flex flex-column justify-content-start">
+                                    <a class="text-light mb-2" href="https://technokrate.com/"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/about.html"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/service.html"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/projects.html"><i class="bi bi-arrow-right text-white me-2"></i>Project</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/case-study/casestudy.html"><i class="bi bi-arrow-right text-white me-2"></i>Case Study</a>
+                                    <a class="text-light mb-2" href="https://technokrate.com/career.html"><i class="bi bi-arrow-right text-white me-2"></i>Career</a>
+                                    <a class="text-light" href="https://technokrate.com/contact.html"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-end">
+            <div class="#">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <p class="mb-0" style="text-align: center;">&copy; 
+                        <a class="text-white" href="#" style="text-align: center; text-decoration: none; border-bottom: 2px solid white;">Talentrise Technokrate Pvt Ltd</a>. All Rights Reserved. 
+                    Designed by 
+                        <a class="text-white" href="" style="text-align: center; text-decoration: none; border-bottom: 2px solid white;">Talentrise Technokrate Pvt Ltd</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        
+           <!--Whats up logo-->
+            
+        <div class="position-fixed" style="bottom: 20px; left: 25px;">
+             <a href="https://wa.link/e39gdk" class="btn btn-lg rounded-pill" style="background-color: #28a745;">
+                <i class="bi bi-whatsapp fs-2 text-white"></i>
+             </a>
+        </div>
+        <!-- Footer End -->
+
+        
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-e8ed3f66-befe-4c31-b424-4487bbed5463" data-elfsight-app-lazy></div>
+        
+        <!--Start of Tawk.to Script-->
+        
+         <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/65145e67b1aaa13b7a7948ef/1hbbp1i4f';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        
+        <!--End of Tawk.to Script-->
+
+
+        <!-- Back to Top -->
+        <!--<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>-->
+       <!-- <a href="#" class="btn btn-lg btn-lg-square rounded back-to-top" -->
+       <!--        style="background-color: #800080; border-color: #800080; color: white; text-decoration: none;">-->
+       <!--         <i class="bi bi-arrow-up"></i>-->
+       <!--</a>-->
+
+    </main>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#loginModal').modal('show');
+        });
+      </script>
+      <script>
+          function hideModal() {
+        $('#loginModal').modal('hide'); // Use Bootstrap's hide method to close the modal
+      }
+      
+      // $('#loginModass').modal('hide');
+      </script>
+
+    
+</body>
+
+</html>

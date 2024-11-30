@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 62.5%;
+}
+html{
+    font-size: 62.5%;
+
+}
+html , 
+body {
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+
+}
+body{
+    font-size: 1.4rem;
+
+}
+
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*First section*/
+#first{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+.first_content h1{
+    font-size: 6rem;
+    line-height: 1.2;
+}
+.first_content h4{
+    font-size: 2.4rem;
+    font-weight: 300;
+} 
+
+.first_img{
+    border-radius: 5rem;
+
+}
+/* long card section */
+.h-card{
+    display: flex;
+    margin: 2rem 1rem;
+    box-shadow: 0px 5px 4px rgba(223, 221, 223 , 0.24);
+    align-items: center;
+    border:1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+}
+
+.card-content{
+     padding: 2rem;
+    
+}
+.status{
+    margin: 1rem;
+    
+}
+.read-btn{
+    all: unset;
+    font-weight: 600;
+
+}
+.read-btn:hover {
+ border-bottom: 1px solid #ccc;
+color: aqua;
+background: #555de9;
+}
+
+.v_card{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 320px;
+        display: flex;
+        box-shadow: 0px 5px 4px rgba(223, 221, 223 , 0.24);
+        align-items: center;
+        border:1px solid #e2e2e2;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    
+    }
+
+.card_container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px , 1fr));
+
+}
+.card_wrapper {
+    display: flex;
+    justify-content: center;
+}

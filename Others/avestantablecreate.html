@@ -1,0 +1,30 @@
+<?php
+$host = "localhost";
+$username = "u570873310_AvestanDB";
+$password = "Avestan@2022";
+$dbname="u570873310_avestan1";
+
+// Create connection
+$conn = new mysqli($host, $username, $password,$dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}else 
+
+// sql to create table
+$sql = "CREATE TABLE hireandroid (
+fname VARCHAR(50) NOT NULL,
+email VARCHAR(50) NOT NULL,
+phno bigint(10) NULL,
+e_bd VARCHAR(20) NOT NULL,
+e_msg VARCHAR(200)
+)";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Table hireandroid created successfully";
+} else {
+  echo "Error creating table: " . $conn->error;
+}
+
+$conn->close();
+?>

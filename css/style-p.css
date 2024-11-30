@@ -1,0 +1,189 @@
+
+
+/* Contact-P */
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #fff;
+    font-size: 14px;
+
+}
+ .col h2,
+ h3{
+text-align: center;
+margin: auto;
+padding: 10px;
+ }
+
+
+.col{
+    width: 100%;
+    margin: 50px auto;
+ 
+}
+.contact-box-P{
+    background: #fff;
+    display: flex;
+    
+}
+.contact-left{
+  flex-basis: 100%;
+  padding: 40px 60px;
+  
+}
+
+  
+  h1{
+    margin-bottom: 10px;
+  }
+  .container-P P{
+    margin-bottom: 10PX;
+
+  }
+  .input-P{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+  }
+  .input-P .input-group-P{
+    flex-basis: 45%;
+  }
+  .input-P .input-group{
+    flex-basis: 30%;
+     
+  }
+  input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+  }
+   .file-p{
+
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+   }
+  
+
+  label{ 
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+  }
+
+
+  .msg{
+
+    border-bottom: 1px solid #ccc;
+    
+    }
+    textarea{
+      width: 100%;
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+  
+    button{
+      background: #1c00b5;
+      width: 100px;
+      border: none;
+      outline: none;
+      color: #fff;
+      height: 35px;
+      border-radius: 30px;
+      margin-top: 20px;
+      box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+  
+      margin-top: 30px;
+      
+      /*position: absolute;*/
+      right: 60px; /* Adjust distance from the right side */
+      transform: translateY(-50%);
+    }
+    .contact-left h3{
+      color: #1c00b5;
+      font-weight: 600;
+      margin-bottom: 30px;
+      
+  
+    }
+    
+    
+     tr td:first-child{
+      padding-right: 20px;
+     }
+  
+     tr td{
+      padding-top: 20px;
+      
+     }
+
+
+
+
+  
+  
+  .progress-blue span {
+    background-color: blue;
+  }
+
+
+  .msg{ 
+
+  border-bottom: 1px solid #ccc;
+  
+  }
+  textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+
+  button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+
+    margin-top: 30px;
+    
+    position: absolute;
+    right: 60px; 
+    transform: translateY(-50%);
+  } 
+  .contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+
+  }
+  
+  
+   tr td:first-child{
+    padding-right: 20px;
+   }
+
+   tr td{
+    padding-top: 20px;
+    
+   }
